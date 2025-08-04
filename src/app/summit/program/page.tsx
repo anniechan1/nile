@@ -411,7 +411,11 @@ export default function SummitPage() {
               Join us as we celebrate the Nile's heritage and forge new partnerships for a sustainable future across all
               11 basin nations.
             </p>
-            <Link href="/registration">
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe1LBQ7nSDlQsDUeGyE-DFuVsB0gnm2A8Rt3jvBy5j22wer3g/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 size="default"
                 className="bg-deep-orange hover:bg-deep-orange-dark text-rich-white font-bold px-6 py-2.5 text-base rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 font-merriweather"

@@ -211,10 +211,10 @@ export default function SponsorsPartnersPage() {
                   please contact the organizing team at:
                 </p>
                 <a
-                  href="mailto:registration@childrenofthenile.org"
+                  href="mailto:MKM@ecopia.de"
                   className="font-playfair text-xl font-bold text-deep-orange hover:text-river-blue transition-colors"
                 >
-                  registration@childrenofthenile.org
+                  MKM@ecopia.de
                 </a>
               </div>
             </div>

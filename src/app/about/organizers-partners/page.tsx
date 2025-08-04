@@ -1,8 +1,48 @@
 import Image from "next/image"
 import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
+import Link from "next/link"
 
 export default function OrganizersPartnersPage() {
+  const keyPartners = [
+    {
+      name: "Ecopia PLC",
+      subtitle: "Chaired by Dr. Mitslal Kifleyesus-Matschie",
+      description: "Steering sustainable enterprises and green innovation.",
+      logo: "/images/ecopia.png",
+      url: "https://www.ecopiagroup.com/",
+      borderColor: "border-warm-gold",
+      shadowColor: "bg-warm-gold/20",
+    },
+    {
+      name: "Bethlehem Ze-Ethiopia",
+      subtitle: "Founded by Desalegn Hailu",
+      description: "Cultural foundation bridging art and advocacy.",
+      logo: "/images/bze.png",
+      url: "https://www.bethlehemzeethiopia.org/",
+      borderColor: "border-deep-orange",
+      shadowColor: "bg-deep-orange/20",
+    },
+    {
+      name: "ASSIST",
+      subtitle: "Chaired by Prof. Mamo",
+      description: "Coordinating scientific and educational frameworks.",
+      logo: "/images/assist.png",
+      url: "https://assistsarchi.wixsite.com/assist",
+      borderColor: "border-river-blue",
+      shadowColor: "bg-river-blue/20",
+    },
+    {
+      name: "Equal Trade Alliance",
+      subtitle: "(Ethiopia/Netherlands)",
+      description: "Advancing fair-trade partnerships across the Nile Basin.",
+      logo: "/images/equal_trade.png",
+      url: "https://equaltradepanafrican.org/",
+      borderColor: "border-deep-orange",
+      shadowColor: "bg-deep-orange/20",
+    },
+  ]
+
   return (
     <div className="min-h-screen bg-off-white">
       <MainNav />
@@ -19,7 +59,6 @@ export default function OrganizersPartnersPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/40"></div>
         </div>
-
         <div className="relative z-10 text-center text-rich-white px-4 max-w-5xl mx-auto">
           <h1 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-black mb-4 leading-tight hero-text-shadow">
             Organizers & Partners
@@ -53,104 +92,46 @@ export default function OrganizersPartnersPage() {
               </h2>
             </div>
 
-            {/* Split Layout */}
-            <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
-              {/* Left: Logo - No Container */}
+            {/* ECSOC as Lead Organizer */}
+            <div className="max-w-4xl mx-auto">
               <div className="relative">
-                <div className="absolute -top-8 -left-8 w-full h-full bg-warm-gold/10 transform rotate-2"></div>
-                <div className="relative">
-                  <div className="relative w-full h-64 mb-6">
-                    <Image src="/images/bze.png" alt="Bethlehem Ze-Ethiopia logo" fill className="object-contain" />
-                  </div>
-                  <p className="font-lora text-sm text-charcoal text-center italic">
-                    Bethlehem Ze-Ethiopia - Humanity and Charitable Works Foundation
-                  </p>
-                </div>
-              </div>
-
-              {/* Right: Founder Portrait - No Container, Smaller Image */}
-              <div className="relative">
-                <div className="relative">
-                  <div className="flex justify-center items-center">
-                    <Image
-                      src="/images/hailu.png"
-                      alt="Desalegn Hailu, founder and visual artist"
-                      width={320}
-                      height={400}
-                      className="rounded-lg object-cover shadow-2xl"
-                    />
-                  </div>
-                </div>
-
-                {/* Founder Info */}
-                <div className="mt-8">
-                  <div className="bg-deep-orange text-rich-white p-6 transform -rotate-1 shadow-lg">
-                    <h3 className="font-playfair text-xl font-bold mb-2">Desalegn Hailu</h3>
-                    <p className="font-lora text-sm leading-relaxed">
-                      Founder of Bethlehem Ze-Ethiopia and President of the Ethiopian Filmmakers Association, Desalegn
-                      merges art and advocacy. With 20+ years in cinema and cultural leadership, he bridges creative
-                      expression with public policy and Pan-African collaboration.
-                    </p>
+                <div className="absolute -top-4 -left-4 w-full h-full bg-warm-gold/10 transform rotate-1"></div>
+                <div className="relative p-8">
+                  <div className="flex items-center space-x-8">
+                    <Link
+                      href="https://www.ecsoc.net/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-shrink-0"
+                    >
+                      <div className="w-40 h-40 relative hover:scale-105 transition-transform duration-300">
+                        <Image
+                          src="/images/ecsoc.png"
+                          alt="Ethiopian Civil Society Organizations Council logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                    </Link>
+                    <div className="flex-1">
+                      <h3 className="font-playfair text-xl md:text-2xl font-bold text-river-blue mb-2">
+                        Ethiopian Civil Society Organizations Council (ECSOC)
+                      </h3>
+                      <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed">
+                        The umbrella organization coordinating civil society engagement across Ethiopia, providing
+                        institutional support and legitimacy for this Pan-African cultural initiative.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Organization Description */}
-            <div className="bg-warm-gold-10 p-8 md:p-12 rounded-2xl shadow-lg relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-warm-gold via-deep-orange to-warm-gold"></div>
-              <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed">
-                An emerging civic and cultural institution rooted in Ethiopia, Bethlehem serves as the central convening
-                body and vision-holder for the "Children of the Nile" process, anchoring its work in artistic practice,
-                community dialogue, and regional cooperation.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Team Images Section
-      <section className="py-16 md:py-20 bg-gradient-to-b from-off-white to-sand">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12">
-              <div className="relative transform hover:scale-105 transition-transform duration-300">
-                <div className="absolute -top-4 -left-4 w-full h-full bg-warm-gold/20 transform rotate-2"></div>
-                <div className="relative overflow-hidden shadow-2xl">
-                  <Image
-                    src="/images/team1.jpeg"
-                    alt="Partnership collaboration meeting"
-                    width={600}
-                    height={400}
-                    className="w-full h-80 object-cover"
-                  />
-                </div>
-                <p className="font-lora text-sm text-charcoal mt-4 text-center italic">
-                  Partnership collaboration meeting bringing together diverse stakeholders
-                </p>
-              </div>
-              <div className="relative transform hover:scale-105 transition-transform duration-300">
-                <div className="absolute -top-4 -right-4 w-full h-full bg-deep-orange/20 transform -rotate-2"></div>
-                <div className="relative overflow-hidden shadow-2xl">
-                  <Image
-                    src="/images/team2.jpeg"
-                    alt="Core organizing team meeting"
-                    width={600}
-                    height={400}
-                    className="w-full h-80 object-cover"
-                  />
-                </div>
-                <p className="font-lora text-sm text-charcoal mt-4 text-center italic">
-                  Core organizing team planning the summit's cultural and academic components
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* Key Partners Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-sand to-off-white">
+      <section className="py-16 md:py-20 bg-gradient-to-b from-off-white to-sand">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -159,126 +140,104 @@ export default function OrganizersPartnersPage() {
               </h2>
             </div>
 
-            {/* Partner Cards */}
-            <div className="space-y-8">
-              {/* Equal Trade Alliance - Horizontal Layout */}
-              <div className="max-w-5xl mx-auto">
-                <div className="relative">
-                  <div className="absolute -top-4 -left-4 w-full h-full bg-deep-orange/10 transform rotate-1"></div>
-                  <div className="relative bg-white p-6 shadow-xl border-l-4 border-deep-orange">
-                    <div className="flex items-start space-x-8">
-                      <div className="w-28 h-28 relative flex-shrink-0">
-                        <Image
-                          src="/images/equal_trade.png"
-                          alt="Equal Trade Alliance logo"
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-playfair text-xl font-bold text-river-blue mb-1">Equal Trade Alliance</h3>
-                        <p className="font-lora text-sm text-charcoal italic mb-2">(Ethiopia/Netherlands)</p>
-                        <p className="font-lora text-base text-charcoal leading-relaxed">
-                          Advancing fair-trade partnerships across the Nile Basin.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ecopia and EPAA - Side by Side with Logo on Left */}
-              <div className="grid lg:grid-cols-2 gap-8">
-                {/* Ecopia - Logo on Left */}
-                <div className="relative">
-                  <div className="absolute -top-4 -right-4 w-full h-full bg-warm-gold/10 transform -rotate-1"></div>
-                  <div className="relative bg-white p-6 shadow-xl border-r-4 border-warm-gold h-full">
-                    <div className="flex items-center space-x-6">
-                      {/* Logo */}
-                      <div className="w-32 h-32 relative flex-shrink-0 flex items-center justify-center">
-                        <Image src="/images/ecopia.png" alt="Ecopia logo" fill className="object-contain" />
-                      </div>
-                      {/* Text and Representative */}
-                      <div className="flex-1">
-                        <h3 className="font-playfair text-lg font-bold text-river-blue mb-3">Ecopia PLC</h3>
-                        <p className="font-lora text-sm text-charcoal leading-relaxed mb-4">
-                          Steering sustainable enterprises.
-                        </p>
-                        <div className="flex items-center space-x-4">
-                          {/* Enlarged Representative Image */}
-                          <div className="w-28 h-28 relative">
+            {/* Grid Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {keyPartners.map((partner, index) => (
+                <Link key={index} href={partner.url} target="_blank" rel="noopener noreferrer" className="block group">
+                  <div className="relative h-full">
+                    <div
+                      className={`absolute -top-2 -right-2 w-full h-full ${partner.shadowColor} transform -rotate-2 rounded-tr-3xl rounded-bl-3xl`}
+                    ></div>
+                    <div
+                      className={`relative bg-white p-6 shadow-2xl border-r-4 ${partner.borderColor} rounded-tr-3xl rounded-bl-3xl transform group-hover:scale-105 transition-all duration-300 h-full`}
+                    >
+                      <div className="text-center flex flex-col h-full">
+                        <div className="mb-4">
+                          <div className="w-32 h-32 relative mx-auto group-hover:scale-110 transition-transform duration-300">
                             <Image
-                              src="/images/mkm.webp"
-                              alt="Dr. Mitslal Kifleyesus-Matschie"
+                              src={partner.logo || "/placeholder.svg"}
+                              alt={`${partner.name} logo`}
                               fill
-                              className="object-cover rounded-full"
+                              className="object-contain"
                             />
                           </div>
-                          <div>
-                            <p className="font-lora text-sm text-charcoal font-medium">Dr. Mitslal Kifleyesus-Matschie</p>
-                            <p className="font-lora text-sm text-charcoal/70">Representative</p>
-                          </div>
+                        </div>
+                        <div className="flex-grow flex flex-col justify-center">
+                          <h3 className="font-playfair text-lg font-bold text-river-blue mb-1">{partner.name}</h3>
+                          <p className="font-lora text-xs text-charcoal italic mb-2">{partner.subtitle}</p>
+                          <p className="font-lora text-sm text-charcoal leading-relaxed">{partner.description}</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
-                {/* EPAA - Logo on Left */}
-                <div className="relative">
-                  <div className="absolute -top-4 -left-4 w-full h-full bg-river-blue/5 transform rotate-1"></div>
-                  <div className="relative bg-white p-6 shadow-xl h-full">
-                    <div className="flex items-center space-x-6">
-                      {/* Logo */}
-                      <div className="w-32 h-32 relative flex-shrink-0 flex items-center justify-center">
-                        <Image
-                          src="/images/epaa.png"
-                          alt="Ethiopian Pan-Africanist Artists Association logo"
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                      {/* Text and Representative */}
-                      <div className="flex-1">
-                        <h3 className="font-playfair text-lg font-bold text-river-blue mb-3">
-                          Ethiopian Pan-Africanist Artists Association (EPAA)
-                        </h3>
-                        <p className="font-lora text-sm text-charcoal leading-relaxed mb-4">
-                          Mobilizing artistic collaborations.
-                        </p>
-                        <div className="flex items-center space-x-4">
+      {/* Supporting Partners Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-b from-sand to-off-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-river-blue mb-6">
+                Supporting Partners
 
-                          <div>
-                            <p className="font-lora text-sm text-charcoal font-medium">Mr. Yonas</p>
-                            <p className="font-lora text-sm text-charcoal/70">Leader</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              </h2>
+
+            </div>
+
+            {/* Supporting Partners Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              {/* Ethiopian Youth Council */}
+              <Link
+                href="https://ethiopianyouthcouncil.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+              >
+                <div className="text-center transform group-hover:scale-105 transition-all duration-300">
+                  <div className="w-32 h-32 relative mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Image
+                      src="/images/youth_council.png"
+                      alt="Ethiopian Youth Council logo"
+                      fill
+                      className="object-contain"
+                    />
                   </div>
-                </div>
-              </div>
+                  <h3 className="font-playfair text-lg font-bold text-river-blue mb-1">Ethiopian Youth Council</h3>
 
-              {/* ASSIST - Horizontal Layout */}
-              <div className="max-w-5xl mx-auto">
-                <div className="relative">
-                  <div className="absolute -top-4 -left-4 w-full h-full bg-river-blue/10 transform rotate-1"></div>
-                  <div className="relative bg-white p-6 shadow-xl border-l-4 border-river-blue">
-                    <div className="flex items-start space-x-8">
-                      <div className="w-28 h-28 relative flex-shrink-0">
-                        <Image src="/images/assist.png" alt="ASSIST logo" fill className="object-contain" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-playfair text-xl font-bold text-river-blue mb-1">ASSIST</h3>
-                        <p className="font-lora text-sm text-charcoal italic mb-2">Chaired by Prof. Mamo</p>
-                        <p className="font-lora text-base text-charcoal leading-relaxed">
-                          Coordinating scientific and educational frameworks.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+              </Link>
+
+              {/* Eljojofe e.V. */}
+              <Link
+                href="http://www.eljojofe.org/?p=1&lang=EN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+              >
+                <div className="text-center transform group-hover:scale-105 transition-all duration-300">
+                  <div className="w-32 h-32 relative mx-auto mb-4 bg-warm-gold/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+
+
+                    <Image src="/images/el.png" alt="El logo" fill className="object-contain" />
+                  </div>
+                  <h3 className="font-playfair text-lg font-bold text-river-blue">Eljojofe e.V.</h3>
+                </div>
+              </Link>
+
+              {/* Ticker Tape Technologies */}
+              <Link href="https://tickertapetechnologies.co/" target="_blank" rel="noopener noreferrer" className="block group md:col-span-2 lg:col-span-1" >
+                <div className="text-center transform group-hover:scale-105 transition-all duration-300">
+                  <div className="w-52 aspect-[2/1] relative mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Image src="/images/ticker_tape.png" alt="Ticker Tape Technologies logo" fill className="object-contain" />
+                  </div>
+                  <h3 className="font-playfair text-lg font-bold text-river-blue">Ticker Tape Technologies</h3>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -290,7 +249,6 @@ export default function OrganizersPartnersPage() {
           <Image src="/images/nile.jpg" alt="Diverse group discussion" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/70"></div>
         </div>
-
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             <blockquote className="font-playfair text-lg md:text-2xl text-rich-white leading-relaxed italic font-medium hero-quote-shadow">

@@ -88,7 +88,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-12">
             <div className="flex items-center space-x-2 text-charcoal">
               <Mail className="h-5 w-5 text-warm-gold" />
-              <span className="font-merriweather">Contact: registration@childrenofthenile.org</span>
+              <span className="font-merriweather">Contact: MKM@ecopia.de</span>
             </div>
             <div className="flex items-center space-x-2 text-charcoal">
               <Globe className="h-5 w-5 text-warm-gold" />
@@ -134,7 +134,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="pt-6 border-t border-warm-gold/30 text-charcoal/70">
             <p className="font-merriweather text-sm md:text-base">
-              Artist: Desalegn Hailu | © 2025 Children of the Nile
+              © 2025 Children of the Nile
             </p>
           </div>
         </div>

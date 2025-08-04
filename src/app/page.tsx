@@ -7,6 +7,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import Link from "next/link"
+const REGISTRATION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSe1LBQ7nSDlQsDUeGyE-DFuVsB0gnm2A8Rt3jvBy5j22wer3g/viewform?usp=header";
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-off-white">
@@ -68,7 +70,7 @@ export default function HomePage() {
           </p>
 
           {/* Enhanced CTA Button - Smaller */}
-          <Link href="/registration">
+          <Link href={REGISTRATION_URL} target="_blank" rel="noopener noreferrer">
             <Button
               size="default"
               className="bg-deep-orange hover:bg-deep-orange-dark text-rich-white font-bold px-6 py-2.5 text-base rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 font-merriweather"
@@ -209,7 +211,7 @@ export default function HomePage() {
             </div>
 
             <div className="text-center">
-              <Link href="/registration">
+              <Link href={REGISTRATION_URL} target="_blank" rel="noopener noreferrer">
                 <Button
                   size="default"
                   className="bg-deep-orange hover:bg-deep-orange-dark text-rich-white font-bold px-6 py-2.5 text-base rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 font-merriweather"
@@ -323,7 +325,7 @@ export default function HomePage() {
                     View Program
                   </Button>
                 </Link>
-                <Link href="/registration">
+                <Link href={REGISTRATION_URL} target="_blank" rel="noopener noreferrer">
                   <Button
                     size="lg"
                     className="bg-deep-orange hover:bg-deep-orange-dark text-rich-white font-bold px-8 py-3 text-lg rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 font-merriweather"

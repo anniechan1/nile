@@ -118,8 +118,7 @@ export default function OrganizersPartnersPage() {
                         Ethiopian Civil Society Organizations Council (ECSOC)
                       </h3>
                       <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed">
-                        The umbrella organization coordinating civil society engagement across Ethiopia, providing
-                        institutional support and legitimacy for this Pan-African cultural initiative.
+                        The Ethiopian Civil Society Organizations Council is an independent apex body legally representing the civil society sector, which consists of organizations, consortia, associations, forums, and networks. ECSOC was established on December 31, 2020, by the 300 General Assembly members that consisted of CSO representatives and are the founders of the Council.
                       </p>
                     </div>
                   </div>

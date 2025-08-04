@@ -88,7 +88,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-12">
             <div className="flex items-center space-x-2 text-charcoal">
               <Mail className="h-5 w-5 text-warm-gold" />
-              <span className="font-merriweather">Contact: MKM@ecopia.de</span>
+              <Link href="mailto:MKM@ecopia.de" className="font-merriweather hover:underline">
+                Contact: MKM@ecopia.de
+              </Link>
             </div>
             <div className="flex items-center space-x-2 text-charcoal">
               <Globe className="h-5 w-5 text-warm-gold" />

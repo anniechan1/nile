@@ -16,6 +16,7 @@ export default function SpeakersDelegatesPage() {
             fill
             className="object-cover"
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30"></div>
         </div>
@@ -53,9 +54,9 @@ export default function SpeakersDelegatesPage() {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
             {/* Text Content */}
-            <div>
+            <div className="lg:col-span-8">
               <h3 className="font-playfair text-xl md:text-2xl font-bold text-river-blue mb-6">Key Participants</h3>
               <ul className="space-y-4 font-lora text-base md:text-lg text-charcoal leading-relaxed font-medium">
                 <li>• His Excellency the President of Ethiopia - Official patron and opening ceremony host</li>
@@ -67,14 +68,15 @@ export default function SpeakersDelegatesPage() {
             </div>
 
             {/* Presidential Portrait */}
-            <div className="flex justify-center">
+            <div className="lg:col-span-4 flex justify-start">
               <div className="text-center">
-                <div className="relative w-48 h-48 mx-auto mb-4">
+                <div className="relative w-48 h-48 mb-4">
                   <Image
                     src="/images/president.jpg"
                     alt="His Excellency the President of Ethiopia"
                     fill
                     className="object-cover rounded-full shadow-2xl"
+                    unoptimized
                   />
                 </div>
                 <h4 className="font-playfair text-lg font-bold text-river-blue mb-2">
@@ -85,6 +87,7 @@ export default function SpeakersDelegatesPage() {
             </div>
           </div>
         </section>
+
 
         {/* Academic Leadership Section */}
         <section className="mb-16 md:mb-20">
@@ -109,6 +112,7 @@ export default function SpeakersDelegatesPage() {
                       alt="Jimma University logo"
                       fill
                       className="object-contain"
+                      unoptimized
                     />
                   </div>
                   <div>
@@ -129,7 +133,7 @@ export default function SpeakersDelegatesPage() {
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8">
                 <div className="flex items-center space-x-6 mb-4">
                   <div className="relative w-28 h-28 flex-shrink-0">
-                    <Image src="/images/assosa.png" alt="Assosa University logo" fill className="object-contain" />
+                    <Image src="/images/assosa.png" alt="Assosa University logo" fill className="object-contain" unoptimized />
                   </div>
                   <div>
                     <h4 className="font-playfair text-lg font-bold text-river-blue">Assosa University</h4>
@@ -161,6 +165,7 @@ export default function SpeakersDelegatesPage() {
                   alt="Historical map of the Nile Basin"
                   fill
                   className="object-cover opacity-30"
+                  unoptimized
                 />
               </div>
 
@@ -259,6 +264,7 @@ export default function SpeakersDelegatesPage() {
                   alt="Traditional African dance celebration"
                   fill
                   className="object-cover"
+                  unoptimized
                 />
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Breathing life into Nile heritage</p>
@@ -287,6 +293,7 @@ export default function SpeakersDelegatesPage() {
                   alt="Academic conference with diverse participants"
                   fill
                   className="object-cover"
+                  unoptimized
                 />
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Advancing Nile knowledge</p>
@@ -315,6 +322,7 @@ export default function SpeakersDelegatesPage() {
                   alt="Young African innovators working on technology"
                   fill
                   className="object-cover"
+                  unoptimized
                 />
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Building sustainable futures</p>
@@ -340,6 +348,7 @@ export default function SpeakersDelegatesPage() {
                   alt="Community discussion meeting with women leaders"
                   fill
                   className="object-cover"
+                  unoptimized
                 />
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Amplifying grassroots voices</p>
@@ -360,7 +369,7 @@ export default function SpeakersDelegatesPage() {
             <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl">
               <h3 className="font-playfair text-lg font-bold text-river-blue mb-4">5. Youth & Diaspora</h3>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
-                <Image src="/images/student.webp" alt="Student presenting innovation" fill className="object-cover" />
+                <Image src="/images/student.webp" alt="Student presenting innovation" fill className="object-cover" unoptimized />
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Leading intergenerational change</p>
               <ul className="space-y-2 font-lora text-sm text-charcoal">
@@ -385,6 +394,7 @@ export default function SpeakersDelegatesPage() {
                   alt="Unity celebration by the Nile river with people from all nations"
                   fill
                   className="object-cover"
+                  unoptimized
                 />
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Geographic balance</p>

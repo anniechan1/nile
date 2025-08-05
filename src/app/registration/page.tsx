@@ -67,6 +67,7 @@ export default function RegistrationPage() {
                   height={800}
                   className="w-full h-auto object-cover"
                   priority
+                  unoptimized
                 />
               </div>
             </div>

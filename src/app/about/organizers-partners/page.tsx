@@ -13,6 +13,7 @@ export default function OrganizersPartnersPage() {
       url: "https://www.ecopiagroup.com/",
       borderColor: "border-warm-gold",
       shadowColor: "bg-warm-gold/20",
+
     },
     {
       name: "Bethlehem Ze-Ethiopia",
@@ -56,6 +57,7 @@ export default function OrganizersPartnersPage() {
             fill
             className="object-cover"
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/40"></div>
         </div>
@@ -110,6 +112,7 @@ export default function OrganizersPartnersPage() {
                           alt="Ethiopian Civil Society Organizations Council logo"
                           fill
                           className="object-contain"
+                          unoptimized
                         />
                       </div>
                     </Link>
@@ -158,6 +161,7 @@ export default function OrganizersPartnersPage() {
                               alt={`${partner.name} logo`}
                               fill
                               className="object-contain"
+                              unoptimized
                             />
                           </div>
                         </div>
@@ -204,6 +208,7 @@ export default function OrganizersPartnersPage() {
                       alt="Ethiopian Youth Council logo"
                       fill
                       className="object-contain"
+                      unoptimized
                     />
                   </div>
                   <h3 className="font-playfair text-lg font-bold text-river-blue mb-1">Ethiopian Youth Council</h3>
@@ -222,7 +227,7 @@ export default function OrganizersPartnersPage() {
                   <div className="w-32 h-32 relative mx-auto mb-4 bg-warm-gold/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
 
 
-                    <Image src="/images/el.png" alt="El logo" fill className="object-contain" />
+                    <Image src="/images/el.png" alt="El logo" fill className="object-contain" unoptimized />
                   </div>
                   <h3 className="font-playfair text-lg font-bold text-river-blue">Eljojofe e.V.</h3>
                 </div>
@@ -232,7 +237,7 @@ export default function OrganizersPartnersPage() {
               <Link href="https://tickertapetechnologies.co/" target="_blank" rel="noopener noreferrer" className="block group md:col-span-2 lg:col-span-1" >
                 <div className="text-center transform group-hover:scale-105 transition-all duration-300">
                   <div className="w-52 aspect-[2/1] relative mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Image src="/images/ticker_tape.png" alt="Ticker Tape Technologies logo" fill className="object-contain" />
+                    <Image src="/images/ticker_tape.png" alt="Ticker Tape Technologies logo" fill className="object-contain" unoptimized />
                   </div>
                   <h3 className="font-playfair text-lg font-bold text-river-blue">Ticker Tape Technologies</h3>
                 </div>
@@ -245,8 +250,8 @@ export default function OrganizersPartnersPage() {
       {/* Closing Quote Section - Smaller Font */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/nile.jpg" alt="Diverse group discussion" fill className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/70"></div>
+          <Image src="/images/nile.jpg" alt="Diverse group discussion" fill className="object-cover" unoptimized />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-black/40"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">

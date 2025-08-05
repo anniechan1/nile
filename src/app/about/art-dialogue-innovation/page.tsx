@@ -17,6 +17,7 @@ export default function ArtDialogueInnovationPage() {
             fill
             className="object-cover"
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/50"></div>
         </div>
@@ -103,6 +104,7 @@ export default function ArtDialogueInnovationPage() {
                     width={600}
                     height={400}
                     className="w-full h-64 object-cover"
+                    unoptimized
                   />
                 </div>
               </div>
@@ -173,6 +175,7 @@ export default function ArtDialogueInnovationPage() {
                     width={600}
                     height={400}
                     className="w-full h-80 object-cover"
+                    unoptimized
                   />
                 </div>
               </div>
@@ -229,6 +232,7 @@ export default function ArtDialogueInnovationPage() {
                     width={600}
                     height={400}
                     className="w-full h-64 object-cover"
+                    unoptimized
                   />
                 </div>
               </div>
@@ -256,9 +260,10 @@ export default function ArtDialogueInnovationPage() {
                   Innovation & Enterprise
                 </h2>
               </div>
-              <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed font-medium max-w-xl mx-auto">
+              <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed font-medium max-w-5xl mx-auto">
                 Looking to the future, the summit promotes green and inclusive enterprise rooted in local knowledge and
                 cross-border collaboration.
+
               </p>
             </div>
 
@@ -272,6 +277,7 @@ export default function ArtDialogueInnovationPage() {
                     width={600}
                     height={400}
                     className="w-full h-64 object-cover"
+                    unoptimized
                   />
                 </div>
               </div>
@@ -284,6 +290,7 @@ export default function ArtDialogueInnovationPage() {
                     width={600}
                     height={400}
                     className="w-full h-64 object-cover"
+                    unoptimized
                   />
                 </div>
               </div>

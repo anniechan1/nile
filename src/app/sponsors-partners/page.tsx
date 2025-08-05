@@ -17,6 +17,7 @@ export default function SponsorsPartnersPage() {
             fill
             className="object-cover"
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30"></div>
         </div>
@@ -120,6 +121,7 @@ export default function SponsorsPartnersPage() {
             fill
             className="object-cover object-center"
             priority
+            unoptimized
 
           />
           <div className="absolute inset-0 bg-black/20"></div>

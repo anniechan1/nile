@@ -25,6 +25,7 @@ export default function HomePage() {
             fill
             className="object-cover"
             priority
+            unoptimized
           />
           {/* Enhanced gradient overlay for better text contrast */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30"></div>
@@ -196,6 +197,7 @@ export default function HomePage() {
                     width={600}
                     height={400}
                     className="w-full h-56 md:h-64 object-cover"
+                    unoptimized
                   />
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-lg">
@@ -205,6 +207,7 @@ export default function HomePage() {
                     width={600}
                     height={400}
                     className="w-full h-56 md:h-64 object-cover"
+                    unoptimized
                   />
                 </div>
               </div>
@@ -249,6 +252,7 @@ export default function HomePage() {
                   width={800}
                   height={450}
                   className="w-full h-40 md:h-48 object-cover"
+                  unoptimized
                 />
                 <CardContent className="p-4 md:p-5 space-y-3">
                   <p className="font-lora text-sm md:text-base text-charcoal leading-relaxed">
@@ -267,6 +271,7 @@ export default function HomePage() {
                   width={800}
                   height={450}
                   className="w-full h-40 md:h-48 object-cover"
+                  unoptimized
                 />
                 <CardContent className="p-4 md:p-5 space-y-3">
                   <p className="font-lora text-sm md:text-base text-charcoal leading-relaxed">
@@ -285,6 +290,7 @@ export default function HomePage() {
                   width={800}
                   height={450}
                   className="w-full h-40 md:h-48 object-cover"
+                  unoptimized
                 />
                 <CardContent className="p-4 md:p-5 space-y-3">
                   <p className="font-lora text-sm md:text-base text-charcoal leading-relaxed">
@@ -303,6 +309,7 @@ export default function HomePage() {
                   width={800}
                   height={450}
                   className="w-full h-40 md:h-48 object-cover"
+                  unoptimized
                 />
                 <CardContent className="p-4 md:p-5 space-y-3">
                   <p className="font-lora text-sm md:text-base text-charcoal leading-relaxed">

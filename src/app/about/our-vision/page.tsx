@@ -16,6 +16,7 @@ export default function OurVisionPage() {
             fill
             className="object-cover"
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/40"></div>
         </div>
@@ -78,6 +79,7 @@ export default function OurVisionPage() {
             alt="Artists creating a collaborative mural by the Nile"
             fill
             className="object-cover"
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-b from-river-blue/80 via-river-blue/60 to-river-blue/80"></div>
         </div>
@@ -135,6 +137,7 @@ export default function OurVisionPage() {
             alt="Young people looking toward the future by the Nile"
             fill
             className="object-cover"
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"></div>
         </div>

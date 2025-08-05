@@ -76,6 +76,7 @@ export default function EthiopiaPage() {
             fill
             className="object-cover"
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40"></div>
         </div>
@@ -178,6 +179,7 @@ export default function EthiopiaPage() {
                       width={600}
                       height={400}
                       className="w-full h-80 object-cover"
+                      unoptimized
                     />
                   </div>
                 </div>
@@ -193,6 +195,7 @@ export default function EthiopiaPage() {
                       width={600}
                       height={400}
                       className="w-full h-80 object-cover"
+                      unoptimized
                     />
                   </div>
                 </div>
@@ -252,6 +255,7 @@ export default function EthiopiaPage() {
                       width={600}
                       height={400}
                       className="w-full h-80 object-cover"
+                      unoptimized
                     />
                   </div>
                 </div>

@@ -93,6 +93,7 @@ export default function EgyptPage() {
             fill
             className="object-cover"
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
         </div>
@@ -182,6 +183,7 @@ export default function EgyptPage() {
                       width={600}
                       height={400}
                       className="w-full h-80 object-cover"
+                      unoptimized
                     />
                   </div>
                 </div>
@@ -301,6 +303,7 @@ export default function EgyptPage() {
                     width={600}
                     height={400}
                     className="w-full h-80 object-cover"
+                    unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                   <div className="absolute bottom-6 left-6 right-6">
@@ -327,6 +330,7 @@ export default function EgyptPage() {
                     width={600}
                     height={400}
                     className="w-full h-80 object-cover"
+                    unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                   <div className="absolute bottom-6 left-6 right-6">

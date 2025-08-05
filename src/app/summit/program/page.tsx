@@ -121,6 +121,7 @@ export default function SummitPage() {
             fill
             className="object-cover"
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30"></div>
         </div>
@@ -181,7 +182,7 @@ export default function SummitPage() {
                       className={`absolute inset-0 transition-opacity duration-1000 ${index === currentDay1Image ? "opacity-100" : "opacity-0"
                         }`}
                     >
-                      <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
+                      <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" unoptimized />
                     </div>
                   ))}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
@@ -204,10 +205,10 @@ export default function SummitPage() {
               {/* Content */}
               <div>
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-deep-orange rounded-xl flex items-center justify-center shadow-xl">
-                    <Award className="h-8 w-8 text-white" />
+                  <div className="w-10 h-10 bg-deep-orange rounded-xl flex items-center justify-center shadow-xl">
+                    <Award className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">
+                  <h3 className="font-playfair text-2xl md:text-2xl font-bold text-river-blue">
                     Day 1: Cultural Grandeur & Academic Excellence
                   </h3>
                 </div>
@@ -256,10 +257,10 @@ export default function SummitPage() {
               {/* Content */}
               <div className="order-2 lg:order-1">
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-deep-orange rounded-xl flex items-center justify-center shadow-xl">
-                    <Handshake className="h-8 w-8 text-white" />
+                  <div className="w-10 h-10 bg-deep-orange rounded-xl flex items-center justify-center shadow-xl">
+                    <Handshake className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">
+                  <h3 className="font-playfair text-2xl md:text-2xl font-bold text-river-blue">
                     Day 2: Innovation & Partnership
                   </h3>
                 </div>
@@ -307,7 +308,7 @@ export default function SummitPage() {
                       className={`absolute inset-0 transition-opacity duration-1000 ${index === currentDay2Image ? "opacity-100" : "opacity-0"
                         }`}
                     >
-                      <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
+                      <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" unoptimized />
                     </div>
                   ))}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
@@ -338,8 +339,9 @@ export default function SummitPage() {
               alt="Nile river at sunset with palm trees and pyramids"
               fill
               className="object-cover"
+              unoptimized
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/40"></div>
+
           </div>
 
           <div className="relative z-10 py-16 md:py-20">

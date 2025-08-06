@@ -4,20 +4,9 @@ import { useState } from "react"
 import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import Link from "next/link"
+import { riverCountries } from "@/data/flags"
 
-const countries = [
-  { id: "egypt", name: "Egypt", x: 50, y: 15, flag: "🇪🇬", color: "golden" },
-  { id: "sudan", name: "Sudan", x: 48, y: 35, flag: "🇸🇩", color: "river" },
-  { id: "south-sudan", name: "South Sudan", x: 42, y: 50, flag: "🇸🇸", color: "clay" },
-  { id: "ethiopia", name: "Ethiopia", x: 58, y: 45, flag: "🇪🇹", color: "clay" },
-  { id: "eritrea", name: "Eritrea", x: 62, y: 35, flag: "🇪🇷", color: "river" },
-  { id: "uganda", name: "Uganda", x: 38, y: 60, flag: "🇺🇬", color: "golden" },
-  { id: "kenya", name: "Kenya", x: 48, y: 65, flag: "🇰🇪", color: "clay" },
-  { id: "tanzania", name: "Tanzania", x: 42, y: 75, flag: "🇹🇿", color: "river" },
-  { id: "rwanda", name: "Rwanda", x: 34, y: 68, flag: "🇷🇼", color: "golden" },
-  { id: "burundi", name: "Burundi", x: 32, y: 72, flag: "🇧🇮", color: "clay" },
-  { id: "drc", name: "Democratic Republic of Congo", x: 28, y: 70, flag: "🇨🇩", color: "river" },
-]
+
 
 export default function VoicesFromTheRiverPage() {
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null)
@@ -317,7 +306,7 @@ export default function VoicesFromTheRiverPage() {
                   </svg>
 
                   {/* Country Markers */}
-                  {countries.map((country) => {
+                  {riverCountries.map((country) => {
                     const colorClasses = getColorClasses(country.color)
                     return (
                       <Link
@@ -342,19 +331,24 @@ export default function VoicesFromTheRiverPage() {
                           )}
                         </div>
 
-                        {/* Country Label with Quote */}
+                        {/* Country Label with Flag */}
                         <div
                           className={`absolute top-8 left-1/2 transform -translate-x-1/2 transition-all duration-500 ${hoveredCountry === country.id ? "opacity-100 scale-100" : "opacity-0 scale-75"
                             }`}
                         >
-                          <div className="bg-white/95 backdrop-blur-xl px-6 py-4 rounded-xl shadow-2xl border-2 border-warm-gold/30">
-                            <div className="flex items-center space-x-3">
-                              <span className="text-2xl">{country.flag}</span>
+                          <div className="bg-white/95 backdrop-blur-xl px-6 py-2 rounded-xl shadow-2xl border-2 border-warm-gold/30 inline-flex items-center space-x-3">
+                            <div className="flex items-center justify-center space-x-3">
+                              <img
+                                src={country.flagSrc}
+                                alt={`${country.name} Flag`}
+                                className="w-8 h-6 object-cover"
+                                width={200}
+                                height={150}
+                              />
                               <p className="text-sm font-bold text-river-blue whitespace-nowrap font-playfair">
                                 {country.name}
                               </p>
                             </div>
-
                           </div>
                         </div>
                       </Link>

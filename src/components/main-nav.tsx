@@ -3,19 +3,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { HiMenu, HiX } from "react-icons/hi"
-const riverCountries = [
-  { id: "egypt", name: "🇪🇬 Egypt" },
-  { id: "sudan", name: "🇸🇩 Sudan" },
-  { id: "south-sudan", name: "🇸🇸 South Sudan" },
-  { id: "ethiopia", name: "🇪🇹 Ethiopia" },
-  { id: "eritrea", name: "🇪🇷 Eritrea" },
-  { id: "uganda", name: "🇺🇬 Uganda" },
-  { id: "kenya", name: "🇰🇪 Kenya" },
-  { id: "tanzania", name: "🇹🇿 Tanzania" },
-  { id: "rwanda", name: "🇷🇼 Rwanda" },
-  { id: "burundi", name: "🇧🇮 Burundi" },
-  { id: "drc", name: "🇨🇩 Democratic Republic of Congo" },
-]
+import { riverCountries } from "@/data/flags"
 export default function MainNav() {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
   const [isSummitDropdownOpen, setIsSummitDropdownOpen] = useState(false)
@@ -138,16 +126,21 @@ export default function MainNav() {
                     <Link href="/voices-from-the-river" className="block w-full py-2 px-4 hover:bg-amber-700 text-left font-bold">
                       All Countries
                     </Link>
-                    {riverCountries.map(country => (
+
+
+                    {riverCountries.map((country) => (
                       <Link
                         key={country.id}
                         href={`/voices-from-the-river/${country.id}`}
-                        className="block w-full py-2 px-4 hover:bg-amber-700 text-left"
+                        className="w-full py-2 px-4 hover:bg-amber-700 text-left flex items-center space-x-2"
                       >
-                        {country.name}
+                        <img
+                          src={country.flagSrc}
+                          alt={`${country.name} flag`}
+                          className="w-5 h-5 rounded-sm"
+                        />
+                        <span>{country.name}</span>
                       </Link>
-
-
                     ))}
 
                   </div>

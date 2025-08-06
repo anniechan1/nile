@@ -31,7 +31,7 @@ export default function DRCPage() {
                 }`}
             >
               <div className="flex items-center space-x-4 mb-8">
-                <span className="text-5xl md:text-6xl">🇨🇩</span>
+
                 <div>
                   <h1
                     className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight text-blue-800"

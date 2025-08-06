@@ -26,7 +26,7 @@ export default function EritreaPage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0" style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/asmara-CdM76bAYlIq3S3T3ogZTw3zIwnNJlY.webp"
+            src="/images/asmara.webp"
             alt="Historic architecture in Asmara, Eritrea"
             fill
             className="object-cover"

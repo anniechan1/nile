@@ -3,10 +3,11 @@
 import { useState, useEffect } from "react"
 import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft } from 'lucide-react'
 import Link from "next/link"
+import Image from "next/image"
 
-export default function BurundiPage() {
+export default function TanzaniaPage() {
   const [scrollY, setScrollY] = useState(0)
   const [isVisible, setIsVisible] = useState(false)
 
@@ -18,121 +19,46 @@ export default function BurundiPage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-red-50 to-white relative overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="fixed inset-0 pointer-events-none">
-        {/* Southernmost Source Animation */}
-        <svg className="absolute inset-0 w-full h-full opacity-15" viewBox="0 0 1200 800">
-          <defs>
-            <linearGradient id="sourceFlow" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#059669" stopOpacity="0.6" />
-              <stop offset="50%" stopColor="#DC2626" stopOpacity="0.8" />
-              <stop offset="100%" stopColor="#F3F4F6" stopOpacity="0.4" />
-            </linearGradient>
-          </defs>
-
-          {/* Mount Gikizi - Southernmost Source */}
-          <circle cx="80" cy="400" r="18" fill="url(#sourceFlow)" className="animate-pulse" opacity="0.9" />
-
-          {/* Ruvyironza River */}
-          <path
-            d="M80,400 Q150,380 220,420 Q290,460 360,440"
-            stroke="url(#sourceFlow)"
-            strokeWidth="5"
-            fill="none"
-            className="animate-pulse"
-            style={{ transform: `translateY(${scrollY * 0.06}px)` }}
-          />
-
-          {/* Ruvubu River */}
-          <path
-            d="M360,440 Q430,420 500,460 Q570,500 640,480"
-            stroke="url(#sourceFlow)"
-            strokeWidth="7"
-            fill="none"
-            className="animate-pulse"
-            style={{ animationDelay: "1s", transform: `translateY(${scrollY * 0.04}px)` }}
-          />
-
-          {/* Kagera River */}
-          <path
-            d="M640,480 Q710,460 780,500 Q850,540 920,520"
-            stroke="url(#sourceFlow)"
-            strokeWidth="9"
-            fill="none"
-            className="animate-pulse"
-            style={{ animationDelay: "2s" }}
-          />
-
-          {/* Connection to Lake Victoria */}
-          <path
-            d="M920,520 Q990,500 1060,540 Q1130,580 1200,560"
-            stroke="url(#sourceFlow)"
-            strokeWidth="11"
-            fill="none"
-            className="animate-pulse"
-            style={{ animationDelay: "3s" }}
-          />
-
-          {/* Small mountain tributaries */}
-          <path
-            d="M60,380 Q70,390 80,400"
-            stroke="url(#sourceFlow)"
-            strokeWidth="3"
-            fill="none"
-            className="animate-pulse"
-            style={{ animationDelay: "0.5s" }}
-          />
-          <path
-            d="M60,420 Q70,410 80,400"
-            stroke="url(#sourceFlow)"
-            strokeWidth="3"
-            fill="none"
-            className="animate-pulse"
-            style={{ animationDelay: "1.5s" }}
-          />
-        </svg>
-      </div>
-
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-yellow-50 relative overflow-hidden">
       <MainNav />
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-green-100 via-red-100 to-gray-50"></div>
+        <div className="absolute inset-0" style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
+          <Image
+            src="/images/elephants.webp"
+            alt="Elephants in Tanzanian savanna landscape"
+            fill
+            className="object-cover"
+            priority
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
 
         <div
-          className={`relative z-10 text-center px-4 max-w-6xl mx-auto transition-all duration-2000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          className={`relative z-10 text-center text-white px-4 max-w-6xl mx-auto transition-all duration-2000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
         >
           <div className="flex items-center justify-center space-x-4 mb-8">
-            <span className="text-6xl md:text-8xl">🇧🇮</span>
+            <span className="text-6xl md:text-8xl">🇹🇿</span>
             <h1
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight animate-glow text-green-600"
+              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-green-700"
               style={{
                 fontFamily: "Playfair Display, serif",
-                textShadow: "0 0 30px rgba(5, 150, 105, 0.5)",
+                textShadow: "0 0 30px rgba(16, 185, 129, 0.5)",
               }}
             >
-              BURUNDI
+              TANZANIA
             </h1>
           </div>
 
-          <h2
-            className="text-2xl md:text-4xl font-light mb-8 text-red-700 italic"
-            style={{ fontFamily: "Playfair Display, serif" }}
-          >
-            Voices from the Source
-          </h2>
-
           <blockquote
-            className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-gray-700 font-light italic"
+            className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-green-700 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "Amazi ni ubuzima."
+            "Haba na haba hujaza kibaba." — "Little by little fills the measure."
           </blockquote>
-          <p className="text-green-600 text-base font-medium" style={{ fontFamily: "Playfair Display, serif" }}>
-            — "Water is life." Kirundi saying shared across generations
-          </p>
         </div>
       </section>
 
@@ -152,201 +78,159 @@ export default function BurundiPage() {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              {/* The Southernmost Spark of the Nile section */}
+              {/* The Land That Feeds the Nile section */}
               <div className="mb-20">
                 <h3
                   className="text-2xl md:text-3xl font-bold text-green-800 mb-6"
                   style={{ fontFamily: "Playfair Display, serif" }}
                 >
-                  The Southernmost Spark of the Nile
+                  The Land That Feeds the Nile
                 </h3>
-                <p
-                  className="text-xl md:text-2xl text-green-800 leading-relaxed font-medium mb-6"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  Did you know? One of the most remote sources of the Nile begins in Burundi—at Mount Gikizi, near the
-                  town of Kasumo, where the Ruvyironza River rises. This tiny stream is considered the southernmost Nile
-                  source. It flows into the Ruvubu River, then into the Kagera River, and finally to Lake Victoria.
-                </p>
-                <div className="bg-gradient-to-r from-green-100 to-red-100 border-l-4 border-green-500 p-6 rounded-lg mb-6">
-                  <p
-                    className="text-lg font-medium text-green-800 italic"
-                    style={{ fontFamily: "Playfair Display, serif" }}
-                  >
-                    Though small in land area, Burundi plays a mighty role in the Nile's journey. The story begins
-                    here—in green hills, misty forests, and the lives of communities who depend on the water.
-                  </p>
-                </div>
-              </div>
 
-              {/* Living With the River section */}
-              <div className="mb-20">
-                <h3
-                  className="text-2xl md:text-3xl font-bold text-green-800 mb-6"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  Living With the River
-                </h3>
-                <p
-                  className="text-xl md:text-2xl text-green-800 leading-relaxed font-medium mb-6"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  In rural Burundi, rivers are a lifeline—for farming, cooking, washing, and ceremonies. But they are
-                  also fragile. Heavy rainfall and deforestation in upstream areas cause erosion and floods, especially
-                  in Muramvya, Gitega, and Muyinga.
-                </p>
-                <p
-                  className="text-xl text-green-800 leading-relaxed mb-6"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  Farmers remember when rivers flowed calmly and predictably. Now, rains come harder, and land washes
-                  away. In response, many have returned to traditional terracing and planting trees to hold the
-                  soil—blending old knowledge with new climate needs.
-                </p>
-              </div>
-
-              {/* Culture Deep as the Hills section */}
-              <div className="mb-20">
-                <h3
-                  className="text-2xl md:text-3xl font-bold text-green-800 mb-6"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  Culture Deep as the Hills
-                </h3>
-                <p
-                  className="text-xl md:text-2xl text-green-800 leading-relaxed font-medium mb-8"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  Burundi's cultural life flows like its rivers—deep, resilient, and collective.
-                </p>
-
-                <div className="grid md:grid-cols-1 gap-6 mb-8">
-                  <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl">
-                    <p className="text-lg text-green-800" style={{ fontFamily: "Playfair Display, serif" }}>
-                      <strong>Dance:</strong> The Royal Drummers of Burundi are world-renowned, blending strength,
-                      rhythm, and spiritual energy. Drum performances often accompany community rituals related to the
-                      land and water.
+                <div className="grid lg:grid-cols-1 gap-12 items-center">
+                  <div className="text-start">
+                    <p
+                      className="text-xl md:text-2xl text-green-800 leading-relaxed font-medium mb-6"
+                      style={{ fontFamily: "Playfair Display, serif" }}
+                    >
+                      Tanzania holds one of the great secrets of the Nile: Lake Victoria. Shared with Uganda and Kenya,
+                      it is the largest lake in Africa—and the main reservoir of the White Nile.
                     </p>
-                  </div>
-                  <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl">
-                    <p className="text-lg text-green-800" style={{ fontFamily: "Playfair Display, serif" }}>
-                      <strong>Food:</strong> Beans, maize, sweet potatoes, and river fish form the basis of many meals.
-                      Isombe (cassava leaves) and ugali are widely enjoyed.
+                    <p
+                      className="text-xl text-green-800 leading-relaxed mb-6"
+                      style={{ fontFamily: "Playfair Display, serif" }}
+                    >
+                      For Tanzanians, especially in the Mwanza, Kagera, and Mara regions, the Nile begins as a lake that
+                      gives life to people, animals, and dreams. The rivers Kagera and Mara that feed Lake Victoria rise
+                      from the highlands and forests of northwestern Tanzania.
                     </p>
-                  </div>
-                  <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl">
-                    <p className="text-lg text-green-800" style={{ fontFamily: "Playfair Display, serif" }}>
-                      <strong>Rituals:</strong> In many communities, water is used for blessings, especially during
-                      childbirth or in traditional healing ceremonies.
-                    </p>
-                  </div>
-                </div>
-
-                <p className="text-xl text-green-800 leading-relaxed" style={{ fontFamily: "Playfair Display, serif" }}>
-                  Storytelling is also key—elders pass down oral tales of rivers as protectors, travelers, and even
-                  tricksters.
-                </p>
-              </div>
-
-              {/* The Youth Are Listening—and Acting section */}
-              <div className="mb-20">
-                <h3
-                  className="text-2xl md:text-3xl font-bold text-green-800 mb-6"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  The Youth Are Listening—and Acting
-                </h3>
-                <p
-                  className="text-xl md:text-2xl text-green-800 leading-relaxed font-medium mb-6"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  Burundian youth are creating local solutions with global awareness. In Gitega, Ngozi, and Kirundo,
-                  they are:
-                </p>
-
-                <div className="grid md:grid-cols-1 gap-4 mb-8">
-                  <div className="bg-white/60 backdrop-blur-sm p-4 rounded-xl">
-                    <p className="text-lg text-green-800" style={{ fontFamily: "Playfair Display, serif" }}>
-                      • Organizing community reforestation projects
-                    </p>
-                  </div>
-                  <div className="bg-white/60 backdrop-blur-sm p-4 rounded-xl">
-                    <p className="text-lg text-green-800" style={{ fontFamily: "Playfair Display, serif" }}>
-                      • Documenting local stories about rivers and rainfall changes
-                    </p>
-                  </div>
-                  <div className="bg-white/60 backdrop-blur-sm p-4 rounded-xl">
-                    <p className="text-lg text-green-800" style={{ fontFamily: "Playfair Display, serif" }}>
-                      • Building youth-led cooperatives for sustainable farming
-                    </p>
-                  </div>
-                </div>
-
-                <p
-                  className="text-xl text-green-800 leading-relaxed mb-6"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  In 2023, a youth group launched the "Protect Our Source" campaign, mapping out local springs and
-                  sharing them through digital platforms. Their message is clear: we are small, but we matter.
-                </p>
-              </div>
-
-              {/* From a Trickling Stream to a Shared River section */}
-              <div className="mb-20">
-                <h3
-                  className="text-2xl md:text-3xl font-bold text-green-800 mb-6"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  From a Trickling Stream to a Shared River
-                </h3>
-                <p
-                  className="text-xl md:text-2xl text-green-800 leading-relaxed font-medium mb-8"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  Burundi reminds us that even the narrowest stream can shape the world. If we care for the Nile at its
-                  most humble beginning, we protect it everywhere.
-                </p>
-
-                {/* Final Quote */}
-                <div className="text-center">
-                  <div className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-green-200 via-red-200 to-green-200 transform -rotate-1 rounded-3xl"></div>
-                    <div className="relative bg-white/90 backdrop-blur-sm p-12 shadow-2xl">
-                      <blockquote
-                        className="text-2xl md:text-3xl font-bold text-green-800 mb-6 leading-relaxed italic"
+                    <div className="bg-gradient-to-r from-green-100 to-blue-100 border-l-4 border-green-500 p-6 rounded-lg">
+                      <p
+                        className="text-lg font-medium text-green-800 italic"
                         style={{ fontFamily: "Playfair Display, serif" }}
                       >
-                        "Iyo ushaka kunywa amazi meza, ubanza gusukura isoko."
-                      </blockquote>
-                      <p className="text-green-600 text-lg" style={{ fontFamily: "Playfair Display, serif" }}>
-                        — "If you want to drink clean water, you must protect the source." Burundian Proverb
+                        These are not just waterways—they are threads in the region's ecological, spiritual, and
+                        cultural fabric.
+                      </p>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+              {/* Living With the Water section */}
+              <div className="mb-20 relative">
+                {/* Full-width background image */}
+                <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-full">
+                  <Image
+                    src="/images/boat1.webp"
+                    alt="Fishing community at Lake Victoria harbor"
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+                </div>
+
+                <div className="relative z-10 py-32">
+                  <div className="max-w-5xl mx-auto px-4">
+                    <div className="flex flex-col gap-12">
+                      {/* Content at the top */}
+                      <div>
+                        <h3
+                          className="text-2xl md:text-3xl font-bold text-white mb-6 drop-shadow-lg"
+                          style={{
+                            fontFamily: "Playfair Display, serif",
+                            textShadow: "2px 2px 4px rgba(0,0,0,0.8)",
+                          }}
+                        >
+                          Living With the Water
+                        </h3>
+                        <p
+                          className="text-xl md:text-2xl text-white leading-relaxed font-medium mb-6 drop-shadow-lg"
+                          style={{
+                            fontFamily: "Playfair Display, serif",
+                            textShadow: "1px 1px 3px rgba(0,0,0,0.8)",
+                          }}
+                        >
+                          Fisherfolk in Mwanza call Lake Victoria "our workplace, our kitchen, and our mirror." Every
+                          sunrise brings hundreds of boats to the water, continuing traditions passed down for
+                          generations.
+                        </p>
+                        <p
+                          className="text-xl text-white leading-relaxed font-medium drop-shadow-lg"
+                          style={{
+                            fontFamily: "Playfair Display, serif",
+                            textShadow: "1px 1px 3px rgba(0,0,0,0.8)",
+                          }}
+                        >
+                          But the lake, and the Nile it feeds, are under pressure. Overfishing, invasive species like
+                          the Nile perch, and climate unpredictability have made life harder. Plastic pollution, too, is
+                          a growing threat.
+                        </p>
+                      </div>
+
+                      {/* Quote box at the bottom */}
+                      <div className="flex items-end">
+                        <div className="bg-white/95 backdrop-blur-sm border-l-4 border-green-500 p-6 rounded-lg shadow-2xl w-full">
+                          <p
+                            className="text-lg font-medium text-green-800 italic"
+                            style={{ fontFamily: "Playfair Display, serif" }}
+                          >
+                            Yet in the face of these challenges, Tanzanians are responding—through community-led lake
+                            restoration, youth clean-up drives, and campaigns to reduce single-use plastics.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Culture That Flows With the River section */}
+              <div className="mb-20">
+                <h3
+                  className="text-2xl md:text-3xl font-bold text-green-800 mb-6"
+                  style={{ fontFamily: "Playfair Display, serif" }}
+                >
+                  Culture That Flows With the River
+                </h3>
+
+                <div className="grid lg:grid-cols-1 gap-8 mb-8 items-center">
+
+                  {/* Text right */}
+                  <div className="text-start">
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl mb-4">
+                      <p className="text-lg text-green-800" style={{ fontFamily: "Playfair Display, serif" }}>
+                        <strong>Music & Dance:</strong> The rhythmic ngoma drum dances of the Sukuma people near Lake
+                        Victoria celebrate rain, harvest, and community gatherings.
+                      </p>
+                    </div>
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl mb-4">
+                      <p className="text-lg text-green-800" style={{ fontFamily: "Playfair Display, serif" }}>
+                        <strong>Food:</strong> Tanzanians in the Nile basin regions enjoy dishes like samaki wa kukaanga
+                        (fried fish), ugali, and mlenda (okra stew).
+                      </p>
+                    </div>
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl">
+                      <p className="text-lg text-green-800" style={{ fontFamily: "Playfair Display, serif" }}>
+                        <strong>Spiritual Life:</strong> In rural Kagera, elders remember blessing ceremonies by the
+                        rivers, and naming children after natural events like rains or floods—marking deep connections
+                        to water.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
+
+
             </div>
           </div>
         </section>
       </main>
 
       <Footer />
-
-      <style jsx>{`
-        @keyframes glow {
-          0%,
-          100% {
-            text-shadow: 0 0 30px rgba(5, 150, 105, 0.5);
-          }
-          50% {
-            text-shadow: 0 0 50px rgba(5, 150, 105, 0.8), 0 0 70px rgba(5, 150, 105, 0.6);
-          }
-        }
-
-        .animate-glow {
-          animation: glow 3s ease-in-out infinite;
-        }
-      `}</style>
     </div>
   )
 }

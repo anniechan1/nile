@@ -43,7 +43,7 @@ export default function KenyaPage() {
           <div className="flex items-center justify-center space-x-4 mb-8">
             <span className="text-6xl md:text-8xl">🇰🇪</span>
             <h1
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight animate-glow text-red-800"
+              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-red-800"
               style={{
                 fontFamily: "Playfair Display, serif",
                 textShadow: "0 0 30px rgba(220, 38, 38, 0.5)",
@@ -53,22 +53,14 @@ export default function KenyaPage() {
             </h1>
           </div>
 
-          <h2
-            className="text-2xl md:text-4xl font-light mb-8 text-green-700 italic"
-            style={{ fontFamily: "Playfair Display, serif" }}
-          >
-            Voices from the Highlands
-          </h2>
 
           <blockquote
-            className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-gray-700 font-light italic"
+            className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-red-800 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "Maji ni uhai"
+            "Maji ni uhai"  — "Water is life"
           </blockquote>
-          <p className="text-gray-700 text-base font-medium" style={{ fontFamily: "Playfair Display, serif" }}>
-            — Swahili for "Water is life"
-          </p>
+
         </div>
       </section>
 
@@ -382,21 +374,7 @@ export default function KenyaPage() {
 
       <Footer />
 
-      <style jsx>{`
-        @keyframes glow {
-          0%,
-          100% {
-            text-shadow: 0 0 30px rgba(220, 38, 38, 0.5);
-          }
-          50% {
-            text-shadow: 0 0 50px rgba(220, 38, 38, 0.8), 0 0 70px rgba(220, 38, 38, 0.6);
-          }
-        }
 
-        .animate-glow {
-          animation: glow 3s ease-in-out infinite;
-        }
-      `}</style>
     </div>
   )
 }

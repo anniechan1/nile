@@ -45,7 +45,7 @@ export default function EthiopiaPage() {
           <div className="flex items-center justify-center space-x-4 mb-8">
             <span className="text-6xl md:text-8xl">🇪🇹</span>
             <h1
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight animate-glow text-green-700"
+              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-green-700"
               style={{
                 fontFamily: "Playfair Display, serif",
                 textShadow: "0 0 30px rgba(16, 185, 129, 0.5)",
@@ -55,24 +55,16 @@ export default function EthiopiaPage() {
             </h1>
           </div>
 
-          <h2
-            className="text-2xl md:text-4xl font-light mb-8 text-green-700 italic"
+          <blockquote
+            className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-green-700 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            Source of the Blue Nile: Pride, Progress, and Partnership
-          </h2>
+            "Ye wuha lij endehone yiblal"  — "May you be like water's child"
+          </blockquote>
 
-          <div className="mb-8">
-            <p
-              className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-4 text-yellow-500 font-light italic"
-              style={{ fontFamily: "Playfair Display, serif" }}
-            >
-              "Ye wuha lij endehone yiblal — tihun tenagari, tiserawari, netib."
-            </p>
-            <p className="text-yellow-500  text-base font-medium" style={{ fontFamily: "Playfair Display, serif" }}>
-              — "May you be like water's child: patient, persistent, and pure."
-            </p>
-          </div>
+
+
+
         </div>
       </section>
 
@@ -446,21 +438,7 @@ export default function EthiopiaPage() {
 
       <Footer />
 
-      <style jsx>{`
-        @keyframes glow {
-          0%,
-          100% {
-            text-shadow: 0 0 30px rgba(16, 185, 129, 0.5);
-          }
-          50% {
-            text-shadow: 0 0 50px rgba(16, 185, 129, 0.8), 0 0 70px rgba(16, 185, 129, 0.6);
-          }
-        }
 
-        .animate-glow {
-          animation: glow 3s ease-in-out infinite;
-        }
-      `}</style>
     </div>
   )
 }

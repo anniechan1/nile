@@ -5,7 +5,7 @@ import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import { ArrowLeft, Droplets, Mountain, Heart } from 'lucide-react'
 import Link from "next/link"
-import Image from "next/image"
+
 
 export default function RwandaPage() {
   const [scrollY, setScrollY] = useState(0)
@@ -26,13 +26,12 @@ export default function RwandaPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0" style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
-          <Image
+          <img
             src="/images/rwanda.webp"
             alt="Rwanda's terraced hills and agricultural landscape"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover"
+
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
@@ -42,9 +41,9 @@ export default function RwandaPage() {
             }`}
         >
           <div className="flex items-center justify-center space-x-4 mb-8">
-            <span className="text-6xl md:text-8xl">🇷🇼</span>
+            <span className="text-5xl md:text-7xl">🇷🇼</span>
             <h1
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-yellow-300"
+              className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight text-yellow-300"
               style={{
                 fontFamily: "Playfair Display, serif",
                 textShadow: "0 0 30px rgba(29, 78, 216, 0.5)",
@@ -58,7 +57,7 @@ export default function RwandaPage() {
             className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-yellow-300 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "Imigabo n'imigambi ni byo byubaka igihugu." — "Shared goals and collective plans are what build a nation."
+            "Imigabo n'imigambi ni byo byubaka igihugu." —<br /> "Shared goals and collective plans are what build a nation."
           </blockquote>
         </div>
       </section>
@@ -137,13 +136,13 @@ export default function RwandaPage() {
                       <div className="relative">
                         <div className="absolute -inset-4 bg-gradient-to-br from-yellow-400/20 to-green-400/20 rounded-3xl transform -rotate-6"></div>
                         <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden">
-                          <Image
+                          <img
                             src="/images/tradition.webp"
                             alt="Traditional Rwandan Intore dancers"
                             width={500}
                             height={600}
                             className="w-full h-96 object-cover"
-                            unoptimized
+
                           />
                         </div>
                       </div>

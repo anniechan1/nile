@@ -5,7 +5,7 @@ import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
+
 
 export default function EthiopiaPage() {
   const [scrollY, setScrollY] = useState(0)
@@ -27,13 +27,12 @@ export default function EthiopiaPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0" style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
-          <Image
+          <img
             src="/images/coffee1.jpg"
             alt="Aerial view of the Grand Ethiopian Renaissance Dam"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover"
+
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40"></div>
         </div>
@@ -43,9 +42,9 @@ export default function EthiopiaPage() {
             }`}
         >
           <div className="flex items-center justify-center space-x-4 mb-8">
-            <span className="text-6xl md:text-8xl">🇪🇹</span>
+            <span className="text-5xl md:text-7xl">🇪🇹</span>
             <h1
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-green-700"
+              className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight text-green-700"
               style={{
                 fontFamily: "Playfair Display, serif",
                 textShadow: "0 0 30px rgba(16, 185, 129, 0.5)",
@@ -122,13 +121,13 @@ export default function EthiopiaPage() {
 
                   <div className="relative">
                     <div className="relative overflow-hidden shadow-2xl">
-                      <Image
+                      <img
                         src="/images/dam.png"
                         alt="Traditional Ethiopian Orthodox icon of Mary and Jesus"
                         width={600}
                         height={400}
                         className="w-full h-80 object-cover"
-                        unoptimized
+
                       />
                     </div>
                   </div>
@@ -141,13 +140,13 @@ export default function EthiopiaPage() {
                   {/* Image on the left */}
                   <div className="flex flex-col items-center">
                     <div className="relative overflow-hidden shadow-2xl w-[300px] lg:w-[350px] xl:w-[400px]">
-                      <Image
+                      <img
                         src="/images/askum.webp"
                         alt="Ancient Aksumite obelisk"
                         width={800}
                         height={1067}
                         className="object-cover w-full h-auto"
-                        unoptimized
+
                       />
                     </div>
                     <span className="text-xs text-gray-500 mt-2 text-center max-w-sm">
@@ -200,12 +199,12 @@ export default function EthiopiaPage() {
               <div className="mb-20 relative">
                 {/* Full-width background image */}
                 <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-full">
-                  <Image
+                  <img
                     src="/images/timket.webp"
                     alt="Ethiopian Orthodox Timket celebration"
-                    fill
-                    className="object-cover"
-                    unoptimized
+
+                    className="absolute inset-0 w-full h-full object-cover"
+
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
                 </div>
@@ -290,13 +289,13 @@ export default function EthiopiaPage() {
 
                   <div className="relative">
                     <div className="relative overflow-hidden shadow-2xl w-[220px] md:w-[260px] lg:w-[320px]">
-                      <Image
+                      <img
                         src="/images/coffee.webp"
                         alt="Traditional Ethiopian coffee ceremony"
                         width={2716}
                         height={3922}
                         className="object-cover w-full h-auto aspect-[2716/3922]"
-                        unoptimized
+
                       />
                     </div>
                   </div>
@@ -364,13 +363,13 @@ export default function EthiopiaPage() {
                   {/* Image on the right */}
                   <div className="flex justify-center">
                     <div className="relative overflow-hidden shadow-2xl w-[340px] md:w-[420px] lg:w-[540px]">
-                      <Image
+                      <img
                         src="/images/tana_lake.webp"
                         alt="Traditional papyrus boat on Lake Tana"
                         width={800}
                         height={533}
                         className="object-cover w-full h-auto"
-                        unoptimized
+
                       />
                     </div>
                   </div>
@@ -380,13 +379,13 @@ export default function EthiopiaPage() {
               {/* The Nile Carries More Than Water section */}
               <div className="mb-20 relative">
                 {/* Full-width background image */}
-                <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-full">
-                  <Image
+                <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen min-h-[100vh] h-full">
+                  <img
                     src="/images/waterfall.webp"
                     alt="Tis Issat Falls - Blue Nile Falls"
-                    fill
-                    className="object-cover"
-                    unoptimized
+
+                    className="absolute inset-0 w-full h-full object-cover"
+
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
                 </div>

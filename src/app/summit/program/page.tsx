@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Image from "next/image"
 import MainNav from "@/components/main-nav"
 import { Button } from "@/components/ui/button"
 import { Calendar, MapPin, Award, Handshake, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
@@ -115,13 +114,12 @@ export default function SummitPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0">
-          <Image
+          <img
             src="/images/hall.webp"
             alt="Summit hall with attendees"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover"
+
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30"></div>
         </div>
@@ -182,7 +180,7 @@ export default function SummitPage() {
                       className={`absolute inset-0 transition-opacity duration-1000 ${index === currentDay1Image ? "opacity-100" : "opacity-0"
                         }`}
                     >
-                      <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" unoptimized />
+                      <img src={image.src || "/placeholder.svg"} alt={image.alt} className="absolute inset-0 w-full h-full object-cover" />
                     </div>
                   ))}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
@@ -308,7 +306,7 @@ export default function SummitPage() {
                       className={`absolute inset-0 transition-opacity duration-1000 ${index === currentDay2Image ? "opacity-100" : "opacity-0"
                         }`}
                     >
-                      <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" unoptimized />
+                      <img src={image.src || "/placeholder.svg"} alt={image.alt} className="absolute inset-0 w-full h-full object-cover" />
                     </div>
                   ))}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
@@ -334,13 +332,11 @@ export default function SummitPage() {
 
         <section className="mb-20 relative overflow-hidden">
           <div className="absolute inset-0">
-            <Image
+            <img
               src="/images/poets.webp"
               alt="Nile river at sunset with palm trees and pyramids"
-              fill
-              className="object-cover"
-              unoptimized
-            />
+
+              className="absolute inset-0 w-full h-full object-cover" />
 
           </div>
 

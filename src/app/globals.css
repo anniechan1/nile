@@ -120,10 +120,10 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-    font-family: "Merriweather", serif;
-  }
+body {
+  @apply bg-background text-foreground;
+  font-family: "Merriweather", serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "EmojiOne Color", "Twemoji", sans-serif;
+}
 }
 
 @layer utilities {

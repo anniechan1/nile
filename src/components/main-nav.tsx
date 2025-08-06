@@ -146,13 +146,24 @@ export default function MainNav() {
                       >
                         {country.name}
                       </Link>
+
+
                     ))}
+
                   </div>
+
                 </div>
               )}
+
             </div>
 
-
+            <Link
+              href="/sponsors-partners"
+              className="text-white/80 hover:text-amber-200 font-medium text-lg transition-colors relative group"
+            >
+              Sponsors & Partners
+              <div className="absolute bottom-0 left-0 w-full h-0.5 bg-amber-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></div>
+            </Link>
 
           </div>
           <button
@@ -276,6 +287,13 @@ export default function MainNav() {
                   ))}
                 </div>
               )}
+              <Link
+                href="/sponsors-partners"
+                className="block text-white py-2 px-2 font-medium text-lg hover:bg-amber-800 rounded"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Sponsors & Partners
+              </Link>
             </div>
           </div>
         )}

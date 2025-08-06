@@ -5,7 +5,6 @@ import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 export default function SouthSudanPage() {
   const [scrollY, setScrollY] = useState(0)
   const [isVisible, setIsVisible] = useState(false)
@@ -23,55 +22,16 @@ export default function SouthSudanPage() {
 
       <MainNav />
 
-      {/* Hero Section */}
-      {/* <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-white to-red-100"></div>
 
-        <div
-          className={`relative z-10 text-center px-4 max-w-6xl mx-auto transition-all duration-2000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-        >
-          <div className="flex items-center justify-center space-x-4 mb-8">
-            <span className="text-6xl md:text-8xl">🇸🇸</span>
-            <h1
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight animate-glow text-blue-600"
-              style={{
-                fontFamily: "Playfair Display, serif",
-                textShadow: "0 0 30px rgba(59, 130, 246, 0.5)",
-              }}
-            >
-              SOUTH SUDAN
-            </h1>
-          </div>
-
-          <h2
-            className="text-2xl md:text-4xl font-light mb-8 text-gray-700 italic"
-            style={{ fontFamily: "Playfair Display, serif" }}
-          >
-            Voices from the Marshes
-          </h2>
-
-          <blockquote
-            className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-red-700 font-light italic"
-            style={{ fontFamily: "Playfair Display, serif" }}
-          >
-            "Even in a time of war, the river flows."
-          </blockquote>
-          <p className="text-blue-600 text-base font-medium" style={{ fontFamily: "Playfair Display, serif" }}>
-            — South Sudanese Proverb
-          </p>
-        </div>
-      </section> */}
 
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0" style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
-          <Image
+          <img
             src="/images/buffalo.jpg"
             alt="buffalo"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover"
+
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
@@ -81,9 +41,9 @@ export default function SouthSudanPage() {
             }`}
         >
           <div className="flex items-center justify-center space-x-4 mb-8">
-            <span className="text-6xl md:text-8xl">🇸🇸</span>
+            <span className="text-5xl md:text-7xl">🇸🇸</span>
             <h1
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-blue-600"
+              className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight text-blue-800"
               style={{
                 fontFamily: "Playfair Display, serif",
                 textShadow: "0 0 30px rgba(59, 130, 246, 0.5)",
@@ -94,7 +54,7 @@ export default function SouthSudanPage() {
           </div>
 
           <blockquote
-            className="text-xl md:text-2xl leading-relaxed max-w-5xl mx-auto mb-4 text-blue-600 font-bold italic"
+            className="text-xl md:text-2xl leading-relaxed max-w-5xl mx-auto mb-4 text-blue-800 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
             "Pan e raan ke raan" - "A home belongs to the people and the people belong to the home"

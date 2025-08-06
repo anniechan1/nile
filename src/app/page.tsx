@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button"
 import { Calendar, MapPin, Globe, ArrowRight } from "lucide-react"
-import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
@@ -19,13 +18,10 @@ export default function HomePage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Background Image with Enhanced Overlay */}
         <div className="absolute inset-0">
-          <Image
+          <img
             src="/images/hero.png"
             alt="Children of the Nile celebration by the river at sunset"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+            className="w-full h-full object-cover"
           />
           {/* Enhanced gradient overlay for better text contrast */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30"></div>
@@ -191,23 +187,23 @@ export default function HomePage() {
 
               <div className="space-y-6">
                 <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                  <Image
+                  <img
                     src="/images/dance.webp"
                     alt="Traditional African dance celebration"
                     width={600}
                     height={400}
                     className="w-full h-56 md:h-64 object-cover"
-                    unoptimized
+
                   />
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                  <Image
+                  <img
                     src="/images/dialogue.webp"
                     alt="Community dialogue by the river"
                     width={600}
                     height={400}
                     className="w-full h-56 md:h-64 object-cover"
-                    unoptimized
+
                   />
                 </div>
               </div>
@@ -246,13 +242,13 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               {/* Cultural Heritage */}
               <Card className="overflow-hidden shadow-2xl bg-white border-warm-gold-20">
-                <Image
+                <img
                   src="/images/festival.webp"
                   alt="Cultural festival celebration with traditional music and dance"
                   width={800}
                   height={450}
                   className="w-full h-40 md:h-48 object-cover"
-                  unoptimized
+
                 />
                 <CardContent className="p-4 md:p-5 space-y-3">
                   <p className="font-lora text-sm md:text-base text-charcoal leading-relaxed">
@@ -265,13 +261,13 @@ export default function HomePage() {
 
               {/* Collaborative Solutions */}
               <Card className="overflow-hidden shadow-2xl bg-white border-warm-gold-20">
-                <Image
+                <img
                   src="/images/forum.webp"
                   alt="Academic forum discussion with diverse participants"
                   width={800}
                   height={450}
                   className="w-full h-40 md:h-48 object-cover"
-                  unoptimized
+
                 />
                 <CardContent className="p-4 md:p-5 space-y-3">
                   <p className="font-lora text-sm md:text-base text-charcoal leading-relaxed">
@@ -284,13 +280,13 @@ export default function HomePage() {
 
               {/* Cross-Border Cooperation */}
               <Card className="overflow-hidden shadow-2xl bg-white border-warm-gold-20">
-                <Image
+                <img
                   src="/images/discussion.webp"
                   alt="Community discussion meeting with women leaders"
                   width={800}
                   height={450}
                   className="w-full h-40 md:h-48 object-cover"
-                  unoptimized
+
                 />
                 <CardContent className="p-4 md:p-5 space-y-3">
                   <p className="font-lora text-sm md:text-base text-charcoal leading-relaxed">
@@ -303,13 +299,13 @@ export default function HomePage() {
 
               {/* United Nations */}
               <Card className="overflow-hidden shadow-2xl bg-white border-warm-gold-20">
-                <Image
+                <img
                   src="/images/unity.webp"
                   alt="Unity celebration by the Nile river with people from all nations"
                   width={800}
                   height={450}
                   className="w-full h-40 md:h-48 object-cover"
-                  unoptimized
+
                 />
                 <CardContent className="p-4 md:p-5 space-y-3">
                   <p className="font-lora text-sm md:text-base text-charcoal leading-relaxed">

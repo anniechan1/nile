@@ -5,7 +5,6 @@ import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function UgandaPage() {
   const [scrollY, setScrollY] = useState(0)
@@ -25,13 +24,12 @@ export default function UgandaPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0" style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
-          <Image
+          <img
             src="/images/children_water.webp"
             alt="Ugandan children at a water pump"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover"
+
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40"></div>
         </div>
@@ -41,9 +39,9 @@ export default function UgandaPage() {
             }`}
         >
           <div className="flex items-center justify-center space-x-4 mb-8">
-            <span className="text-6xl md:text-8xl">🇺🇬</span>
+            <span className="text-5xl md:text-7xl">🇺🇬</span>
             <h1
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-yellow-500"
+              className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight text-yellow-500"
               style={{
                 fontFamily: "Playfair Display, serif",
                 textShadow: "0 0 30px rgba(234, 179, 8, 0.5)",
@@ -127,12 +125,12 @@ export default function UgandaPage() {
               <div className="mb-20 relative">
                 {/* Full-width background image */}
                 <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-full">
-                  <Image
+                  <img
                     src="/images/basin.webp"
                     alt="Ugandan women carrying water basins"
-                    fill
-                    className="object-cover object-center"
-                    unoptimized
+
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
                 </div>
@@ -245,12 +243,12 @@ export default function UgandaPage() {
               <div className="mb-20 relative">
                 {/* Full-width background image */}
                 <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-full">
-                  <Image
+                  <img
                     src="/images/dancing.webp"
                     alt="Traditional Ugandan cultural dancers"
-                    fill
-                    className="object-cover"
-                    unoptimized
+
+                    className="absolute inset-0 w-full h-full object-cover"
+
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
                 </div>

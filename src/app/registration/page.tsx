@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Calendar, MapPin } from "lucide-react"
 import Footer from "@/components/footer"
@@ -61,15 +61,12 @@ export default function RegistrationPage() {
             {/* Right Side - Poster Image */}
             <div className="relative mt-28">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <Image
+                <img
                   src="/images/poster.jpeg"
                   alt="Children of the Nile Summit Registration Poster"
                   width={600}
                   height={800}
-                  className="w-full h-auto object-cover"
-                  priority
-                  unoptimized
-                />
+                  className="w-full h-auto object-cover" />
               </div>
             </div>
           </div>

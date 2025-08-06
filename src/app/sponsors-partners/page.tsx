@@ -1,4 +1,3 @@
-import Image from "next/image"
 import MainNav from "@/components/main-nav"
 import { Plane, Building2 } from "lucide-react"
 import Footer from "@/components/footer"
@@ -11,13 +10,12 @@ export default function SponsorsPartnersPage() {
       {/* Hero Section with Summit Background */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0">
-          <Image
+          <img
             src="/images/youth.webp"
             alt="African woman speaking at summit with traditional headwrap"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover"
+
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30"></div>
         </div>
@@ -115,13 +113,12 @@ export default function SponsorsPartnersPage() {
       {/* Sponsorship Tiers Section with Full-Width Mural Background */}
       <section className="relative overflow-hidden -mx-4 md:-mx-8 lg:-mx-16">
         <div className="absolute inset-0 w-full h-full">
-          <Image
+          <img
             src="/images/mural.webp"
             alt="Traditional African murals with community working on technology"
-            fill
-            className="object-cover object-center"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover object-center"
+
 
           />
           <div className="absolute inset-0 bg-black/20"></div>

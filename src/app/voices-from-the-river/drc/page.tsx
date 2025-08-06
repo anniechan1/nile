@@ -5,7 +5,6 @@ import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import { ArrowLeft, Waves, Mountain, Users } from 'lucide-react'
 import Link from "next/link"
-import Image from "next/image"
 
 export default function DRCPage() {
   const [scrollY, setScrollY] = useState(0)
@@ -76,13 +75,13 @@ export default function DRCPage() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-yellow-500/20 rounded-3xl transform rotate-3"></div>
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[1204/1620] w-full max-w-md mx-auto">
-                  <Image
+                  <img
                     src="/images/street.webp"
                     alt="street"
                     width={1204}
                     height={1620}
                     className="object-cover"
-                    unoptimized
+
                   />
                 </div>
               </div>
@@ -150,12 +149,12 @@ export default function DRCPage() {
                     </div>
 
                     <div className="relative">
-                      <Image
+                      <img
                         src="/images/boat.webp"
                         alt="Traditional fishing boat on lake in DRC"
-                        fill
-                        className="object-cover"
-                        unoptimized
+
+                        className="absolute inset-0 w-full h-full object-cover"
+
                       />
                     </div>
                   </div>
@@ -252,12 +251,12 @@ export default function DRCPage() {
               {/* Final Image Section - Magazine Style */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <div className="absolute inset-0">
-                  <Image
+                  <img
                     src="/images/congo.webp"
                     alt="Street life and commerce in DRC"
-                    fill
-                    className="object-cover"
-                    unoptimized
+
+                    className="absolute inset-0 w-full h-full object-cover"
+
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 </div>

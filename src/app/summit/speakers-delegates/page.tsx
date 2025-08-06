@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 
@@ -10,13 +10,12 @@ export default function SpeakersDelegatesPage() {
       {/* Hero Section with Performers Background */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0">
-          <Image
+          <img
             src="/images/presenting.webp"
             alt="Traditional African musicians performing at cultural celebration"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover"
+
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30"></div>
         </div>
@@ -71,12 +70,12 @@ export default function SpeakersDelegatesPage() {
             <div className="lg:col-span-4 flex justify-start">
               <div className="text-center">
                 <div className="relative w-48 h-48 mb-4">
-                  <Image
+                  <img
                     src="/images/president.jpg"
                     alt="His Excellency the President of Ethiopia"
-                    fill
-                    className="object-cover rounded-full shadow-2xl"
-                    unoptimized
+
+                    className="absolute inset-0 w-full h-full object-cover rounded-full shadow-2xl"
+
                   />
                 </div>
                 <h4 className="font-playfair text-lg font-bold text-river-blue mb-2">
@@ -107,13 +106,11 @@ export default function SpeakersDelegatesPage() {
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8">
                 <div className="flex items-center space-x-6 mb-4">
                   <div className="relative w-28 h-28 flex-shrink-0">
-                    <Image
+                    <img
                       src="/images/jimma_uni.png"
                       alt="Jimma University logo"
-                      fill
-                      className="object-contain"
-                      unoptimized
-                    />
+
+                      className="absolute inset-0 w-full h-full object-contain" />
                   </div>
                   <div>
                     <h4 className="font-playfair text-lg font-bold text-river-blue">Jimma University</h4>
@@ -133,7 +130,7 @@ export default function SpeakersDelegatesPage() {
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8">
                 <div className="flex items-center space-x-6 mb-4">
                   <div className="relative w-28 h-28 flex-shrink-0">
-                    <Image src="/images/assosa.png" alt="Assosa University logo" fill className="object-contain" unoptimized />
+                    <img src="/images/assosa.png" alt="Assosa University logo" className="absolute inset-0 w-full h-full object-contain" />
                   </div>
                   <div>
                     <h4 className="font-playfair text-lg font-bold text-river-blue">Assosa University</h4>
@@ -158,16 +155,7 @@ export default function SpeakersDelegatesPage() {
               Nile Basin University Network
             </h3>
             <div className="relative rounded-2xl shadow-2xl overflow-hidden">
-              {/* Map Background */}
-              <div className="absolute inset-0">
-                <Image
-                  src="/images/map.webp"
-                  alt="Historical map of the Nile Basin"
-                  fill
-                  className="object-cover opacity-30"
-                  unoptimized
-                />
-              </div>
+
 
               <div className="relative bg-white/90 backdrop-blur-sm p-8">
                 <div className="overflow-x-auto">
@@ -259,13 +247,11 @@ export default function SpeakersDelegatesPage() {
                 1. Artists & Cultural Practitioners
               </h3>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
-                <Image
+                <img
                   src="/images/performer.webp"
                   alt="Traditional African dance celebration"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
+
+                  className="absolute inset-0 w-full h-full object-cover" />
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Breathing life into Nile heritage</p>
               <ul className="space-y-2 font-lora text-sm text-charcoal">
@@ -288,13 +274,11 @@ export default function SpeakersDelegatesPage() {
             <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl">
               <h3 className="font-playfair text-lg font-bold text-river-blue mb-4">2. Academics & Researchers</h3>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
-                <Image
+                <img
                   src="/images/scholar.webp"
                   alt="Academic conference with diverse participants"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
+
+                  className="absolute inset-0 w-full h-full object-cover" />
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Advancing Nile knowledge</p>
               <ul className="space-y-2 font-lora text-sm text-charcoal">
@@ -317,13 +301,10 @@ export default function SpeakersDelegatesPage() {
             <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl">
               <h3 className="font-playfair text-lg font-bold text-river-blue mb-4">3. Entrepreneurs & Industry</h3>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
-                <Image
+                <img
                   src="/images/young_afri1.webp"
                   alt="Young African innovators working on technology"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
+                  className="absolute inset-0 w-full h-full object-cover" />
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Building sustainable futures</p>
               <ul className="space-y-2 font-lora text-sm text-charcoal">
@@ -343,13 +324,11 @@ export default function SpeakersDelegatesPage() {
             <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl">
               <h3 className="font-playfair text-lg font-bold text-river-blue mb-4">4. Civil Society Organizations</h3>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
-                <Image
+                <img
                   src="/images/discussion.webp"
                   alt="Community discussion meeting with women leaders"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
+                  className="absolute inset-0 w-full h-full object-cover" />
+
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Amplifying grassroots voices</p>
               <ul className="space-y-2 font-lora text-sm text-charcoal">
@@ -369,7 +348,7 @@ export default function SpeakersDelegatesPage() {
             <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl">
               <h3 className="font-playfair text-lg font-bold text-river-blue mb-4">5. Youth & Diaspora</h3>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
-                <Image src="/images/student.webp" alt="Student presenting innovation" fill className="object-cover" unoptimized />
+                <img src="/images/student.webp" alt="Student presenting innovation" className="absolute inset-0 w-full h-full object-cover" />
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Leading intergenerational change</p>
               <ul className="space-y-2 font-lora text-sm text-charcoal">
@@ -389,13 +368,10 @@ export default function SpeakersDelegatesPage() {
             <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl">
               <h3 className="font-playfair text-lg font-bold text-river-blue mb-4">6. 11-Nation Delegation</h3>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
-                <Image
+                <img
                   src="/images/unity.webp"
                   alt="Unity celebration by the Nile river with people from all nations"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
+                  className="absolute inset-0 w-full h-full object-cover" />
               </div>
               <p className="font-lora text-charcoal mb-4 italic">Geographic balance</p>
               <p className="font-lora text-sm text-charcoal">

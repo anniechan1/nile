@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import Link from "next/link"
@@ -51,13 +51,12 @@ export default function OrganizersPartnersPage() {
       {/* Hero Section - No River */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0">
-          <Image
+          <img
             src="/images/organisor.webp"
             alt="Community workshop and collaborative art session"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover"
+
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/40"></div>
         </div>
@@ -107,12 +106,12 @@ export default function OrganizersPartnersPage() {
                       className="flex-shrink-0"
                     >
                       <div className="w-40 h-40 relative hover:scale-105 transition-transform duration-300">
-                        <Image
+                        <img
                           src="/images/ecsoc.png"
                           alt="Ethiopian Civil Society Organizations Council logo"
-                          fill
-                          className="object-contain"
-                          unoptimized
+
+                          className="absolute inset-0 w-full h-full oobject-contain"
+
                         />
                       </div>
                     </Link>
@@ -156,12 +155,12 @@ export default function OrganizersPartnersPage() {
                       <div className="text-center flex flex-col h-full">
                         <div className="mb-4">
                           <div className="w-32 h-32 relative mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <Image
+                            <img
                               src={partner.logo || "/placeholder.svg"}
                               alt={`${partner.name} logo`}
-                              fill
-                              className="object-contain"
-                              unoptimized
+
+                              className="absolute inset-0 w-full h-full object-contain"
+
                             />
                           </div>
                         </div>
@@ -203,12 +202,12 @@ export default function OrganizersPartnersPage() {
               >
                 <div className="text-center transform group-hover:scale-105 transition-all duration-300">
                   <div className="w-32 h-32 relative mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Image
+                    <img
                       src="/images/youth_council.png"
                       alt="Ethiopian Youth Council logo"
-                      fill
-                      className="object-contain"
-                      unoptimized
+
+                      className="absolute inset-0 w-full h-full object-contain"
+
                     />
                   </div>
                   <h3 className="font-playfair text-lg font-bold text-river-blue mb-1">Ethiopian Youth Council</h3>
@@ -227,7 +226,7 @@ export default function OrganizersPartnersPage() {
                   <div className="w-32 h-32 relative mx-auto mb-4 bg-warm-gold/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
 
 
-                    <Image src="/images/el.png" alt="El logo" fill className="object-contain" unoptimized />
+                    <img src="/images/el.png" alt="El logo" className="absolute inset-0 w-full h-full object-contain" />
                   </div>
                   <h3 className="font-playfair text-lg font-bold text-river-blue">Eljojofe e.V.</h3>
                 </div>
@@ -237,7 +236,7 @@ export default function OrganizersPartnersPage() {
               <Link href="https://tickertapetechnologies.co/" target="_blank" rel="noopener noreferrer" className="block group md:col-span-2 lg:col-span-1" >
                 <div className="text-center transform group-hover:scale-105 transition-all duration-300">
                   <div className="w-52 aspect-[2/1] relative mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Image src="/images/ticker_tape.png" alt="Ticker Tape Technologies logo" fill className="object-contain" unoptimized />
+                    <img src="/images/ticker_tape.png" alt="Ticker Tape Technologies logo" className="absolute inset-0 w-full h-full object-contain" />
                   </div>
                   <h3 className="font-playfair text-lg font-bold text-river-blue">Ticker Tape Technologies</h3>
                 </div>
@@ -250,7 +249,7 @@ export default function OrganizersPartnersPage() {
       {/* Closing Quote Section - Smaller Font */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/nile.jpg" alt="Diverse group discussion" fill className="object-cover" unoptimized />
+          <img src="/images/nile.jpg" alt="Diverse group discussion" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-black/40"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4">

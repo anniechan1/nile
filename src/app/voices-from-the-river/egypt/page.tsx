@@ -5,7 +5,7 @@ import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import { ArrowLeft } from 'lucide-react'
 import Link from "next/link"
-import Image from "next/image"
+
 
 export default function EgyptPage() {
   const [scrollY, setScrollY] = useState(0)
@@ -25,13 +25,12 @@ export default function EgyptPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0" style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
-          <Image
+          <img
             src="/images/pyramid.jpg"
             alt="The Great Pyramids of Giza with camels"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover"
+
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40"></div>
         </div>
@@ -41,9 +40,9 @@ export default function EgyptPage() {
             }`}
         >
           <div className="flex items-center justify-center space-x-4 mb-8">
-            <span className="text-6xl md:text-8xl">🇪🇬</span>
+            <span className="text-5xl md:text-7xl">🇪🇬</span>
             <h1
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-amber-400"
+              className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight text-amber-400"
               style={{
                 fontFamily: "Playfair Display, serif",
                 textShadow: "0 0 30px rgba(251, 191, 36, 0.5)",
@@ -117,13 +116,13 @@ export default function EgyptPage() {
 
                   <div className="relative">
                     <div className="relative overflow-hidden shadow-2xl">
-                      <Image
+                      <img
                         src="/images/ruins.jpg"
                         alt="Ancient Egyptian temple columns with hieroglyphics"
                         width={600}
                         height={400}
                         className="w-full h-80 object-cover"
-                        unoptimized
+
                       />
                     </div>
                   </div>
@@ -134,12 +133,11 @@ export default function EgyptPage() {
               <div className="mb-20 relative">
                 {/* Full-width background image */}
                 <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-full">
-                  <Image
+                  <img
                     src="/images/boat.webp"
                     alt="Traditional felucca sailboat on the Nile"
-                    fill
-                    className="object-cover object-center"
-                    unoptimized
+
+                    className="object-cover object-center w-full h-full"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
                 </div>
@@ -212,13 +210,12 @@ export default function EgyptPage() {
                       className="relative rounded-3xl shadow-2xl overflow-hidden"
                       style={{ width: 400, height: 300 }}
                     >
-                      <Image
+                      <img
                         src="/images/handcraft.webp"
                         alt="Egyptian craftsman working on traditional boat models"
                         width={800}
                         height={600}
                         className="object-cover w-full h-full"
-                        unoptimized
                       />
                     </div>
                   </div>
@@ -260,12 +257,11 @@ export default function EgyptPage() {
               <div className="mb-20 relative">
                 {/* Full-width background image */}
                 <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-full">
-                  <Image
+                  <img
                     src="/images/meal.webp"
                     alt="Traditional Egyptian meal being prepared by the water"
-                    fill
-                    className="object-cover"
-                    unoptimized
+
+                    className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
                 </div>
@@ -305,12 +301,11 @@ export default function EgyptPage() {
               <div className="mb-20 relative">
                 {/* Full-width background image */}
                 <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-[600px]">
-                  <Image
+                  <img
                     src="/images/egyptian.webp"
                     alt="Two people in traditional dress by the Nile at sunset"
-                    fill
-                    className="object-cover"
-                    unoptimized
+
+                    className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
                 </div>

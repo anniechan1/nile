@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 
@@ -10,13 +10,10 @@ export default function OurVisionPage() {
       {/* Hero Section - Clean Background without River */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0">
-          <Image
+          <img
             src="/images/students.webp"
             alt="Students envisioning the future by the Nile"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/40"></div>
         </div>
@@ -74,12 +71,14 @@ export default function OurVisionPage() {
       {/* Objectives Section - Full Background */}
       <section className="relative py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <Image
+          <img
+
             src="/images/artists.webp"
+
             alt="Artists creating a collaborative mural by the Nile"
-            fill
-            className="object-cover"
-            unoptimized
+
+            className="w-full h-full object-cover"
+
           />
           <div className="absolute inset-0 bg-gradient-to-b from-river-blue/80 via-river-blue/60 to-river-blue/80"></div>
         </div>
@@ -132,12 +131,10 @@ export default function OurVisionPage() {
       {/* Youth Vision Section - Full Background with Larger Height */}
       <section className="relative py-32 md:py-40 overflow-hidden">
         <div className="absolute inset-0">
-          <Image
+          <img
             src="/images/youth.webp"
             alt="Young people looking toward the future by the Nile"
-            fill
-            className="object-cover"
-            unoptimized
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"></div>
         </div>

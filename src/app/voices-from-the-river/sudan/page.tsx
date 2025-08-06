@@ -5,7 +5,6 @@ import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function SudanPage() {
   const [scrollY, setScrollY] = useState(0)
@@ -25,13 +24,12 @@ export default function SudanPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0" style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
-          <Image
+          <img
             src="/images/nile.webp"
             alt="Aerial view of where Blue and White Nile meet in Khartoum"
-            fill
+
             className="object-cover"
-            priority
-            unoptimized
+
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40"></div>
         </div>
@@ -41,9 +39,9 @@ export default function SudanPage() {
             }`}
         >
           <div className="flex items-center justify-center space-x-4 mb-8">
-            <span className="text-6xl md:text-8xl">🇸🇩</span>
+            <span className="text-5xl md:text-7xl">🇸🇩</span>
             <h1
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-red-600"
+              className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight text-red-600"
               style={{
                 fontFamily: "Playfair Display, serif",
                 textShadow: "0 0 30px rgba(220, 38, 38, 0.5)",
@@ -120,13 +118,13 @@ export default function SudanPage() {
 
                   <div className="relative">
                     <div className="relative overflow-hidden shadow-2xl">
-                      <Image
+                      <img
                         src="/images/meroe.webp"
                         alt="Ancient Nubian pyramids at Meroe"
                         width={600}
                         height={400}
                         className="w-full h-80 object-cover"
-                        unoptimized
+
                       />
                     </div>
                   </div>
@@ -137,12 +135,11 @@ export default function SudanPage() {
               <div className="mb-20 relative">
                 {/* Full-width background image */}
                 <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-full">
-                  <Image
+                  <img
                     src="/images/sudan.webp"
                     alt="Sudanese cultural celebration"
-                    fill
-                    className="object-cover object-center"
-                    unoptimized
+                    className="object-cover object-center w-full h-full"
+
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
                 </div>
@@ -217,13 +214,13 @@ export default function SudanPage() {
                       className="relative rounded-3xl shadow-2xl overflow-hidden"
                       style={{ width: 340, height: 483 }}
                     >
-                      <Image
+                      <img
                         src="/images/henna.webp"
                         alt="Intricate henna patterns on hands"
                         width={798}
                         height={1133}
                         className="object-cover w-full h-full"
-                        unoptimized
+
                       />
                     </div>
                   </div>
@@ -293,13 +290,13 @@ export default function SudanPage() {
                       className="relative  shadow-2xl overflow-hidden"
                       style={{ width: 300, height: 450 }}
                     >
-                      <Image
+                      <img
                         src="/images/dance1.webp"
                         alt="Traditional Sudanese dancer in colorful costume"
                         width={800}
                         height={1200}
                         className="object-cover w-full h-full"
-                        unoptimized
+
                       />
                     </div>
                   </div>
@@ -309,12 +306,12 @@ export default function SudanPage() {
               <div className="mb-20 relative">
                 {/* Full-width background image */}
                 <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-full">
-                  <Image
+                  <img
                     src="/images/weaving.webp"
                     alt="Ancient Nubian pyramids at Meroe"
-                    fill
-                    className="object-cover"
-                    unoptimized
+
+                    className="absolute inset-0 w-full h-full object-cover"
+
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
                 </div>

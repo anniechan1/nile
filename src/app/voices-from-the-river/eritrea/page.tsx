@@ -5,7 +5,6 @@ import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function EritreaPage() {
   const [scrollY, setScrollY] = useState(0)
@@ -25,13 +24,12 @@ export default function EritreaPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0" style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
-          <Image
+          <img
             src="/images/asmara.webp"
             alt="Historic architecture in Asmara, Eritrea"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover"
+
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40"></div>
         </div>
@@ -41,9 +39,9 @@ export default function EritreaPage() {
             }`}
         >
           <div className="flex items-center justify-center space-x-4 mb-8">
-            <span className="text-6xl md:text-8xl">🇪🇷</span>
+            <span className="text-5xl md:text-7xl">🇪🇷</span>
             <h1
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-red-600"
+              className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight text-red-600"
               style={{
                 fontFamily: "Playfair Display, serif",
                 textShadow: "0 0 30px rgba(220, 38, 38, 0.5)",
@@ -54,7 +52,7 @@ export default function EritreaPage() {
           </div>
 
           <blockquote
-            className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-red-600 font-bold italic"
+            className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-8 text-red-600 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
             "እምባ ብሓይሊ ኣይትተምልከን፣ ብሰብኣዊ ኣምራኽን ትትምልከን።" — "A mountain is not moved by force, but by human cooperation."
@@ -125,12 +123,12 @@ export default function EritreaPage() {
               <div className="mb-20 relative">
                 {/* Full-width background image */}
                 <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-full">
-                  <Image
+                  <img
                     src="/images/farming.jpg"
                     alt="farming"
-                    fill
-                    className="object-cover"
-                    unoptimized
+
+                    className="absolute inset-0 w-full h-full object-cover"
+
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
                 </div>
@@ -212,13 +210,13 @@ export default function EritreaPage() {
                   {/* Image left */}
                   <div className="flex justify-center">
                     <div className="relative rounded-3xl shadow-2xl overflow-hidden">
-                      <Image
+                      <img
                         src="/images/animal_market.webp"
                         alt="Traditional Eritrean community gathering at livestock market"
                         width={500}
                         height={350}
                         className="object-cover w-full h-full"
-                        unoptimized
+
                       />
                     </div>
                   </div>

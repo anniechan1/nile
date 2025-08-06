@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import { Palette, MessageCircle, Lightbulb } from "lucide-react"
@@ -11,13 +11,13 @@ export default function ArtDialogueInnovationPage() {
       {/* Hero Section - Clean Background without River */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0">
-          <Image
+          <img
             src="/images/exhibition.webp"
             alt="Traditional musicians celebrating by the Nile"
-            fill
-            className="object-cover"
-            priority
-            unoptimized
+
+            className="absolute inset-0 w-full h-full object-cover"
+
+
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/50"></div>
         </div>
@@ -98,13 +98,13 @@ export default function ArtDialogueInnovationPage() {
               <div className="relative">
                 <div className="absolute -top-6 -right-6 w-full h-full bg-warm-gold/10 transform -rotate-3"></div>
                 <div className="relative overflow-hidden shadow-2xl">
-                  <Image
+                  <img
                     src="/images/artists1.webp"
                     alt="Artists creating collaborative murals"
                     width={600}
                     height={400}
                     className="w-full h-64 object-cover"
-                    unoptimized
+
                   />
                 </div>
               </div>
@@ -169,13 +169,13 @@ export default function ArtDialogueInnovationPage() {
               <div className="relative">
                 <div className="absolute -top-6 -left-6 w-full h-full bg-river-blue/10 transform rotate-2"></div>
                 <div className="relative overflow-hidden shadow-2xl">
-                  <Image
+                  <img
                     src="/images/panel.webp"
                     alt="Youth panel discussion with diverse participants"
                     width={600}
                     height={400}
                     className="w-full h-80 object-cover"
-                    unoptimized
+
                   />
                 </div>
               </div>
@@ -226,13 +226,13 @@ export default function ArtDialogueInnovationPage() {
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full bg-warm-gold/20 transform -rotate-2"></div>
                 <div className="relative overflow-hidden shadow-2xl">
-                  <Image
+                  <img
                     src="/images/group.webp"
                     alt="Intergenerational dialogue gathering with traditional and modern participants"
                     width={600}
                     height={400}
                     className="w-full h-64 object-cover"
-                    unoptimized
+
                   />
                 </div>
               </div>
@@ -271,26 +271,26 @@ export default function ArtDialogueInnovationPage() {
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full bg-deep-orange/20 transform rotate-1"></div>
                 <div className="relative overflow-hidden shadow-2xl">
-                  <Image
+                  <img
                     src="/images/young_afri.webp"
                     alt="Young innovators with technology"
                     width={600}
                     height={400}
                     className="w-full h-64 object-cover"
-                    unoptimized
+
                   />
                 </div>
               </div>
               <div className="relative">
                 <div className="absolute -top-4 -right-4 w-full h-full bg-warm-gold/20 transform -rotate-1"></div>
                 <div className="relative overflow-hidden shadow-2xl">
-                  <Image
+                  <img
                     src="/images/innovators.webp"
                     alt="Solar energy innovation"
                     width={600}
                     height={400}
                     className="w-full h-64 object-cover"
-                    unoptimized
+
                   />
                 </div>
               </div>

@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-
+import { HiMenu, HiX } from "react-icons/hi"
 const riverCountries = [
   { id: "egypt", name: "🇪🇬 Egypt" },
   { id: "sudan", name: "🇸🇩 Sudan" },
@@ -20,6 +20,7 @@ export default function MainNav() {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
   const [isSummitDropdownOpen, setIsSummitDropdownOpen] = useState(false)
   const [isRiverDropdownOpen, setIsRiverDropdownOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 py-6">
       <div className="container mx-auto px-4">
@@ -152,8 +153,142 @@ export default function MainNav() {
             </div>
 
 
+
           </div>
+          <button
+            className="md:hidden text-white focus:outline-none"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <HiX size={32} /> : <HiMenu size={32} />}
+          </button>
+
+
         </div>
+
+        {/* Mobile menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 bg-amber-700 rounded-lg shadow-lg py-4 px-6">
+            <Link
+              href="/"
+              className="block text-white py-2 px-2 font-medium text-lg hover:bg-amber-800 rounded"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+            {/* About Dropdown - Mobile */}
+            <div>
+              <button
+                className="w-full text-left text-white py-2 px-2 font-medium text-lg hover:bg-amber-800 rounded flex justify-between items-center"
+                onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
+              >
+                About
+                <span>{isAboutDropdownOpen ? "▲" : "▼"}</span>
+              </button>
+              {isAboutDropdownOpen && (
+                <div className="pl-4">
+                  <Link
+                    href="/about/our-vision"
+                    className="block py-2 px-2 text-white hover:bg-amber-800 rounded"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Our Vision
+                  </Link>
+                  <Link
+                    href="/about/art-dialogue-innovation"
+                    className="block py-2 px-2 text-white hover:bg-amber-800 rounded"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Art, Dialogue & Innovation
+                  </Link>
+                  <Link
+                    href="/about/organizers-partners"
+                    className="block py-2 px-2 text-white hover:bg-amber-800 rounded"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Organizers & Partners
+                  </Link>
+                </div>
+              )}
+            </div>
+            {/* Summit 2025 Dropdown - Mobile */}
+            <div>
+              <button
+                className="w-full text-left text-white py-2 px-2 font-medium text-lg hover:bg-amber-800 rounded flex justify-between items-center"
+                onClick={() => setIsSummitDropdownOpen(!isSummitDropdownOpen)}
+              >
+                Summit 2025
+                <span>{isSummitDropdownOpen ? "▲" : "▼"}</span>
+              </button>
+              {isSummitDropdownOpen && (
+                <div className="pl-4">
+                  <Link
+                    href="/summit/program"
+                    className="block py-2 px-2 text-white hover:bg-amber-800 rounded"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Program
+                  </Link>
+                  <Link
+                    href="/summit/speakers-delegates"
+                    className="block py-2 px-2 text-white hover:bg-amber-800 rounded"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Speakers & Delegates
+                  </Link>
+                </div>
+              )}
+            </div>
+            <Link
+              href="/registration"
+              className="block text-white py-2 px-2 font-medium text-lg hover:bg-amber-800 rounded"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Registration
+            </Link>
+            {/* Voices from the River Dropdown - Mobile */}
+            <div>
+              <button
+                className="w-full text-left text-white py-2 px-2 font-medium text-lg hover:bg-amber-800 rounded flex justify-between items-center"
+                onClick={() => setIsRiverDropdownOpen(!isRiverDropdownOpen)}
+              >
+                Voices from the River
+                <span>{isRiverDropdownOpen ? "▲" : "▼"}</span>
+              </button>
+              {isRiverDropdownOpen && (
+                <div className="pl-4">
+                  <Link
+                    href="/voices-from-the-river"
+                    className="block py-2 px-2 text-white hover:bg-amber-800 rounded font-bold"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    All Countries
+                  </Link>
+                  {riverCountries.map(country => (
+                    <Link
+                      key={country.id}
+                      href={`/voices-from-the-river/${country.id}`}
+                      className="block py-2 px-2 text-white hover:bg-amber-800 rounded"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {country.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+
+
+
+
+
+
+
+
+
       </div>
     </nav>
   )

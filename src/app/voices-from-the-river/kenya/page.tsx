@@ -58,7 +58,7 @@ export default function KenyaPage() {
             className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-red-800 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "Maji ni uhai"  — "Water is life"
+            "Maji ni uhai"<br />—"Water is life"
           </blockquote>
 
         </div>
@@ -288,7 +288,7 @@ export default function KenyaPage() {
                       style={{ width: 266, height: 400 }}
                     >
                       <img
-                        src="/images/sheep.webp"
+                        src="/images/Sheep.webp"
                         alt="Young Kenyan shepherd with sheep"
                         width={800}
                         height={1200}
@@ -357,7 +357,7 @@ export default function KenyaPage() {
                             className="text-white text-base text-left"
                             style={{ fontFamily: "Playfair Display, serif" }}
                           >
-                            — Kenyan Proverb
+
                           </p>
                         </div>
                       </div>

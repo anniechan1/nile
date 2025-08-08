@@ -94,7 +94,12 @@ export default function Footer() {
             </div>
             <div className="flex items-center space-x-2 text-charcoal">
               <Globe className="h-5 w-5 text-warm-gold" />
-              <span className="font-merriweather">Website: children-of-the-nile.org</span>
+              <Link
+                href="/"
+                className="font-merriweather hover:underline"
+              >
+                Website: children-of-the-nile.org
+              </Link>
             </div>
           </div>
 

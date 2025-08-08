@@ -11,6 +11,7 @@ const day1Images = [
   { src: "/images/professor.webp", alt: "University professors in academic regalia" },
   { src: "/images/present.webp", alt: "Students presenting at innovation expo" },
   { src: "/images/scholar.webp", alt: "Academic conference with diverse participants" },
+  { src: "/images/diaspora.webp", alt: "Diaspora engagement in cultural exchange" },
 
 ]
 
@@ -121,7 +122,7 @@ export default function SummitPage() {
             className="absolute inset-0 w-full h-full object-cover"
 
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30"></div>
         </div>
 
         <div className="relative z-10 text-center text-rich-white px-4 max-w-5xl mx-auto">
@@ -152,7 +153,7 @@ export default function SummitPage() {
       <main className="container mx-auto px-4 py-16 md:py-20">
         {/* Introduction */}
         <section className="mb-16 md:mb-20">
-          <div className="max-w-5xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed font-medium">
               The summit will convene distinguished leaders from arts, academia, government, and diplomacy across all
               Nile Basin nations.
@@ -405,7 +406,7 @@ export default function SummitPage() {
             <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue mb-6">
               Be Part of This Historic Gathering
             </h2>
-            <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed mb-8 max-w-4xl mx-auto font-medium">
+            <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed mb-8 max-w-5xl mx-auto font-medium">
               Join us as we celebrate the Nile's heritage and forge new partnerships for a sustainable future across all
               11 basin nations.
             </p>

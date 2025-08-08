@@ -68,14 +68,12 @@ export default function SpeakersDelegatesPage() {
 
             {/* Presidential Portrait */}
             <div className="lg:col-span-4 flex justify-start">
-              <div className="text-center">
+              <div className="flex flex-col items-center text-center">
                 <div className="relative w-48 h-48 mb-4">
                   <img
                     src="/images/president.jpg"
                     alt="His Excellency the President of Ethiopia"
-
                     className="absolute inset-0 w-full h-full object-cover rounded-full shadow-2xl"
-
                   />
                 </div>
                 <h4 className="font-playfair text-lg font-bold text-river-blue mb-2">
@@ -99,18 +97,25 @@ export default function SpeakersDelegatesPage() {
             </p>
           </div>
 
+
           {/* Lead University Hosts */}
           <div className="mb-12">
             <h3 className="font-playfair text-xl md:text-2xl font-bold text-river-blue mb-6">Lead University Hosts</h3>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8">
+              {/* Jimma University Card */}
+              <a
+                href="https://ju.edu.et/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform duration-200 hover:scale-105 hover:shadow-3xl bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8 block"
+              >
                 <div className="flex items-center space-x-6 mb-4">
                   <div className="relative w-28 h-28 flex-shrink-0">
                     <img
                       src="/images/jimma_uni.png"
                       alt="Jimma University logo"
-
-                      className="absolute inset-0 w-full h-full object-contain" />
+                      className="absolute inset-0 w-full h-full object-contain"
+                    />
                   </div>
                   <div>
                     <h4 className="font-playfair text-lg font-bold text-river-blue">Jimma University</h4>
@@ -126,11 +131,21 @@ export default function SpeakersDelegatesPage() {
                     <li>○ Nile Innovation Challenge judging panel</li>
                   </ul>
                 </div>
-              </div>
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8">
+              </a>
+              {/* Assosa University Card */}
+              <a
+                href="https://asu.edu.et/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform duration-200 hover:scale-105 hover:shadow-3xl bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8 block"
+              >
                 <div className="flex items-center space-x-6 mb-4">
                   <div className="relative w-28 h-28 flex-shrink-0">
-                    <img src="/images/assosa.png" alt="Assosa University logo" className="absolute inset-0 w-full h-full object-contain" />
+                    <img
+                      src="/images/assosa.png"
+                      alt="Assosa University logo"
+                      className="absolute inset-0 w-full h-full object-contain"
+                    />
                   </div>
                   <div>
                     <h4 className="font-playfair text-lg font-bold text-river-blue">Assosa University</h4>
@@ -145,9 +160,10 @@ export default function SpeakersDelegatesPage() {
                     <li>○ Borderland Research Initiative (Sudan/Ethiopia collaborations)</li>
                   </ul>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
+
 
           {/* Nile Basin University Network with Map Background */}
           <div className="mb-12">

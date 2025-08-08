@@ -57,7 +57,7 @@ export default function RwandaPage() {
             className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-yellow-300 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "Imigabo n'imigambi ni byo byubaka igihugu." —<br /> "Shared goals and collective plans are what build a nation."
+            "Imigabo n'imigambi ni byo byubaka igihugu."<br />-"Shared goals and collective plans are what build a nation."
           </blockquote>
         </div>
       </section>

@@ -55,7 +55,7 @@ export default function TanzaniaPage() {
             className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-green-700 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "Haba na haba hujaza kibaba." — "Little by little fills the measure."
+            "Haba na haba hujaza kibaba"<br />—"Little drops of water make a mighty ocean"
           </blockquote>
         </div>
       </section>

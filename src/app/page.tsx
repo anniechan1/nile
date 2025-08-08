@@ -318,7 +318,7 @@ export default function HomePage() {
             </div>
 
             <div className="text-center mt-12 md:mt-16">
-              <div className="flex justify-center space-x-4">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md mx-auto">
                 {/* Program Button */}
                 <Link href="/summit/program">
                   <Button
@@ -331,7 +331,7 @@ export default function HomePage() {
                 <Link href={REGISTRATION_URL} target="_blank" rel="noopener noreferrer">
                   <Button
                     size="lg"
-                    className="bg-deep-orange hover:bg-deep-orange-dark text-rich-white font-bold px-8 py-3 text-lg rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 font-merriweather"
+                    className="bg-deep-orange hover:bg-deep-orange-dark text-rich-white font-bold px-8 py-3 text-lg rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 font-merriweather flex items-center justify-center"
                   >
                     Join the Summit
                     <Globe className="h-5 w-5 ml-3" />

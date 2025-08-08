@@ -29,11 +29,9 @@ export default function SouthSudanPage() {
           <img
             src="/images/buffalo.jpg"
             alt="buffalo"
-
             className="absolute inset-0 w-full h-full object-cover"
-
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          {/* <div className="absolute inset-0 bg-black/40"></div> */}
         </div>
 
         <div
@@ -57,7 +55,7 @@ export default function SouthSudanPage() {
             className="text-xl md:text-2xl leading-relaxed max-w-5xl mx-auto mb-4 text-blue-800 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "Pan e raan ke raan" - "A home belongs to the people and the people belong to the home"
+            "Akeu aci ku piök, nhialic aci ku deec"<br />-"Water flows but never forgets its source"
           </blockquote>
 
 

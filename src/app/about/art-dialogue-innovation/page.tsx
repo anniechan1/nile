@@ -19,7 +19,7 @@ export default function ArtDialogueInnovationPage() {
 
 
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-black/20"></div>
         </div>
 
         <div className="relative z-10 text-center text-rich-white px-4 max-w-6xl mx-auto">
@@ -55,7 +55,7 @@ export default function ArtDialogueInnovationPage() {
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center">
             <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed font-medium">
               At the heart of Children of the Nile – A Shared Present & Future is a holistic, Pan-African approach
               grounded in three powerful forces: art, dialogue, and innovation. These pillars serve not only as methods
@@ -101,10 +101,9 @@ export default function ArtDialogueInnovationPage() {
                   <img
                     src="/images/artists1.webp"
                     alt="Artists creating collaborative murals"
-                    width={600}
-                    height={400}
-                    className="w-full h-64 object-cover"
-
+                    width={700}
+                    height={467}
+                    className="w-full h-72 object-cover"
                   />
                 </div>
               </div>
@@ -260,7 +259,7 @@ export default function ArtDialogueInnovationPage() {
                   Innovation & Enterprise
                 </h2>
               </div>
-              <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed font-medium max-w-5xl mx-auto">
+              <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed font-medium max-w-6xl mx-auto">
                 Looking to the future, the summit promotes green and inclusive enterprise rooted in local knowledge and
                 cross-border collaboration.
 
@@ -276,7 +275,7 @@ export default function ArtDialogueInnovationPage() {
                     alt="Young innovators with technology"
                     width={600}
                     height={400}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-80 object-cover"
 
                   />
                 </div>
@@ -289,7 +288,7 @@ export default function ArtDialogueInnovationPage() {
                     alt="Solar energy innovation"
                     width={600}
                     height={400}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-80 object-cover"
 
                   />
                 </div>

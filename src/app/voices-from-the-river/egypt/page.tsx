@@ -56,7 +56,7 @@ export default function EgyptPage() {
             className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-amber-300 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "مصر هبة النيل" — "Egypt is the gift of the Nile"
+            "مصر هبة النيل"<br />-"Egypt is the gift of the Nile"
           </blockquote>
         </div>
       </section>
@@ -302,7 +302,7 @@ export default function EgyptPage() {
                 {/* Full-width background image */}
                 <div className="absolute inset-0 left-1/2 transform -translate-x-1/2 w-screen h-[600px]">
                   <img
-                    src="/images/egyptian.webp"
+                    src="/images/Egyptian.webp"
                     alt="Two people in traditional dress by the Nile at sunset"
 
                     className="w-full h-full object-cover"

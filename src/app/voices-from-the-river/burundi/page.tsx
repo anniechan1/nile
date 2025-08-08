@@ -57,7 +57,7 @@ export default function BurundiPage() {
             className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-red-800 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "Ubumwe ni ububasha." — "Unity is strength."
+            "Ubumwe ni ububasha"<br />"Unity is strength"
           </blockquote>
         </div>
       </section>

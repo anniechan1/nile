@@ -31,7 +31,7 @@ export default function EritreaPage() {
             className="absolute inset-0 w-full h-full object-cover"
 
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
         </div>
 
         <div
@@ -55,7 +55,7 @@ export default function EritreaPage() {
             className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-8 text-red-600 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "እምባ ብሓይሊ ኣይትተምልከን፣ ብሰብኣዊ ኣምራኽን ትትምልከን።" — "A mountain is not moved by force, but by human cooperation."
+            "እምባ ብሓይሊ ኣይትተምልከን፣ ብሰብኣዊ ኣምራኽን ትትምልከን"<br />-"A mountain is not moved by force, but by human cooperation"
           </blockquote>
         </div>
       </section>
@@ -275,7 +275,7 @@ export default function EritreaPage() {
                         "ትሕግስቲ ንህዝቢ"
                       </p>
                       <p className="text-lg font-medium text-red-800" style={{ fontFamily: "Playfair Display, serif" }}>
-                        "Victory to the Masses" — Slogan of the Eritrean People's Liberation Front (EPLF)
+                        "Victory to the Masses" <br />-Slogan of the Eritrean People's Liberation Front (EPLF)
                       </p>
                     </div>
                     <p

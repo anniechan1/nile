@@ -1,6 +1,5 @@
 "use client"
-
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
 import Link from "next/link"
@@ -10,6 +9,16 @@ import { riverCountries } from "@/data/flags"
 
 export default function VoicesFromTheRiverPage() {
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null)
+  const scrollRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (scrollRef.current) {
+      const scrollContainer = scrollRef.current;
+      const scrollWidth = scrollContainer.scrollWidth;
+      const clientWidth = scrollContainer.clientWidth;
+      // Scroll to center
+      scrollContainer.scrollLeft = (scrollWidth - clientWidth) / 2;
+    }
+  }, []);
 
   const getColorClasses = (color: string) => {
     switch (color) {
@@ -107,7 +116,9 @@ export default function VoicesFromTheRiverPage() {
         ></div>
       </div>
 
+
       <MainNav />
+
 
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center relative px-4">
@@ -208,8 +219,9 @@ export default function VoicesFromTheRiverPage() {
               </div>
 
               {/* Interactive Map Container */}
-              <div className="relative bg-gradient-to-br from-warm-gold-10 to-river-blue-10 backdrop-blur-xl border-2 border-warm-gold/30 rounded-[3rem] p-12 shadow-2xl shadow-warm-gold/20">
-                <div className="relative w-full h-[700px] bg-gradient-to-b from-sand/50 to-off-white/50 rounded-2xl overflow-hidden border border-warm-gold/20">
+              {/* <div className="relative bg-gradient-to-br from-warm-gold-10 to-river-blue-10 backdrop-blur-xl border-2 border-warm-gold/30 rounded-[3rem] p-12 shadow-2xl shadow-warm-gold/20"> */}
+              <div ref={scrollRef} className="relative w-full h-[700px] overflow-x-auto">
+                <div className="relative w-[1200px] h-full bg-gradient-to-b from-sand/50 to-off-white/50 rounded-2xl overflow-hidden border border-warm-gold/20">
                   {/* Realistic Nile River Path */}
                   <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <defs>
@@ -325,7 +337,6 @@ export default function VoicesFromTheRiverPage() {
                             }`}
                         >
                           <div className="absolute inset-0 rounded-full animate-ping bg-current opacity-20"></div>
-                          {/* Ripple effect on hover */}
                           {hoveredCountry === country.id && (
                             <div className="absolute inset-0 rounded-full animate-ping bg-current opacity-40 scale-150"></div>
                           )}
@@ -356,7 +367,7 @@ export default function VoicesFromTheRiverPage() {
                   })}
 
                   {/* Map Legend */}
-                  <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-xl p-6 rounded-xl shadow-2xl border-2 border-warm-gold/30">
+                  <div className="absolute bottom-6 left-6 md:w-auto w-[90%]">
                     <h3 className="text-lg font-bold text-river-blue mb-3 font-playfair">Basin Nations</h3>
                     <div className="space-y-2">
                       <div className="flex items-center space-x-3 text-sm text-charcoal font-lora">
@@ -374,11 +385,13 @@ export default function VoicesFromTheRiverPage() {
                     </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Call to Action */}
+              </div>
             </div>
+
+            {/* Call to Action */}
           </div>
+
         </section>
       </main>
 

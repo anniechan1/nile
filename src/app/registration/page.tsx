@@ -19,7 +19,7 @@ export default function RegistrationPage() {
       <main className="container mx-auto px-4 py-16">
         <MainNav />
         {/* Registration Section */}
-        <section>
+        <section className="mt-12 sm:mt-0">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Registration Call to Action */}
             <div className="flex flex-col items-center justify-center bg-white/90 backdrop-blur-sm rounded-3xl p-12 shadow-2xl">
@@ -137,10 +137,12 @@ export default function RegistrationPage() {
                   >
                     <Button
                       size="default"
-                      className="bg-warm-gold hover:bg-warm-gold-dark text-rich-white font-bold px-8 py-3 text-base rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 font-merriweather"
+                      className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold px-4 sm:px-6 md:px-8 py-3 sm:py-4 text-sm sm:text-base rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 font-merriweather w-full sm:w-auto max-w-full whitespace-normal leading-relaxed min-h-[3rem] sm:min-h-[3.5rem]"
                     >
-                      By signing this petition, we affirm our commitment
-                      <ArrowRight className="h-4 w-4 ml-2" />
+                      <span className="text-center">
+                        Sign the Petition: Affirm Our Commitment to Unity
+                      </span>
+                      <ArrowRight className="h-4 w-4 ml-2 flex-shrink-0" />
                     </Button>
                   </Link>
                 </div>

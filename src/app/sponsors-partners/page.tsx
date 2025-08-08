@@ -68,10 +68,10 @@ export default function SponsorsPartnersPage() {
             {/* Travel Support */}
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-16 h-16 bg-deep-orange rounded-xl flex items-center justify-center shadow-xl">
-                  <Plane className="h-8 w-8 text-white" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-deep-orange rounded-xl flex items-center justify-center shadow-xl">
+                  <Plane className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                 </div>
-                <h3 className="font-playfair text-xl md:text-2xl font-bold text-river-blue">1. Travel Support</h3>
+                <h3 className="font-playfair text-lg sm:text-xl md:text-2xl font-bold text-river-blue">1. Travel Support</h3>
               </div>
               <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed font-medium mb-6">
                 Ethiopian Airlines is invited to serve as the Official Travel Partner, providing{" "}
@@ -88,10 +88,10 @@ export default function SponsorsPartnersPage() {
             {/* Accommodation Support */}
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-16 h-16 bg-deep-orange rounded-xl flex items-center justify-center shadow-xl">
-                  <Building2 className="h-8 w-8 text-white" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-deep-orange rounded-xl flex items-center justify-center shadow-xl">
+                  <Building2 className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                 </div>
-                <h3 className="font-playfair text-xl md:text-2xl font-bold text-river-blue">
+                <h3 className="font-playfair text-lg sm:text-xl md:text-2xl font-bold text-river-blue">
                   2. Accommodation Support
                 </h3>
               </div>

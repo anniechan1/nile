@@ -58,7 +58,7 @@ export default function EthiopiaPage() {
             className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-green-700 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "Ye wuha lij endehone yiblal"  — "May you be like water's child"
+            "Ye wuha lij endehone yiblal"<br />—"May you be like water's child"
           </blockquote>
 
 

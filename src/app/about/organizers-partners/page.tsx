@@ -17,9 +17,9 @@ export default function OrganizersPartnersPage() {
     },
     {
       name: "Bethlehem Ze-Ethiopia",
-      subtitle: "Founded by Desalegn Hailu",
+      subtitle: "Founded by Desalegn Hailu Mazengiya (Artist)",
       description: "Cultural foundation bridging art and advocacy.",
-      logo: "/images/bze.png",
+      logo: "/images/BZE.png",
       url: "https://www.bethlehemzeethiopia.org/",
       borderColor: "border-deep-orange",
       shadowColor: "bg-deep-orange/20",
@@ -58,7 +58,7 @@ export default function OrganizersPartnersPage() {
             className="absolute inset-0 w-full h-full object-cover"
 
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-black/20"></div>
         </div>
         <div className="relative z-10 text-center text-rich-white px-4 max-w-5xl mx-auto">
           <h1 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-black mb-4 leading-tight hero-text-shadow">
@@ -93,33 +93,32 @@ export default function OrganizersPartnersPage() {
               </h2>
             </div>
 
+
             {/* ECSOC as Lead Organizer */}
             <div className="max-w-4xl mx-auto">
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full bg-warm-gold/10 transform rotate-1"></div>
-                <div className="relative p-8">
-                  <div className="flex items-center space-x-8">
+                <div className="relative p-4 md:p-8">
+                  <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
                     <Link
                       href="https://www.ecsoc.net/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-shrink-0"
                     >
-                      <div className="w-40 h-40 relative hover:scale-105 transition-transform duration-300">
+                      <div className="w-32 h-32 md:w-40 md:h-40 relative hover:scale-105 transition-transform duration-300 mx-auto md:mx-0">
                         <img
                           src="/images/ecsoc.png"
                           alt="Ethiopian Civil Society Organizations Council logo"
-
-                          className="absolute inset-0 w-full h-full oobject-contain"
-
+                          className="absolute inset-0 w-full h-full object-contain"
                         />
                       </div>
                     </Link>
-                    <div className="flex-1">
-                      <h3 className="font-playfair text-xl md:text-2xl font-bold text-river-blue mb-2">
+                    <div className="flex-1 text-center md:text-left">
+                      <h3 className="font-playfair text-lg md:text-2xl font-bold text-river-blue mb-2">
                         Ethiopian Civil Society Organizations Council (ECSOC)
                       </h3>
-                      <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed">
+                      <p className="font-lora text-sm md:text-lg text-charcoal leading-relaxed">
                         The Ethiopian Civil Society Organizations Council is an independent apex body legally representing the civil society sector, which consists of organizations, consortia, associations, forums, and networks. ECSOC was established on December 31, 2020, by the 300 General Assembly members that consisted of CSO representatives and are the founders of the Council.
                       </p>
                     </div>
@@ -127,6 +126,7 @@ export default function OrganizersPartnersPage() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -247,10 +247,10 @@ export default function OrganizersPartnersPage() {
       </section>
 
       {/* Closing Quote Section - Smaller Font */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative  py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/nile.jpg" alt="Diverse group discussion" className="absolute inset-0 w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-black/40"></div>
+          <img src="/images/nile.jpg" alt="Nile" className="absolute inset-0 w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-black/20"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">

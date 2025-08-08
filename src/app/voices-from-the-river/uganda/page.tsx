@@ -31,7 +31,7 @@ export default function UgandaPage() {
             className="absolute inset-0 w-full h-full object-cover"
 
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
 
         <div
@@ -55,7 +55,7 @@ export default function UgandaPage() {
             className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8 text-yellow-400 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "Omuntu ky'ayagala, ye ky'amuloga" — "What a person loves is what bewitches them."
+            "Ennyanja erina amayinja, obulamu bw’abantu bugenda mu maaso"<br />-"The lake has waves, but human life goes on"
           </blockquote>
         </div>
       </section>

@@ -21,15 +21,13 @@ export default function SudanPage() {
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-gray-50 relative overflow-hidden">
       <MainNav />
 
-      {/* Hero Section */}
+
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0" style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
           <img
             src="/images/nile.webp"
             alt="Aerial view of where Blue and White Nile meet in Khartoum"
-
-            className="object-cover"
-
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40"></div>
         </div>
@@ -39,7 +37,6 @@ export default function SudanPage() {
             }`}
         >
           <div className="flex items-center justify-center space-x-4 mb-8">
-
             <h1
               className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight text-red-600"
               style={{
@@ -55,10 +52,8 @@ export default function SudanPage() {
             className="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-4 text-red-600 font-bold italic"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
-            "النيل ما بيجري إلا بالصبر"  - "The Nile flows only with patience"
+            "النيل ما بيجري إلا بالصبر"<br />-"The Nile flows only with patience"
           </blockquote>
-
-
         </div>
       </section>
 
@@ -79,6 +74,7 @@ export default function SudanPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               {/* Where the Two Niles Meet section */}
+
               <div className="mb-20">
                 <h3
                   className="text-2xl md:text-3xl font-bold text-red-800 mb-6"
@@ -87,10 +83,10 @@ export default function SudanPage() {
                   Where the Two Niles Meet
                 </h3>
 
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
                   <div>
                     <p
-                      className="text-xl md:text-2xl text-red-800 leading-relaxed font-medium mb-6"
+                      className="text-lg md:text-xl lg:text-2xl text-red-800 leading-relaxed font-medium mb-6"
                       style={{ fontFamily: "Playfair Display, serif" }}
                     >
                       At the heart of Khartoum, the Blue Nile and White Nile converge — a powerful symbol of Sudan's
@@ -98,7 +94,7 @@ export default function SudanPage() {
                       the coming together of diverse cultures, languages, and histories within the country.
                     </p>
                     <p
-                      className="text-xl text-red-800 leading-relaxed mb-6"
+                      className="text-lg md:text-xl text-red-800 leading-relaxed mb-6"
                       style={{ fontFamily: "Playfair Display, serif" }}
                     >
                       For Sudanese people, the Nile is not only a lifeline but a spiritual thread woven through
@@ -106,9 +102,9 @@ export default function SudanPage() {
                       and Nuba in the south and west, and sustains communities that have lived along its banks for
                       millennia.
                     </p>
-                    <div className="bg-gradient-to-r from-red-100 to-gray-100 border-l-4 border-red-500 p-6 rounded-lg">
+                    <div className="bg-gradient-to-r from-red-100 to-gray-100 border-l-4 border-red-500 p-4 md:p-6 rounded-lg">
                       <p
-                        className="text-lg font-medium text-red-800 italic"
+                        className="text-base md:text-lg font-medium text-red-800 italic"
                         style={{ fontFamily: "Playfair Display, serif" }}
                       >
                         The river nourishes not just the land but the spirit.
@@ -117,19 +113,19 @@ export default function SudanPage() {
                   </div>
 
                   <div className="relative">
-                    <div className="relative overflow-hidden shadow-2xl">
+                    <div className="relative overflow-hidden shadow-2xl rounded-xl">
                       <img
                         src="/images/meroe.webp"
                         alt="Ancient Nubian pyramids at Meroe"
                         width={600}
                         height={400}
-                        className="w-full h-80 object-cover"
-
+                        className="w-full h-48 md:h-80 object-cover"
                       />
                     </div>
                   </div>
                 </div>
               </div>
+
 
               {/* Spiritual Traditions and Daily Life section */}
               <div className="mb-20 relative">

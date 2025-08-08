@@ -46,7 +46,7 @@ export default function MainNav() {
               {/* Add padding div to bridge the gap */}
               <div className="absolute left-0 top-full w-48 h-2"></div>
               {isAboutDropdownOpen && (
-                <div className="absolute left-0 top-full pt-2 w-52 whitespace-nowrap">
+                <div className="absolute left-0 top-full pt-2 w-56 whitespace-nowrap">
                   <div className="rounded-md shadow-lg bg-amber-600 border border-amber-700 text-white overflow-hidden">
                     <Link href="/about/our-vision" className="block w-full py-2 px-4 hover:bg-amber-700 text-left">
                       Our Vision
@@ -84,7 +84,7 @@ export default function MainNav() {
               {/* Add padding div to bridge the gap */}
               <div className="absolute left-0 top-full w-48 h-2"></div>
               {isSummitDropdownOpen && (
-                <div className="absolute left-0 top-full pt-2 w-48">
+                <div className="absolute left-0 top-full pt-2 w-52">
                   <div className="rounded-md shadow-lg bg-amber-600 border border-amber-700 text-white overflow-hidden">
                     <Link href="/summit/program" className="block w-full py-2 px-4 hover:bg-amber-700 text-left">
                       Program

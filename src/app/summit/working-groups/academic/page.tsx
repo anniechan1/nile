@@ -232,7 +232,7 @@ export default function AcademicWorkingGroupPage() {
                     <img
                       src="/images/speakers/Prof_Geci.jpeg"
                       alt="Prof. Geci Karuri-Sebina"
-                      className="w-24 h-24 rounded-full object-cover"
+                      className="w-28 h-24 rounded-full object-cover"
                     />
                     <div>
                       <p className="text-sm text-charcoal">

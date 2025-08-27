@@ -54,7 +54,7 @@ export default function HomePage() {
               style={{ lineHeight: "1.6" }}
             >
               "This event grows from Ethiopia's soil but belongs to all Nile nations. We build it together—brushstroke
-              by brushstroke, idea by idea." — Desalegn Hailu
+              by brushstroke, idea by idea." — Desalegn Hailu Mazengiya
               {/* <span className="text-warm-gold font-medium not-italic ml-2"></span> */}
             </blockquote>
           </div>
@@ -151,7 +151,7 @@ export default function HomePage() {
                 <span>6–7 September 2025</span>
                 <span>|</span>
                 <MapPin className="h-4 w-4" />
-                <span>Addis Ababa + Online</span>
+                <span>Online</span>
               </div>
             </div>
 

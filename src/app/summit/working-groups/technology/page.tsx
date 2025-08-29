@@ -1,7 +1,7 @@
 "use client"
 
 import MainNav from "@/components/main-nav"
-import { Calendar, Globe, ArrowLeft, Clock, Target, FileText } from "lucide-react"
+import { Calendar, Globe, ArrowLeft, Clock, Target } from "lucide-react"
 import Footer from "@/components/footer"
 import Link from "next/link"
 
@@ -30,20 +30,7 @@ export default function TechnologyWorkingGroupPage() {
               "Digital Nile: Empowering Youth and Technology for Transformation"
             </p>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-              <div className="flex items-center space-x-2 bg-deep-orange/10 px-4 py-2 rounded-full">
-                <Globe className="h-4 w-4 text-deep-orange" />
-                <span className="font-bold text-deep-orange text-sm">Online</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-river-blue/10 px-4 py-2 rounded-full">
-                <Calendar className="h-4 w-4 text-river-blue" />
-                <span className="font-bold text-river-blue text-sm">7 September 2025</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-warm-gold/20 px-4 py-2 rounded-full">
-                <Clock className="h-4 w-4 text-charcoal" />
-                <span className="font-bold text-charcoal text-sm">14:00–16:00 EAT</span>
-              </div>
-            </div>
+
 
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
               <div className="grid md:grid-cols-2 gap-6 text-left">
@@ -52,11 +39,13 @@ export default function TechnologyWorkingGroupPage() {
                   <img
                     src="/images/speakers/Felix.jpeg"
                     alt="Felix Matschie"
-                    className="w-20 h-20 rounded-full object-cover"
+                    className="w-24 h-24 rounded-full object-cover"
                   />
                   <div>
                     <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Chair</h3>
-                    <p className="text-sm text-charcoal">• Felix Matschie (Ethiopia/Germany)</p>
+                    <p className="text-sm text-charcoal">
+                      • <strong>Felix Matschie</strong> (Ethiopia/Germany)
+                    </p>
                     <p className="text-sm text-charcoal">Ecopia Group, Children of the Nile Initiative</p>
                   </div>
                 </div>
@@ -66,16 +55,17 @@ export default function TechnologyWorkingGroupPage() {
                   <img
                     src="/images/speakers/Samuel.jpeg"
                     alt="Samuel Bahiru"
-                    className="w-20 h-20 rounded-full object-cover"
+                    className="w-24 h-24 rounded-full object-cover"
                   />
                   <div>
                     <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Co-Chair</h3>
-                    <p className="text-sm text-charcoal">• Samuel Bahiru (Ethiopia)</p>
-                    <p className="text-sm text-charcoal">CEO, Ticker Tape</p>
+                    <p className="text-sm text-charcoal">
+                      • <strong>Samuel Bahiru </strong>(Ethiopia)
+                    </p>
+                    <p className="text-sm text-charcoal">Ticker Tape Technologies</p>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -118,9 +108,7 @@ export default function TechnologyWorkingGroupPage() {
 
         {/* Session Agenda */}
         <section className="mb-16">
-          <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue mb-8 text-center">
-            Agenda
-          </h2>
+          <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue mb-8 text-center">Agenda</h2>
 
           <div className="space-y-8">
             {/* Part 1 */}
@@ -129,30 +117,41 @@ export default function TechnologyWorkingGroupPage() {
                 <h3 className="font-playfair text-xl font-bold text-river-blue">Part 1: Opening & Keynotes</h3>
                 <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">30 minutes</span>
               </div>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div>
-                    <p className="font-bold text-charcoal">Welcome</p>
-                    <p className="text-sm text-charcoal">Samuel Bahiru, Chair (Ethiopia)</p>
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Left Content */}
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div>
+                      <p className="font-bold text-charcoal">Welcome</p>
+                      <p className="text-sm text-charcoal">Samuel Bahiru, Chair (Ethiopia)</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div>
+                      <p className="font-bold text-charcoal">Keynote: Digital Skills for Africa's Next Generation</p>
+                      <p className="text-sm text-charcoal">Anele Simon (South Africa)</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div>
+                      <p className="font-bold text-charcoal">
+                        Special Keynote: Cybersecurity & Knowledge Sovereignty for Nile Youth
+                      </p>
+                      <p className="text-sm text-charcoal">Dr. Shumete Gizaw (Ethiopia)</p>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <div>
-                    <p className="font-bold text-charcoal">Keynote: Digital Skills for Africa's Next Generation</p>
-                    <p className="text-sm text-charcoal">Anele Simon (South Africa)</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div>
-                    <p className="font-bold text-charcoal">
-                      Special Keynote: Cybersecurity & Knowledge Sovereignty for Nile Youth
-                    </p>
-                    <p className="text-sm text-charcoal">Dr. Shumete Gizaw (Ethiopia)</p>
-                  </div>
+
+                {/* Right Content: Add Image */}
+                <div className="flex items-center justify-center">
+                  <img
+                    src="/images/tech.webp"
+                    alt="Digital Technology Innovation"
+                    className="w-full max-w-sm h-auto rounded-lg shadow-md"
+                  />
                 </div>
               </div>
             </div>
-
             {/* Part 2 */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
               <div className="flex items-center justify-between mb-4">
@@ -163,40 +162,77 @@ export default function TechnologyWorkingGroupPage() {
               </div>
               <p className="text-sm text-charcoal font-lora mb-4">Moderated by Felix Matschie</p>
 
-              <div className="space-y-6">
-                <div className="border-l-4 border-deep-orange pl-4">
-                  <h4 className="font-bold text-charcoal mb-2">Egypt – Women Entrepreneurs in Digital Innovation</h4>
-                  <p className="text-sm text-charcoal">Rania Reda (Founder, Entreprenelle)</p>
+              {/* Content and Images Side-by-Side */}
+              <div className="flex flex-col md:flex-row items-start md:space-x-6">
+                {/* Left Content */}
+                <div className="space-y-6 flex-1">
+                  <div className="border-l-4 border-deep-orange pl-4">
+                    <h4 className="font-bold text-charcoal mb-2">Egypt – Women Entrepreneurs in Digital Innovation</h4>
+                    <p className="text-sm text-charcoal">Rania Reda (Founder, Entreprenelle)</p>
+                  </div>
+
+                  <div className="border-l-4 border-river-blue pl-4">
+                    <h4 className="font-bold text-charcoal mb-2">Sudan – Mobile Solutions for Youth Employment</h4>
+                    <p className="text-sm text-charcoal">Mohamed "Mo" Ibrahim (MoTech Sudan)</p>
+                  </div>
+
+                  <div className="border-l-4 border-warm-gold pl-4">
+                    <h4 className="font-bold text-charcoal mb-2">South Sudan – Tech for Peace & Social Change</h4>
+                    <p className="text-sm text-charcoal">Mary Boyoi (Youth peace advocate & media entrepreneur)</p>
+                  </div>
+
+                  <div className="border-l-4 border-deep-orange pl-4">
+                    <h4 className="font-bold text-charcoal mb-2">Ethiopia – Youth-Led AI & Digital Platforms</h4>
+                    <p className="text-sm text-charcoal">Betelhem Dessie (iCog Labs / Solve IT)</p>
+                  </div>
+
+                  <div className="border-l-4 border-river-blue pl-4">
+                    <h4 className="font-bold text-charcoal mb-2">Kenya – Open Source Tech for Community Resilience</h4>
+                    <p className="text-sm text-charcoal">Juliana Rotich (Co-founder, Ushahidi & BRCK)</p>
+                  </div>
+
+                  <div className="border-l-4 border-warm-gold pl-4">
+                    <h4 className="font-bold text-charcoal mb-2">Tanzania – Building Startup Ecosystems</h4>
+                    <p className="text-sm text-charcoal">Jumanne Mtambalike (Sahara Ventures)</p>
+                  </div>
+
+                  <div className="border-l-4 border-deep-orange pl-4">
+                    <h4 className="font-bold text-charcoal mb-2">Rwanda – Digital Transformation & Women in STEM</h4>
+                    <p className="text-sm text-charcoal">Clarisse Iribagiza (HeHe Labs)</p>
+                  </div>
                 </div>
 
-                <div className="border-l-4 border-river-blue pl-4">
-                  <h4 className="font-bold text-charcoal mb-2">Sudan – Mobile Solutions for Youth Employment</h4>
-                  <p className="text-sm text-charcoal">Mohamed "Mo" Ibrahim (MoTech Sudan)</p>
-                </div>
-
-                <div className="border-l-4 border-warm-gold pl-4">
-                  <h4 className="font-bold text-charcoal mb-2">South Sudan – Tech for Peace & Social Change</h4>
-                  <p className="text-sm text-charcoal">Mary Boyoi (Youth peace advocate & media entrepreneur)</p>
-                </div>
-
-                <div className="border-l-4 border-deep-orange pl-4">
-                  <h4 className="font-bold text-charcoal mb-2">Ethiopia – Youth-Led AI & Digital Platforms</h4>
-                  <p className="text-sm text-charcoal">Betelhem Dessie (iCog Labs / Solve IT)</p>
-                </div>
-
-                <div className="border-l-4 border-river-blue pl-4">
-                  <h4 className="font-bold text-charcoal mb-2">Kenya – Open Source Tech for Community Resilience</h4>
-                  <p className="text-sm text-charcoal">Juliana Rotich (Co-founder, Ushahidi & BRCK)</p>
-                </div>
-
-                <div className="border-l-4 border-warm-gold pl-4">
-                  <h4 className="font-bold text-charcoal mb-2">Tanzania – Building Startup Ecosystems</h4>
-                  <p className="text-sm text-charcoal">Jumanne Mtambalike (Sahara Ventures)</p>
-                </div>
-
-                <div className="border-l-4 border-deep-orange pl-4">
-                  <h4 className="font-bold text-charcoal mb-2">Rwanda – Digital Transformation & Women in STEM</h4>
-                  <p className="text-sm text-charcoal">Clarisse Iribagiza (HeHe Labs)</p>
+                {/* Right Images */}
+                <div className="grid grid-cols-2 gap-4 flex-1">
+                  {/* Horizontal Images */}
+                  <div className="col-span-1">
+                    <img
+                      src="/images/pitch.webp"
+                      alt="Woman entrepreneur presenting"
+                      className="w-full max-w-md h-auto rounded-lg shadow-md object-cover"
+                    />
+                  </div>
+                  <div className="col-span-1">
+                    <img
+                      src="/images/stem.webp"
+                      alt="Young women collaborating on technology projects"
+                      className="w-full max-w-md h-auto rounded-lg shadow-md object-cover"
+                    />
+                  </div>
+                  <div className="col-span-1">
+                    <img
+                      src="/images/engineer.webp"
+                      alt="Woman engineer working on technology"
+                      className="w-full max-w-lg h-auto rounded-lg shadow-md object-cover"
+                    />
+                  </div>
+                  <div className="col-span-1">
+                    <img
+                      src="/images/code.webp"
+                      alt="Diverse startup team collaborating"
+                      className="w-full max-w-md h-auto rounded-lg shadow-md object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -210,22 +246,34 @@ export default function TechnologyWorkingGroupPage() {
                 <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">45 minutes</span>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-4">
-                <div className="bg-river-blue/10 p-4 rounded-lg">
-                  <h4 className="font-bold text-charcoal text-sm mb-2">Nile Digital Academy</h4>
-                  <p className="text-xs text-charcoal">Online youth training hub</p>
+              {/* Image and Text in Column */}
+              <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
+                {/* Image */}
+                <div className="flex-shrink-0">
+                  <img
+                    src="/images/startup.webp"
+                    alt="Code development and programming"
+                    className="w-80 h-auto rounded-lg shadow-md"
+                  />
                 </div>
-                <div className="bg-deep-orange/10 p-4 rounded-lg">
-                  <h4 className="font-bold text-charcoal text-sm mb-2">Youth Tech Startup Network</h4>
-                  <p className="text-xs text-charcoal">Cross-country entrepreneurship</p>
-                </div>
-                <div className="bg-warm-gold/20 p-4 rounded-lg">
-                  <h4 className="font-bold text-charcoal text-sm mb-2">Digital Storytelling</h4>
-                  <p className="text-xs text-charcoal">#ChildrenOfTheNile campaign</p>
+
+                {/* Text */}
+                <div className="space-y-4">
+                  <div className="bg-river-blue/10 p-4 rounded-lg">
+                    <h4 className="font-bold text-charcoal text-sm mb-2">Nile Digital Academy</h4>
+                    <p className="text-xs text-charcoal">Online youth training hub</p>
+                  </div>
+                  <div className="bg-deep-orange/10 p-4 rounded-lg">
+                    <h4 className="font-bold text-charcoal text-sm mb-2">Youth Tech Startup Network</h4>
+                    <p className="text-xs text-charcoal">Cross-country entrepreneurship</p>
+                  </div>
+                  <div className="bg-warm-gold/20 p-4 rounded-lg">
+                    <h4 className="font-bold text-charcoal text-sm mb-2">Digital Storytelling</h4>
+                    <p className="text-xs text-charcoal">#ChildrenOfTheNile campaign</p>
+                  </div>
                 </div>
               </div>
             </div>
-
             {/* Part 4 */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
               <div className="flex items-center justify-between mb-4">
@@ -256,14 +304,14 @@ export default function TechnologyWorkingGroupPage() {
                 <div className="flex items-start space-x-3">
                   <div>
                     <p className="font-bold text-charcoal">Closing Remarks</p>
-                    <p className="text-sm text-charcoal">Felix Matschie, Co-Chair</p>
+
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div>
                     <p className="font-bold text-charcoal">Adoption of Youth & Tech GERD Message</p>
                     <div className="bg-warm-gold/10 p-4 rounded-lg mt-2">
-                      <p className="text-sm text-charcoal italic">
+                      <p className="text-lg text-charcoal italic">
                         "We, the youth of the Nile Basin, pledge to harness digital tools and technology to build peace,
                         innovation, and sustainable prosperity across all our nations."
                       </p>
@@ -274,8 +322,6 @@ export default function TechnologyWorkingGroupPage() {
             </div>
           </div>
         </section>
-
-
       </main>
 
       <Footer />

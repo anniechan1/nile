@@ -41,46 +41,7 @@ export default function SpeakersPage() {
         <div className="space-y-16">
 
 
-          {/* Dr. Zelalem Yirga Biwota */}
-          <section id="zelalem-biwota" className="scroll-mt-24">
-            <div className="bg-gradient-to-br from-warm-gold/5 to-river-blue/10 rounded-3xl p-8 shadow-xl border border-warm-gold/20">
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="md:col-span-1">
-                  <div className="relative">
-                    <img
-                      src="/images/speakers/Dr_Zelalem.jpeg"
-                      alt="Dr. Zelalem Yirga Biwota"
-                      className="w-full h-80 object-cover rounded-2xl shadow-lg"
-                    />
-                  </div>
-                </div>
-                <div className="md:col-span-2">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">
-                      Dr. Zelalem Yirga Biwota
-                    </h2>
-                    <div className="flex items-center space-x-2 bg-deep-orange/10 px-3 py-1 rounded-full">
-                      <MapPin className="h-4 w-4 text-deep-orange" />
-                      <span className="text-sm font-bold text-deep-orange">Ethiopia</span>
-                    </div>
-                  </div>
 
-                  <div className="space-y-4 text-charcoal font-lora">
-
-
-                    <p>
-                      Public health specialist,Health care leader,Expert refugee and returnee health advisor,Ethiopian traditional school of thoughts  Scholar
-
-                    </p>
-
-
-
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
 
           {/* Prof. Geci Karuri-Sebina */}
           <section id="geci-karuri" className="scroll-mt-24">
@@ -115,7 +76,9 @@ export default function SpeakersPage() {
                       Witwatersrand in addition to serving as a Principal at the School of International Futures (SOIF);
                       is the ICESCO Chair on Innovation and Futures in Africa; and an Adjunct Professor at UCT's African
                       Centre for Cities at the University of Cape Town. She has over 2 decades of experience designing,
-                      teaching and facilitating foresight-based projects around the world. Geci holds Bachelors degrees
+                      teaching and facilitating foresight-based projects around the world. </p>
+
+                    <p>Geci holds Bachelors degrees
                       in Computer Science and Sociology (Iowa); Masters degrees in Architecture and in Urban Planning
                       (UCLA); and a PhD in planning and innovation studies (Wits University). She is a Desmond Tutu
                       African Leadership Fellow, and part of curating the post-activist communities of The Emergence
@@ -340,6 +303,43 @@ export default function SpeakersPage() {
                       international peer reviewed and Scopus/Web of science/Springer journals and societies. He is also
                       recipient several national and international awards.
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* Dr. Zelalem Yirga Biwota */}
+          <section id="zelalem-biwota" className="scroll-mt-24">
+            <div className="bg-gradient-to-br from-warm-gold/5 to-river-blue/10 rounded-3xl p-8 shadow-xl border border-warm-gold/20">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <div className="relative">
+                    <img
+                      src="/images/speakers/Dr_Zelalem.jpeg"
+                      alt="Dr. Zelalem Yirga Biwota"
+                      className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-2">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">
+                      Dr. Zelalem Yirga Biwota
+                    </h2>
+                    <div className="flex items-center space-x-2 bg-deep-orange/10 px-3 py-1 rounded-full">
+                      <MapPin className="h-4 w-4 text-deep-orange" />
+                      <span className="text-sm font-bold text-deep-orange">Ethiopia</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4 text-charcoal font-lora">
+
+
+                    <p>
+                      Public health specialist,Health care leader,Expert refugee and returnee health advisor,Ethiopian traditional school of thoughts  Scholar
+
+                    </p>
+
                   </div>
                 </div>
               </div>

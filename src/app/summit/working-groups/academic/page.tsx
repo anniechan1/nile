@@ -23,27 +23,14 @@ export default function AcademicWorkingGroupPage() {
             </Link>
 
             <h1 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-river-blue mb-4">
-              Academic & Universities Working Group
+              Universities & Research Working Group
             </h1>
 
             <p className="font-playfair text-lg md:text-xl text-deep-orange font-medium italic mb-6">
               "Building an Academic Bridge Across 11 Nations: Knowledge, Cooperation, and a Shared Future for the Nile"
             </p>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-              <div className="flex items-center space-x-2 bg-deep-orange/10 px-4 py-2 rounded-full">
-                <Globe className="h-4 w-4 text-deep-orange" />
-                <span className="font-bold text-deep-orange text-sm">Online</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-river-blue/10 px-4 py-2 rounded-full">
-                <Calendar className="h-4 w-4 text-river-blue" />
-                <span className="font-bold text-river-blue text-sm">7 September 2025</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-warm-gold/20 px-4 py-2 rounded-full">
-                <Clock className="h-4 w-4 text-charcoal" />
-                <span className="font-bold text-charcoal text-sm">14:00-16:30 EAT</span>
-              </div>
-            </div>
+
 
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
               <div className="grid md:grid-cols-2 gap-6 text-left">
@@ -56,7 +43,7 @@ export default function AcademicWorkingGroupPage() {
                   />
                   <div>
                     <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Chair</h3>
-                    <p className="text-sm text-charcoal"><strong>• Dr. Jemal Abafita</strong></p>
+                    <p className="text-sm text-charcoal"><strong>Dr. Jemal Abafita</strong></p>
                     <p className="text-sm text-charcoal">President of Jimma University (Ethiopia)</p>
                   </div>
                 </div>
@@ -64,13 +51,13 @@ export default function AcademicWorkingGroupPage() {
                 {/* Co-Chair Section */}
                 <div className="flex items-center space-x-4">
                   <img
-                    src="/images/speakers/prof_mammo.jpeg"
+                    src="/images/speakers/mammo.png"
                     alt="Prof. Mammo Muchie"
                     className="w-24 h-24 rounded-full object-cover"
                   />
                   <div>
                     <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Co-Chair</h3>
-                    <p className="text-sm text-charcoal"><strong>• Prof. Mammo Muchie</strong></p>
+                    <p className="text-sm text-charcoal"><strong>Prof. Mammo Muchie</strong></p>
                     <p className="text-sm text-charcoal">
                       DST/NRF SARChI Professor in Innovation Studies, TUT, South Africa & Steering Committee -
                       Universities & Research
@@ -193,35 +180,6 @@ export default function AcademicWorkingGroupPage() {
               <p className="text-sm text-charcoal font-lora mb-4">Moderated by Prof. Mammo Muchie</p>
 
               <div className="space-y-6">
-                <div className="border-l-4 border-deep-orange pl-4">
-                  <h4 className="font-bold text-charcoal mb-2">
-                    Ethiopia: "Public Health, Population Movements, and Traditional Knowledge Systems"
-                  </h4>
-                  <div className="flex items-start space-x-3 mb-2">
-                    <img
-                      src="/images/speakers/Dr_Zelalem.jpeg"
-                      alt="Dr. Zelalem Yirga Biwota"
-                      className="w-24 h-24 rounded-full object-cover"
-                    />
-                    <div>
-                      <p className="text-sm text-charcoal">
-                        <Link
-                          href="/summit/speakers#zelalem-yirga"
-                          className="text-river-blue hover:text-river-blue-dark underline"
-                        >
-                          Dr. Zelalem Yirga Biwota
-                        </Link>
-
-                      </p>
-                      <p className="text-xs text-charcoal mt-2">
-                        Public health specialist, healthcare leader, and expert scholar of Ethiopian traditional thought.
-                        His work at the nexus of refugee health and indigenous knowledge systems provides a critical
-                        framework for understanding community resilience and wellbeing throughout the Nile Basin.
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
 
                 <div className="border-l-4 border-river-blue pl-4">
                   <h4 className="font-bold text-charcoal mb-2">
@@ -232,7 +190,7 @@ export default function AcademicWorkingGroupPage() {
                     <img
                       src="/images/speakers/Prof_Geci.jpeg"
                       alt="Prof. Geci Karuri-Sebina"
-                      className="w-28 h-24 rounded-full object-cover"
+                      className="w-24 h-24 rounded-full object-cover"
                     />
                     <div>
                       <p className="text-sm text-charcoal">
@@ -311,6 +269,7 @@ export default function AcademicWorkingGroupPage() {
                     </div>
                   </div>
 
+
                 </div>
 
                 <div className="border-l-4 border-river-blue pl-4">
@@ -343,6 +302,36 @@ export default function AcademicWorkingGroupPage() {
                   </div>
 
                 </div>
+              </div>
+
+              <div className="border-l-4 border-deep-orange pl-4">
+                <h4 className="font-bold text-charcoal mb-2">
+                  Ethiopia: "Public Health, Population Movements, and Traditional Knowledge Systems"
+                </h4>
+                <div className="flex items-start space-x-3 mb-2">
+                  <img
+                    src="/images/speakers/Dr_Zelalem.jpeg"
+                    alt="Dr. Zelalem Yirga Biwota"
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="text-sm text-charcoal">
+                      <Link
+                        href="/summit/speakers#zelalem-yirga"
+                        className="text-river-blue hover:text-river-blue-dark underline"
+                      >
+                        Dr. Zelalem Yirga Biwota
+                      </Link>
+
+                    </p>
+                    <p className="text-xs text-charcoal mt-2">
+                      Public health specialist, healthcare leader, and expert scholar of Ethiopian traditional thought.
+                      His work at the nexus of refugee health and indigenous knowledge systems provides a critical
+                      framework for understanding community resilience and wellbeing throughout the Nile Basin.
+                    </p>
+                  </div>
+                </div>
+
               </div>
 
               <div className="mt-6 pt-4 border-t border-warm-gold/20">
@@ -443,19 +432,19 @@ export default function AcademicWorkingGroupPage() {
                 {/* Left Content */}
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <span className="text-xs text-charcoal bg-deep-orange/20 px-2 py-1 rounded mt-1">15 mins</span>
+                    <span className="text-xs text-charcoal bg-deep-orange/20 px-3 py-1 rounded mt-1 min-w-[60px]">15 mins</span>
                     <p className="text-sm text-charcoal">
                       Rapporteurs present key outcomes and action points from each group.
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="text-xs text-charcoal bg-deep-orange/20 px-2 py-1 rounded mt-1">10 mins</span>
+                    <span className="text-xs text-charcoal bg-deep-orange/20 px-3 py-1 rounded mt-1 min-w-[60px]">10 mins</span>
                     <p className="text-sm text-charcoal">
                       Discussion and consolidation of the priority areas and the formal charter for the network.
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="text-xs text-charcoal bg-deep-orange/20 px-2 py-1 rounded mt-1">5mins</span>
+                    <span className="text-xs text-charcoal bg-deep-orange/20 px-3 py-1 rounded mt-1 min-w-[60px]">5 mins</span>
                     <p className="text-sm text-charcoal">
                       Formal Agreement to establish the Nile Basin University & Research Network, with Jimma University
                       serving as the inaugural secretariat for 2025-2026.

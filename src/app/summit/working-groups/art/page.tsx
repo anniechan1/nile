@@ -1,7 +1,7 @@
 "use client"
 
 import MainNav from "@/components/main-nav"
-import { Calendar, Globe, ArrowLeft, Clock, Target, Palette, Trophy } from "lucide-react"
+import { Calendar, Globe, ArrowLeft, Clock, Target } from "lucide-react"
 import Footer from "@/components/footer"
 import Link from "next/link"
 
@@ -30,23 +30,9 @@ export default function ArtWorkingGroupPage() {
               "Art, Culture and Sport: Twin Engines for Nile Unity & Peace"
             </p>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-              <div className="flex items-center space-x-2 bg-deep-orange/10 px-4 py-2 rounded-full">
-                <Globe className="h-4 w-4 text-deep-orange" />
-                <span className="font-bold text-deep-orange text-sm">Online</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-river-blue/10 px-4 py-2 rounded-full">
-                <Calendar className="h-4 w-4 text-river-blue" />
-                <span className="font-bold text-river-blue text-sm">6-7 September 2025</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-warm-gold/20 px-4 py-2 rounded-full">
-                <Clock className="h-4 w-4 text-charcoal" />
-                <span className="font-bold text-charcoal text-sm">14:00-17:00 EAT (Daily)</span>
-              </div>
-            </div>
+
 
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-
               <div className="grid md:grid-cols-2 gap-6 text-left">
                 {/* Overall Chairs Section */}
                 <div className="flex items-center space-x-4">
@@ -56,28 +42,14 @@ export default function ArtWorkingGroupPage() {
                     className="w-20 h-20 rounded-full object-cover"
                   />
                   <div>
-                    <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Overall Chairs</h3>
-                    <p className="text-sm text-charcoal">• Artist Desalegn Hailu Mazengiya (Ethiopia)</p>
+                    <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Overall Chair</h3>
+                    <p className="text-sm text-charcoal">Artist Desalegn Hailu Mazengiya (Ethiopia)</p>
                     <p className="text-sm text-charcoal">Cultural Stream</p>
                   </div>
                 </div>
 
-                {/* Co-Chairs & Liaison Section */}
-                <div className="flex items-center space-x-4">
-                  <img
-                    src="/images/speakers/dr_tsegaye.jpeg"
-                    alt="Tsegaye Degineh"
-                    className="w-20 h-20 rounded-full object-cover"
-                  />
-                  <div>
-                    <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Co-Chairs & Liaison</h3>
-                    <p className="text-sm text-charcoal">• Tsegaye Degineh (Ethiopia/Germany)</p>
-                    <p className="text-sm text-charcoal">Digital Strategist & Summit Facilitator</p>
-                  </div>
-                </div>
+
               </div>
-
-
             </div>
           </div>
         </div>
@@ -125,6 +97,8 @@ export default function ArtWorkingGroupPage() {
                 </div>
               </div>
             </div>
+
+
           </div>
         </section>
 
@@ -145,42 +119,55 @@ export default function ArtWorkingGroupPage() {
                   </h3>
                   <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">45 minutes</span>
                 </div>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                    <div>
-                      <p className="font-bold text-charcoal">Welcome & Framing the Vision</p>
-                      <p className="text-sm text-charcoal">Artist Desalegn Hailu Mazengiya & Sports Co-Chair</p>
+
+                <div className="flex flex-col md:flex-row items-start md:space-x-6">
+                  {/* Left Content */}
+                  <div className="space-y-4 flex-1">
+                    <div className="flex items-start space-x-3">
+                      <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                      <div>
+                        <p className="font-bold text-charcoal">Welcome & Framing the Vision</p>
+                        <p className="text-sm text-charcoal">Artist Desalegn Hailu Mazengiya & Sports Co-Chair</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                      <div>
+                        <p className="font-bold text-charcoal">
+                          Keynote 1 (Cultural Memory): "The Nile: Our Past, Our Canvas"
+                        </p>
+                        <p className="text-sm text-charcoal">Dr. Salima Ikram (Egypt), Egyptologist</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                      <div>
+                        <p className="font-bold text-charcoal">
+                          Keynote 2 (Sport for Peace): "Scoring Goals for Peace: Sport as a Universal Language"
+                        </p>
+                        <p className="text-sm text-charcoal">
+                          Didier Drogba (Côte d'Ivoire), FIFA Legend (or pre-recorded message)
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                      <div>
+                        <p className="font-bold text-charcoal">
+                          Youth Testimony: "Our United Nile: A View from the Future"
+                        </p>
+                        <p className="text-sm text-charcoal">A young artist/athlete from Uganda</p>
+                      </div>
                     </div>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                    <div>
-                      <p className="font-bold text-charcoal">
-                        Keynote 1 (Cultural Memory): "The Nile: Our Past, Our Canvas"
-                      </p>
-                      <p className="text-sm text-charcoal">Dr. Salima Ikram (Egypt), Egyptologist</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                    <div>
-                      <p className="font-bold text-charcoal">
-                        Keynote 2 (Sport for Peace): "Scoring Goals for Peace: Sport as a Universal Language"
-                      </p>
-                      <p className="text-sm text-charcoal">
-                        Didier Drogba (Côte d'Ivoire), FIFA Legend (or pre-recorded message)
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                    <div>
-                      <p className="font-bold text-charcoal">
-                        Youth Testimony: "Our United Nile: A View from the Future"
-                      </p>
-                      <p className="text-sm text-charcoal">A young artist/athlete from Uganda</p>
-                    </div>
+
+                  {/* Right Image */}
+                  <div className="flex-shrink-0 w-full md:w-1/2 mt-6 md:mt-0">
+                    <img
+                      src="/images/nile_cloth.webp"
+                      alt="Nile textile traditions"
+                      className="w-full h-64 object-cover rounded-lg shadow-md"
+                    />
                   </div>
                 </div>
               </div>
@@ -193,69 +180,128 @@ export default function ArtWorkingGroupPage() {
                   </h3>
                   <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">60 minutes</span>
                 </div>
-                <p className="text-sm text-charcoal font-lora mb-4">Moderated by Tsegaye Degineh</p>
 
-                <div className="space-y-4">
-                  <div className="border-l-4 border-deep-orange pl-4">
-                    <p className="font-bold text-charcoal">Ethiopia (Art): "Designing a Light Ceremony for GERD"</p>
-                    <p className="text-sm text-charcoal">Aida Muluneh, Photographer</p>
+                {/* Text and Sun Boat Image Side-by-Side */}
+                <div className="flex flex-col md:flex-row md:items-start md:space-x-6">
+                  {/* Left Text */}
+                  <div className="space-y-4 flex-1">
+                    <div className="border-l-4 border-deep-orange pl-4">
+                      <p className="font-bold text-charcoal">Ethiopia (Art): "Designing a Light Ceremony for GERD"</p>
+                      <p className="text-sm text-charcoal">Aida Muluneh, Photographer</p>
+                    </div>
+                    <div className="border-l-4 border-river-blue pl-4">
+                      <p className="font-bold text-charcoal">Sudan (Art): "The Poetry of the Nile"</p>
+                      <p className="text-sm text-charcoal">Emi Mahmoud, Poet & Activist</p>
+                    </div>
+                    <div className="border-l-4 border-warm-gold pl-4">
+                      <p className="font-bold text-charcoal">
+                        South Sudan (Sport): "Basketball: Dribbling for Reconciliation"
+                      </p>
+                      <p className="text-sm text-charcoal">Luol Deng, President, South Sudan Basketball Federation</p>
+                    </div>
+                    <div className="border-l-4 border-deep-orange pl-4">
+                      <p className="font-bold text-charcoal">
+                        Kenya (Sport): "The Marathon: A Journey of Shared Struggle & Triumph"
+                      </p>
+                      <p className="text-sm text-charcoal">Eliud Kipchoge (or representative)</p>
+                    </div>
+                    <div className="border-l-4 border-river-blue pl-4">
+                      <p className="font-bold text-charcoal">Egypt (Art): "The Nile in Modern Art"</p>
+                      <p className="text-sm text-charcoal">Moataz Nasr, Visual Artist</p>
+                    </div>
                   </div>
-                  <div className="border-l-4 border-river-blue pl-4">
-                    <p className="font-bold text-charcoal">Sudan (Art): "The Poetry of the Nile"</p>
-                    <p className="text-sm text-charcoal">Emi Mahmoud, Poet & Activist</p>
-                  </div>
-                  <div className="border-l-4 border-warm-gold pl-4">
-                    <p className="font-bold text-charcoal">
-                      South Sudan (Sport): "Basketball: Dribbling for Reconciliation"
+
+                  {/* Right Sun Boat Image */}
+                  <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
+                    <img
+                      src="/images/sun_boat.webp"
+                      alt="Sun Boat installation"
+                      className="w-full h-auto max-h-[300px] object-contain rounded-lg"
+                    />
+                    <p className="text-sm font-medium text-charcoal text-center mt-2">
+                      Sun Boat, Moataz Nasr
                     </p>
-                    <p className="text-sm text-charcoal">Luol Deng, President, South Sudan Basketball Fed.</p>
                   </div>
-                  <div className="border-l-4 border-deep-orange pl-4">
-                    <p className="font-bold text-charcoal">
-                      Kenya (Sport): "The Marathon: A Journey of Shared Struggle & Triumph"
+                </div>
+
+                {/* Puzzle Layout for Remaining Images */}
+                <div className="grid grid-cols-3 gap-4 mt-6">
+                  {/* Horizontal Image (Aida Muluneh) */}
+                  <div className="col-span-3 md:col-span-2">
+                    <img
+                      src="/images/aida_art.jpg"
+                      alt="Aida Muluneh artwork"
+                      className="w-full h-64 object-contain rounded-lg"
+                    />
+                    <p className="text-sm font-medium text-charcoal text-center mt-2">
+                      Aida Muluneh | Star Shine Moon Glow
                     </p>
-                    <p className="text-sm text-charcoal">Eliud Kipchoge (or representative)</p>
                   </div>
-                  <div className="border-l-4 border-river-blue pl-4">
-                    <p className="font-bold text-charcoal">Egypt (Art): "The Nile in Modern Art"</p>
-                    <p className="text-sm text-charcoal">Moataz Nasr, Visual Artist</p>
+
+                  {/* Portrait Image (Emi Mahmoud) */}
+                  <div className="col-span-3 md:col-span-1">
+                    <img
+                      src="/images/emi.webp"
+                      alt="Emtithal Mahmoud"
+                      className="w-full h-64 object-contain rounded-lg"
+                    />
+                    <p className="text-sm font-medium text-charcoal text-center mt-2">
+                      Emtithal Mahmoud, Sudanese poet
+                    </p>
                   </div>
                 </div>
               </div>
-
               {/* Part 3 */}
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-playfair text-xl font-bold text-river-blue">
-                    Part 3: Integrated Breakout Groups – Designing Together
-                  </h3>
-                  <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">45 minutes</span>
-                </div>
-                <p className="text-sm text-charcoal font-lora mb-4">
-                  Groups are mixed with artists, athletes, and organizers.
-                </p>
+                <div className="flex flex-col md:flex-row items-start md:space-x-6">
+                  {/* Left Content */}
+                  <div className="space-y-4 flex-1">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="font-playfair text-xl font-bold text-river-blue">
+                        Part 3: Integrated Breakout Groups – Designing Together
+                      </h3>
+                      <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">45 minutes</span>
+                    </div>
+                    <p className="text-sm text-charcoal font-lora mb-4">
+                      Groups are mixed with artists, athletes, and organizers.
+                    </p>
 
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div className="bg-river-blue/10 p-4 rounded-lg">
-                    <h4 className="font-bold text-charcoal text-sm mb-2">The GERD Inauguration Festival</h4>
-                    <p className="text-xs text-charcoal">Designing a combined cultural and sporting ceremony.</p>
+                    <div className="flex items-start space-x-3">
+                      <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                      <div>
+                        <h4 className="font-bold text-charcoal text-sm mb-2">The GERD Inauguration Festival</h4>
+                        <p className="text-xs text-charcoal">Designing a combined cultural and sporting ceremony.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                      <div>
+                        <h4 className="font-bold text-charcoal text-sm mb-2">The Nile Unity Games & Festival 2026</h4>
+                        <p className="text-xs text-charcoal">
+                          Planning a grand event that includes a football tournament, a marathon, art exhibitions, and musical
+                          performances.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                      <div>
+                        <h4 className="font-bold text-charcoal text-sm mb-2">Ambassador Program</h4>
+                        <p className="text-xs text-charcoal">
+                          Defining the role of a unified "Nile Ambassador" corps of artists and athletes.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="bg-deep-orange/10 p-4 rounded-lg">
-                    <h4 className="font-bold text-charcoal text-sm mb-2">The Nile Unity Games & Festival 2026</h4>
-                    <p className="text-xs text-charcoal">
-                      Planning a grand event that includes a football tournament, a marathon, art exhibitions, and
-                      musical performances.
-                    </p>
-                  </div>
-                  <div className="bg-warm-gold/20 p-4 rounded-lg">
-                    <h4 className="font-bold text-charcoal text-sm mb-2">Ambassador Program</h4>
-                    <p className="text-xs text-charcoal">
-                      Defining the role of a unified "Nile Ambassador" corps of artists and athletes.
-                    </p>
-                  </div>
+
+                  {/* Right Image */}
+                  <img
+                    src="/images/marathon.webp"
+                    alt="Marathon event"
+                    className="w-full md:w-1/3 h-auto max-h-[300px] object-contain rounded-lg"
+                  />
                 </div>
               </div>
-
               {/* Part 4 */}
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 <div className="flex items-center justify-between mb-4">
@@ -284,112 +330,130 @@ export default function ArtWorkingGroupPage() {
         {/* Day 2 */}
         <section className="mb-16">
           <div className="bg-gradient-to-br from-warm-gold/5 to-deep-orange/5 rounded-3xl p-8 shadow-xl border border-warm-gold/20">
-            <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue mb-8 text-center">
-              DAY 2: BUILDING THE ACTION PLAN
-            </h2>
-            <p className="text-center text-charcoal font-lora mb-8">7 September 2025</p>
+            {/* Content */}
+            <div className="relative z-10">
+              <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue mb-8 text-center">
+                DAY 2: BUILDING THE ACTION PLAN
+              </h2>
+              <p className="text-center text-charcoal font-lora mb-8">7 September 2025</p>
 
-            <div className="space-y-8">
-              {/* Part 5 */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-playfair text-xl font-bold text-river-blue">Part 5: Deep Dive Workshops</h3>
-                  <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">60 minutes</span>
-                </div>
-                <p className="text-sm text-charcoal font-lora mb-4">Based on Day 1, groups refine concepts.</p>
+              <div className="space-y-8">
+                {/* Part 5 */}
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="font-playfair text-xl font-bold text-river-blue">Part 5: Deep Dive Workshops</h3>
+                    <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">60 minutes</span>
+                  </div>
+                  <p className="text-sm text-charcoal font-lora mb-4">Based on Day 1, groups refine concepts.</p>
 
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div className="bg-river-blue/10 p-4 rounded-lg">
-                    <h4 className="font-bold text-charcoal text-sm mb-2">Workshop A</h4>
-                    <p className="text-xs text-charcoal">
-                      Finalizing the structure and timeline for the Nile Unity Games & Festival.
-                    </p>
-                  </div>
-                  <div className="bg-deep-orange/10 p-4 rounded-lg">
-                    <h4 className="font-bold text-charcoal text-sm mb-2">Workshop B</h4>
-                    <p className="text-xs text-charcoal">
-                      Developing the curriculum and network for the Nile Artists & Athletes Ambassadors.
-                    </p>
-                  </div>
-                  <div className="bg-warm-gold/20 p-4 rounded-lg">
-                    <h4 className="font-bold text-charcoal text-sm mb-2">Workshop C</h4>
-                    <p className="text-xs text-charcoal">
-                      Crafting the joint communication and social media strategy (#ChildrenOfTheNile).
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Part 6 */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-playfair text-xl font-bold text-river-blue">
-                    Part 6: Presenting the Unified Action Plan
-                  </h3>
-                  <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">45 minutes</span>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                    <p className="text-charcoal font-lora">Each workshop presents its finalized proposal.</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                    <p className="text-charcoal font-lora">Open forum for feedback and commitment from attendees.</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Part 7 */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-playfair text-xl font-bold text-river-blue">
-                    Part 7: Adoption & Closing Ceremony
-                  </h3>
-                  <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">30 minutes</span>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                    <p className="text-charcoal font-lora">Adoption of the 2025-2026 Unified Action Plan</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                    <div>
-                      <p className="text-charcoal font-lora font-bold">
-                        Reading and Adoption of the Joint GERD Message:
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="bg-river-blue/10 p-4 rounded-lg">
+                      <h4 className="font-bold text-charcoal text-sm mb-2">Workshop A</h4>
+                      <p className="text-xs text-charcoal">
+                        Finalizing the structure and timeline for the Nile Unity Games & Festival.
                       </p>
-                      <div className="bg-warm-gold/10 p-4 rounded-lg mt-2">
-                        <p className="text-sm text-charcoal italic">
-                          "We, the artists and athletes of the Nile Basin, pledge to unite our creativity and energy. We
-                          will use our cultural heritage and the spirit of sport to illuminate the GERD as a beacon of
-                          peace, collaboration, and shared prosperity for all Children of the Nile."
-                        </p>
+                    </div>
+                    <div className="bg-deep-orange/10 p-4 rounded-lg">
+                      <h4 className="font-bold text-charcoal text-sm mb-2">Workshop B</h4>
+                      <p className="text-xs text-charcoal">
+                        Developing the curriculum and network for the Nile Artists & Athletes Ambassadors.
+                      </p>
+                    </div>
+                    <div className="bg-warm-gold/20 p-4 rounded-lg">
+                      <h4 className="font-bold text-charcoal text-sm mb-2">Workshop C</h4>
+                      <p className="text-xs text-charcoal">
+                        Crafting the joint communication and social media strategy (#ChildrenOfTheNile).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Part 6 */}
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="font-playfair text-xl font-bold text-river-blue">
+                      Part 6: Presenting the Unified Action Plan
+                    </h3>
+                    <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">45 minutes</span>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                      <p className="text-charcoal font-lora">Each workshop presents its finalized proposal.</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                      <p className="text-charcoal font-lora">Open forum for feedback and commitment from attendees.</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Part 7 */}
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                  <div className="flex flex-col md:flex-row items-start md:space-x-6">
+                    {/* Left Content */}
+                    <div className="space-y-4 flex-1">
+                      <div className="flex items-center justify-between mb-4">
+                        <h3 className="font-playfair text-xl font-bold text-river-blue">
+                          Part 7: Adoption & Closing Ceremony
+                        </h3>
+                        <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">30 minutes</span>
+                      </div>
+                      <div className="space-y-4">
+                        <div className="flex items-start space-x-3">
+                          <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                          <p className="text-charcoal font-lora">Adoption of the 2025-2026 Unified Action Plan</p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                          <div>
+                            <p className="text-charcoal font-lora font-bold">
+                              Reading and Adoption of the Joint GERD Message:
+                            </p>
+                            <div className="bg-warm-gold/10 p-4 rounded-lg mt-2">
+                              <p className="text-lg text-charcoal italic">
+                                "We, the artists and athletes of the Nile Basin, pledge to unite our creativity and energy.
+                                We will use our cultural heritage and the spirit of sport to illuminate the GERD as a beacon
+                                of peace, collaboration, and shared prosperity for all Children of the Nile."
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                          <div>
+                            <p className="text-charcoal font-lora font-bold">Symbolic Handover:</p>
+                            <p className="text-sm text-charcoal">
+                              A cultural performer passes an artistic item to an athlete, symbolizing the handover of plans
+                              to the steering committee for implementation.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                          <div>
+                            <p className="text-charcoal font-lora font-bold">Closing Remarks:</p>
+                            <p className="text-sm text-charcoal">
+                              Artist Desalegn Hailu Mazengiya & Sports Co-Chair with a united closing statement.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                    <div>
-                      <p className="text-charcoal font-lora font-bold">Symbolic Handover:</p>
-                      <p className="text-sm text-charcoal">
-                        A cultural performer passes an artistic item to an athlete, symbolizing the handover of plans to
-                        the steering committee for implementation.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                    <div>
-                      <p className="text-charcoal font-lora font-bold">Closing Remarks:</p>
-                      <p className="text-sm text-charcoal">
-                        Artist Desalegn Hailu Mazengiya & Sports Co-Chair with a united closing statement.
-                      </p>
+
+                    {/* Right Image */}
+                    <div className="flex-shrink-0 w-full md:w-1/2 mt-6 md:mt-0">
+                      <img
+                        src="/images/art.webp"
+                        alt="Artistic representation of unity"
+                        className="w-full h-auto max-h-[400px] object-contain rounded-lg"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </section>
       </main>

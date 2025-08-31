@@ -144,7 +144,8 @@ export default function TechnologyWorkingGroupPage() {
                     <div>
                       <p className="font-bold text-charcoal">Welcome, Official Opening & Introduction to the Working Group</p>
                       <p className="text-sm text-charcoal">
-                        <strong>Felix Matschie</strong> (Ethiopia/Germany), Strategic Lead, Ecopia Group. A co-founder of the initiative, Felix will open the session and frame the critical role of youth and technology in building a shared future for the Nile.
+                        <strong>Felix Matschie</strong> (Ethiopia/Germany), Strategic Lead, Ecopia Group.  <br /><br />
+                        <em>A co-founder of the initiative, Felix will open the session and frame the critical role of youth and technology in building a shared future for the Nile.</em>
                       </p>
                     </div>
                   </div>
@@ -159,7 +160,8 @@ export default function TechnologyWorkingGroupPage() {
                     <div>
                       <p className="font-bold text-charcoal">Statement of Purpose & Session Objectives</p>
                       <p className="text-sm text-charcoal">
-                        <strong>Samuel Bahiru</strong> (Ethiopia), CTO & Co-Founder, Ticker Tape Technologies. A visionary technologist and entrepreneur, Samuel will outline the session's goals for fostering cross-border collaboration and innovation among the Nile Basin's youth.
+                        <strong>Samuel Bahiru</strong> (Ethiopia), CTO & Co-Founder, Ticker Tape Technologies. <br /><br />
+                        <em>A visionary technologist and entrepreneur, Samuel will outline the session's goals for fostering cross-border collaboration and innovation among the Nile Basin's youth.</em>
                       </p>
                     </div>
                   </div>
@@ -174,7 +176,8 @@ export default function TechnologyWorkingGroupPage() {
                     <div>
                       <p className="font-bold text-charcoal">Keynote 1: Digital Skills for Africa's Next Generation</p>
                       <p className="text-sm text-charcoal">
-                        <strong>Anele Simon</strong> (South Africa), Acting Secretary General, ICOYACA. A leading advocate for youth and digital empowerment, Anele will discuss strategies for equipping young people with the skills needed to thrive in the digital economy and become drivers of sustainable development.
+                        <strong>Anele Simon</strong> (South Africa), Acting Secretary General, ICOYACA. <br /><br />
+                        <em>A leading advocate for youth and digital empowerment, Anele will discuss strategies for equipping young people with the skills needed to thrive in the digital economy and become drivers of sustainable development.</em>
                       </p>
                     </div>
                   </div>
@@ -189,7 +192,8 @@ export default function TechnologyWorkingGroupPage() {
                     <div>
                       <p className="font-bold text-charcoal">Keynote 2: Digital Health Access for Youth Empowerment</p>
                       <p className="text-sm text-charcoal">
-                        <strong>Fred Mpala</strong> (Uganda), Health Card. A social entrepreneur focused on health-tech solutions, Fred will explore how digital tools can revolutionize healthcare access and create new opportunities for youth engagement and employment in the sector.
+                        <strong>Fred Mpala</strong> (Uganda), Health Card. <br /><br />
+                        <em>A social entrepreneur focused on health-tech solutions, Fred will explore how digital tools can revolutionize healthcare access and create new opportunities for youth engagement and employment in the sector.</em>
                       </p>
                     </div>
                   </div>
@@ -224,7 +228,7 @@ export default function TechnologyWorkingGroupPage() {
                     <h4 className="font-bold text-charcoal mb-2">Sudan: "Mobile Solutions for Youth Employment"</h4>
                     <p className="text-sm text-charcoal">
                       <strong>Mohamed "Mo" Ibrahim</strong>, Founder, MoTech Sudan.
-                      <br />
+                      <br /><br />
                       <em>A pioneer in leveraging mobile technology to tackle unemployment, Mohamed will share insights on creating practical tech solutions that address local challenges and create economic opportunities for young people.</em>
                     </p>
                   </div>
@@ -234,7 +238,7 @@ export default function TechnologyWorkingGroupPage() {
                     <h4 className="font-bold text-charcoal mb-2">South Sudan: "Tech for Peace & Social Change"</h4>
                     <p className="text-sm text-charcoal">
                       <strong>Mary Boyoi</strong>, Youth Peace Advocate & Media Entrepreneur.
-                      <br />
+                      <br /><br />
                       <em>A passionate voice for her generation, Mary will discuss the powerful intersection of technology, media, and peacebuilding, showcasing how digital platforms can be used to foster social cohesion and drive positive change.</em>
                     </p>
                   </div>
@@ -243,7 +247,7 @@ export default function TechnologyWorkingGroupPage() {
                     <h4 className="font-bold text-charcoal mb-2">South Sudan: "Digital Media & Storytelling for Youth Voices"</h4>
                     <p className="text-sm text-charcoal">
                       <strong>Siapi</strong>, Journalist.
-                      <br />
+                      <br /><br />
                       <em>A dedicated journalist, Siapi will highlight the importance of digital storytelling and media literacy in amplifying the voices of Nile Basin youth and shaping a narrative of unity and shared destiny.</em>
                     </p>
                   </div>
@@ -259,7 +263,7 @@ export default function TechnologyWorkingGroupPage() {
                       />
                       <p className="text-sm text-charcoal">
                         <strong>Samiya Abdulkadir Godu</strong>, Youth Entrepreneur.
-                        <br />
+                        <br /><br />
                         <em>A dynamic young founder, Samiya will share her journey and perspectives on the challenges and opportunities for launching and scaling tech-driven ventures in the region.</em>
                       </p>
                     </div>
@@ -275,7 +279,7 @@ export default function TechnologyWorkingGroupPage() {
                       />
                       <p className="text-sm text-charcoal">
                         <strong>Elfagid Woldegiorgis</strong>, MasterCard.
-                        <br />
+                        <br /><br />
                         <em>An expert in financial technology, Elfagid will explore how fintech innovations are breaking down barriers to financial access and empowering a new generation of young entrepreneurs and consumers across the Nile Basin.</em>
                       </p>
                     </div>
@@ -292,7 +296,7 @@ export default function TechnologyWorkingGroupPage() {
                       />
                       <p className="text-sm text-charcoal">
                         <strong>Wim Vanhelleputte</strong> (CEO, Safaricom Ethiopia) (TBC).
-                        <br />
+                        <br /><br />
                         <em>Sharing experiences from the field on how Telco and Fintech services can enhance local communities and lead to more cohesive regional collaboration.</em>
                       </p>
                     </div>
@@ -348,7 +352,7 @@ export default function TechnologyWorkingGroupPage() {
                 <div className="bg-gradient-to-br from-deep-orange/10 to-deep-orange/5 border-l-4 border-deep-orange rounded-lg p-6 shadow-md">
                   <h4 className="font-bold text-deep-orange mb-2">Group 1: How to Leverage Technology to Improve Your Communities</h4>
                   <p className="text-sm text-charcoal">
-                    <strong>Facilitator:</strong> Fred Mpala (Chief of Technology at Healthcard), with experience in LiveScience, Healthcare, and Financial Services at various Fortune 500 companies. <br />
+                    <strong>Facilitator:</strong> Fred Mpala (Chief of Technology at Healthcard), with experience in LiveScience, Healthcare, and Financial Services at various Fortune 500 companies.  <br /><br />
                     <em>This group will focus on highlighting methods and actions youth groups can take to leverage technology to enhance their local communities and have tangible and direct impact.</em>
                   </p>
                 </div>
@@ -357,7 +361,7 @@ export default function TechnologyWorkingGroupPage() {
                 <div className="bg-gradient-to-br from-river-blue/10 to-river-blue/5 border-l-4 border-river-blue rounded-lg p-6 shadow-md">
                   <h4 className="font-bold text-river-blue mb-2">Breakout Group 2: Youth Tech Startup Network – Cross-Country Entrepreneurship</h4>
                   <p className="text-sm text-charcoal">
-                    <strong>Facilitator:</strong> Samuel Bahiru (Ethiopia), CTO & Co-Founder, Ticker Tape Technologies.<br />
+                    <strong>Facilitator:</strong> Samuel Bahiru (Ethiopia), CTO & Co-Founder, Ticker Tape Technologies. <br /><br />
                     <em>Samuel will leverage his experience building a cutting-edge AI and data visualization company to facilitate the design of a network that supports, funds, and connects youth-led startups across borders.</em>
                   </p>
                 </div>
@@ -366,7 +370,7 @@ export default function TechnologyWorkingGroupPage() {
                 <div className="bg-gradient-to-br from-warm-gold/10 to-warm-gold/5 border-l-4 border-warm-gold rounded-lg p-6 shadow-md">
                   <h4 className="font-bold text-warm-gold mb-2">Breakout Group 3: Digital Storytelling – #ChildrenOfTheNile Campaign</h4>
                   <p className="text-sm text-charcoal">
-                    <strong>Facilitator:</strong> Siapi (South Sudan), Journalist. <br />
+                    <strong>Facilitator:</strong> Siapi (South Sudan), Journalist.  <br /><br />
                     <em>Siapi will lead the creation of a compelling digital campaign to share stories of innovation and collaboration, harnessing the power of narrative to unite the youth of the Nile.</em>
                   </p>
                 </div>

@@ -221,8 +221,8 @@ export default function ArtWorkingGroupPage() {
                       <p className="font-bold text-charcoal">Keynote Inspiration: "Digital Storytelling for Continental Unity"</p>
                       <p className="text-sm text-charcoal">Mika Chavala (Tanzania), Founder, Swahili Nation YouTube Channel & One Africa Foundation</p>
                       <div className="bg-warm-gold/10 p-4 rounded-lg mt-2">
-                        <p className="text-lg text-charcoal italic">
-                          Speaker Profile: Mika Chavala is a strategic leader and founder of the Swahili Nation One Africa Foundation and Kairos Mega Investment. His YouTube channel, "Swahili Nation," boasts over 487,000 subscribers and is dedicated to preserving African heritage and fostering pan-African unity through knowledge sharing. An honorary citizen of Seoul and appointed Africa Insight ambassador, he is a visionary committed to youth development and transformative projects across the continent.
+                        <p className="text-sm text-charcoal italic">
+                          Mika Chavala is a strategic leader and founder of the Swahili Nation One Africa Foundation and Kairos Mega Investment. His YouTube channel, "Swahili Nation," boasts over 487,000 subscribers and is dedicated to preserving African heritage and fostering pan-African unity through knowledge sharing. An honorary citizen of Seoul and appointed Africa Insight ambassador, he is a visionary committed to youth development and transformative projects across the continent.
                         </p>
                       </div>
                     </div>
@@ -239,8 +239,8 @@ export default function ArtWorkingGroupPage() {
                       <p className="font-bold text-charcoal">Session Goals & Process Overview</p>
                       <p className="text-sm text-charcoal">Tsegaye Degineh (Ethiopia/Germany), Digital Strategist & Facilitator</p>
                       <div className="bg-deep-orange/10 p-4 rounded-lg mt-2">
-                        <p className="text-lg text-charcoal italic">
-                          Speaker Profile: Tsegaye Degineh is an Ethiopian-German digital strategist, software developer, and author. A pioneer in the German tech scene, he is known for his work on digital transformation and fostering dialogue between Africa and Europe. He brings expertise in leveraging digital tools for cultural storytelling and strategic facilitation.
+                        <p className="text-sm text-charcoal italic">
+                          Tsegaye Degineh is an Ethiopian-German digital strategist, software developer, and author. A pioneer in the German tech scene, he is known for his work on digital transformation and fostering dialogue between Africa and Europe. He brings expertise in leveraging digital tools for cultural storytelling and strategic facilitation.
                         </p>
                       </div>
                     </div>

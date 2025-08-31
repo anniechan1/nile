@@ -1,20 +1,49 @@
+import MainNav from "@/components/main-nav"
+import { Calendar, Globe, ArrowLeft, Clock, Target } from "lucide-react"
+import Footer from "@/components/footer"
+import Link from "next/link"
+
 export default function EntrepreneursWorkingGroupPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
-            Digital Guardians of the Nile, AI Technologies & Cybersecurity Working Group
-          </h1>
-          <p className="text-xl text-blue-100 mb-6 text-pretty">
-            Harnessing Intelligent Rivers: Ethical AI, Security, and Responsible Innovation for the Nile Basin
-          </p>
-          <div className="flex flex-wrap gap-6 text-blue-200">
+    <div className="min-h-screen bg-off-white">
+      <MainNav />
 
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-river-blue/10 to-warm-gold/5 pt-24 pb-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Link
+              href="/summit/program"
+              className="inline-flex items-center text-river-blue hover:text-river-blue-dark mb-6 transition-colors"
+            >
+              <ArrowLeft className="h-4 w-4 mr-2" />
+              Back to Program
+            </Link>
+            <h1 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-river-blue mb-4">
+              Digital Guardians of the Nile, AI Technologies & Cybersecurity Working Group
+            </h1>
+            <p className="font-playfair text-lg md:text-xl text-deep-orange font-medium italic mb-6">
+              "Harnessing Intelligent Rivers: Ethical AI, Security, and Responsible Innovation for the Nile Basin"
+            </p>
+
+            <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+              <div className="flex items-center space-x-2 bg-deep-orange/10 px-4 py-2 rounded-full">
+                <Globe className="h-4 w-4 text-deep-orange" />
+                <span className="font-bold text-deep-orange text-sm">Online</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-river-blue/10 px-4 py-2 rounded-full">
+                <Calendar className="h-4 w-4 text-river-blue" />
+                <span className="font-bold text-river-blue text-sm">Saturday, 6 September 2025</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-warm-gold/20 px-4 py-2 rounded-full">
+                <Clock className="h-4 w-4 text-charcoal" />
+                <span className="font-bold text-charcoal text-sm">14:00 - 16:00 EAT</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
 
       {/* Leadership */}
       <div className="max-w-6xl mx-auto px-6 py-12">
@@ -124,6 +153,17 @@ export default function EntrepreneursWorkingGroupPage() {
                       </div>
                     </li>
                     <li>
+                      <p className="font-bold">Strategic Vision: Investment and Innovation for Africa's Digital Future</p>
+                      <div className="flex items-center gap-4 mt-2">
+                        <img
+                          src="/images/speakers/Babacar.png"
+                          alt="Mr. Babacar Seck"
+                          className="w-20 h-20 rounded-full object-cover"
+                        />
+                        <p className="text-sm text-gray-600">Mr. Babacar Seck (Kenya), Technology Investment Leader, Former CEO of Digital Africa</p>
+                      </div>
+                    </li>
+                    <li>
                       <p className="font-bold">Ethical Imperative: Ubuntu in the Algorithm</p>
                       <div className="flex items-center gap-4 mt-2">
                         <img
@@ -139,10 +179,17 @@ export default function EntrepreneursWorkingGroupPage() {
 
                 {/* Right Image */}
                 <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
+                  {/* Fraud Image */}
+                  <img
+                    src="/images/fraud.webp"
+                    alt="Fraud Detection"
+                    className="w-full h-auto rounded-lg shadow-md mb-4"
+                  />
+                  {/* Ubuntu Image */}
                   <img
                     src="/images/Ubuntu.webp"
                     alt="Ubuntu 25.04 Plucky Puffin Desktop"
-                    className="w-full h-auto rounded-lg shadow-md"
+                    className="w-full h-auto rounded-lg shadow-md mt-40"
                   />
                   <p className="text-sm text-gray-600 text-center mt-2">
                     Ubuntu 25.04 Plucky Puffin
@@ -174,14 +221,15 @@ export default function EntrepreneursWorkingGroupPage() {
                   <ul className="space-y-6 text-gray-700">
                     {/* Dr. Jennifer Batamuliza */}
                     <li>
-                      <p className="font-bold">Dr. Jennifer Batamuliza (Rwanda): Data Sovereignty & Green STEM Ecosystems</p>
-                      <div className="flex items-center gap-4 mt-2">
+                      <div className="flex items-center gap-4">
                         <img
                           src="/images/speakers/Dr_Jenn.jpeg"
                           alt="Dr. Jennifer Batamuliza"
                           className="w-16 h-16 rounded-full object-cover"
                         />
-                        <p className="text-sm text-gray-600">Specialist in Data Sovereignty & STEM Education</p>
+                        <p className="font-bold text-gray-700">
+                          Dr. Jennifer Batamuliza: Data Sovereignty & Green STEM Ecosystems
+                        </p>
                       </div>
                     </li>
 
@@ -229,18 +277,36 @@ export default function EntrepreneursWorkingGroupPage() {
                         />
                       </div>
                     </li>
+
+                    {/* Mr. Eugene Rwagasore */}
+                    <li>
+                      <div className="flex items-start gap-4">
+                        <div>
+                          <p className="font-bold">Mr. Eugene Rwagasore (Kenya): Entrepreneurial Innovation in AI for Basin Solutions</p>
+                          <p className="text-sm text-gray-600 italic mt-2">
+                            AI Entrepreneur, Co-founder and CTO of Pindo
+                          </p>
+                        </div>
+                        <img
+                          src="/images/speakers/eugene.jpeg"
+                          alt="Mr. Eugene Rwagasore"
+                          className="w-52 h-auto rounded-lg object-cover shadow-md"
+                        />
+                      </div>
+                    </li>
                     {/* Dr. Mitslal Kifleyesus-Matschie */}
                     <li>
-                      <p className="font-bold">Dr. Mitslal Kifleyesus-Matschie (Ethiopia/Germany): Dual-Use Tech Ethics for Peaceful Development</p>
-                      <div className="flex items-center gap-4 mt-2">
+                      <div className="flex items-center gap-4">
                         <img
                           src="/images/speakers/mkm.webp"
                           alt="Dr. Mitslal Kifleyesus-Matschie"
                           className="w-16 h-16 rounded-full object-cover"
                         />
+                        <p className="font-bold text-gray-700">
+                          Dr. Mitslal Kifleyesus-Matschie (Ethiopia/Germany): Dual-Use Tech Ethics for Peaceful Development
+                        </p>
                       </div>
                     </li>
-
                     {/* Representative, TikerTape Technology */}
                     <li>
                       <p className="font-bold">Representative, Ticker Tape Technology (Ethiopia/Germany): Youth-Led Innovation for Basin Challenges</p>
@@ -262,33 +328,33 @@ export default function EntrepreneursWorkingGroupPage() {
 
             {/* Part 3 */}
             <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
-              <h3 className="text-3xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Part 3: Breakout Groups – From Principles to Action (45 minutes)
               </h3>
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="space-y-6">
                 {/* Drafting the Ethical AI & Data Charter */}
                 <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 shadow-md">
-                  <h4 className="text-xl font-bold text-blue-900 mb-4">Drafting the Ethical AI & Data Charter</h4>
+                  <h4 className="text-lg font-bold text-blue-900 mb-4">Drafting the Ethical AI & Data Charter</h4>
                   <div className="flex items-center gap-4">
                     <img
                       src="/images/speakers/mkm.webp"
                       alt="Dr. Mitslal Kifleyesus-Matschie"
-                      className="w-16 h-16 rounded-full object-cover"
+                      className="w-20 h-20 rounded-full object-cover"
                     />
-                    <p className="text-gray-700">Lead: Dr. Mitslal Kifleyesus-Matschie</p>
+                    <p className="text-sm text-gray-700">Lead: Dr. Mitslal Kifleyesus-Matschie</p>
                   </div>
                 </div>
 
                 {/* Cybersecurity Resilience & Peacebuilding */}
                 <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 shadow-md">
-                  <h4 className="text-xl font-bold text-green-900 mb-4">Cybersecurity Resilience & Peacebuilding</h4>
+                  <h4 className="text-lg font-bold text-green-900 mb-4">Cybersecurity Resilience & Peacebuilding</h4>
                   <div className="flex items-center gap-4">
                     <img
                       src="/images/speakers/Bisrat_Yirdaw.jpeg"
                       alt="Mr. Bisrat Yirdaw"
-                      className="w-16 h-16 rounded-full object-cover"
+                      className="w-20 h-20 rounded-full object-cover"
                     />
-                    <p className="text-gray-700">
+                    <p className="text-sm text-gray-700">
                       Lead: Mr. Bisrat Yirdaw, CISSP - Cybersecurity Expert & Trainer
                     </p>
                   </div>
@@ -296,19 +362,19 @@ export default function EntrepreneursWorkingGroupPage() {
 
                 {/* Fostering Innovation & Talent */}
                 <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md">
-                  <h4 className="text-xl font-bold text-purple-900 mb-4">Fostering Innovation & Talent</h4>
+                  <h4 className="text-lg font-bold text-purple-900 mb-4">Fostering Innovation & Talent</h4>
                   <div className="flex items-center gap-4">
                     <img
                       src="/images/speakers/Dr_Jenn.jpeg"
                       alt="Dr. Jennifer Batamuliza"
-                      className="w-16 h-16 rounded-full object-cover"
+                      className="w-20 h-20 rounded-full object-cover"
                     />
                     <img
                       src="/images/speakers/Samuel.jpeg"
                       alt="Ticker Tape Representative"
-                      className="w-16 h-16 rounded-full object-cover"
+                      className="w-20 h-20 rounded-full object-cover"
                     />
-                    <p className="text-gray-700">
+                    <p className="text-sm text-gray-700">
                       Lead: Dr. Jennifer Batamuliza & Ticker Tape Rep.
                     </p>
                   </div>
@@ -354,11 +420,11 @@ export default function EntrepreneursWorkingGroupPage() {
                   <ul className="space-y-2 text-gray-700 mb-4">
                     <li>• Youth Reflection: Young innovator's vision of an ethical & secure future</li>
                     <li>• Closing Remarks: Dr. Jennifer Batamuliza</li>
-                    <li>• Adoption of the GERD Technology Message</li>
+                    <li>• Adoption of the GERD Technology Message: </li>
                   </ul>
 
-                  <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
-                    <h4 className="font-bold text-blue-900 mb-3">GERD Technology Message:</h4>
+                  <div className="bg-blue-50 p-6 rounded-lg">
+
                     <p className="text-blue-800 italic text-pretty">
                       "We, the technologists and guardians of the Nile's digital future, pledge to harness artificial
                       intelligence and cybersecurity as forces for unity, peace, and shared prosperity. We commit to ethical
@@ -384,27 +450,35 @@ export default function EntrepreneursWorkingGroupPage() {
 
 
         {/* Expected Deliverables */}
-        <div className="bg-gradient-to-r from-blue-900 to-indigo-800 text-white rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-6">Expected Deliverables</h2>
+        <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
+          <h2 className="text-xl font-bold text-gray-900 mb-6">Expected Deliverables</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-300 rounded-full mt-2 flex-shrink-0"></div>
-                <span>Ratified Charter for Ethical Use of AI & Data in the Nile Basin</span>
+                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">
+                  Ratified <span className="font-bold">Charter for Ethical Use of AI & Data</span> in the Nile Basin
+                </span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-300 rounded-full mt-2 flex-shrink-0"></div>
-                <span>Drafted Action Plan for Cybersecurity Cooperation & Peacebuilding</span>
+                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">
+                  Drafted <span className="font-bold">Action Plan for Cybersecurity Cooperation & Peacebuilding</span>
+                </span>
               </li>
             </ul>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-300 rounded-full mt-2 flex-shrink-0"></div>
-                <span>Proposal for Nile Basin AI & Digital Innovation Consortium</span>
+                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">
+                  Proposal for <span className="font-bold">Nile Basin AI & Digital Innovation Consortium</span>
+                </span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-300 rounded-full mt-2 flex-shrink-0"></div>
-                <span>Finalized GERD Inauguration Technology Message</span>
+                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">
+                  Finalized <span className="font-bold">GERD Inauguration Technology Message</span>
+                </span>
               </li>
             </ul>
           </div>

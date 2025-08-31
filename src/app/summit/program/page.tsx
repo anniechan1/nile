@@ -517,7 +517,7 @@ export default function SummitPage() {
                     <Link href="/summit/working-groups/art" className="block">
                       <div className="bg-orange-50 hover:bg-orange-600 hover:text-white p-4 rounded-lg cursor-pointer transition-all duration-300 group">
                         <p className="font-bold text-gray-800 group-hover:text-white text-sm mb-2">
-                          Group 3: Art & Culture
+                          Group 3: Art, Culture and Sport
                         </p>
                         <div className="flex items-center space-x-3">
                           <img
@@ -560,7 +560,7 @@ export default function SummitPage() {
                     <Link href="/summit/working-groups/entrepreneurs" className="block">
                       <div className="bg-blue-50 hover:bg-blue-600 hover:text-white p-4 rounded-lg cursor-pointer transition-all duration-300 group">
                         <p className="font-bold text-gray-800 group-hover:text-white text-sm mb-2">
-                          Group 5: Digital Guardians of the Nile: AI, Ethics & Cybersecurity for Shared Futures
+                          Group 5: Digital Guardians of the Nile: AI, Ethics & Cybersecurity
                         </p>
                         <div className="flex items-center space-x-3 mb-4">
                           <img

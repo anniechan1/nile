@@ -87,7 +87,7 @@ export default function ArtWorkingGroupPage() {
                     />
                     <div>
                       <p className="text-sm text-charcoal font-bold">Dr. Mitslal Kifleyesus-Matschie (Ethiopia/Germany)</p>
-                      <p className="text-sm text-charcoal">Expert in Dual-Use Technologies & AI Ethics; Founder, Ecopia Value Chain</p>
+                      <p className="text-sm text-charcoal">Expert in Dual-Use Technologies & AI Ethics; <br />Founder, Ecopia Value Chain</p>
                     </div>
                   </div>
 
@@ -99,7 +99,7 @@ export default function ArtWorkingGroupPage() {
                     />
                     <div>
                       <p className="text-sm text-charcoal font-bold">Mika Chavala (Tanzania)</p>
-                      <p className="text-sm text-charcoal">Founder, Swahili Nation One Africa Foundation; Digital Content Creator & Pan-African Advocate</p>
+                      <p className="text-sm text-charcoal">Founder, Swahili Nation One Africa Foundation; <br />Digital Content Creator & Pan-African Advocate</p>
                     </div>
                   </div>
                 </div>
@@ -249,8 +249,6 @@ export default function ArtWorkingGroupPage() {
               </div>
 
 
-
-
               {/* Part 2 */}
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 <div className="flex items-center justify-between mb-4">
@@ -291,14 +289,21 @@ export default function ArtWorkingGroupPage() {
 
                 {/* Puzzle Layout for Remaining Images */}
                 <div className="grid grid-cols-3 gap-4 mt-6">
-                  {/* Horizontal Image (Aida Muluneh) */}
-                  <div className="col-span-3 md:col-span-2">
-                    <img
-                      src="/images/aida_art.jpg"
-                      alt="Aida Muluneh artwork"
-                      className="w-full h-64 object-contain rounded-lg"
-                    />
-                    <p className="text-sm font-medium text-charcoal text-center mt-2">
+                  {/* Aida Images */}
+                  <div className="col-span-3 md:col-span-2 flex flex-col items-center space-y-4">
+                    <div className="flex items-center space-x-4">
+                      <img
+                        src="/images/speakers/Aida.png"
+                        alt="Aida Muluneh"
+                        className="w-52 h-60 object-cover rounded-lg shadow-md"
+                      />
+                      <img
+                        src="/images/aida_art.jpg"
+                        alt="Aida Muluneh artwork"
+                        className="w-full h-64 object-contain rounded-lg"
+                      />
+                    </div>
+                    <p className="text-sm font-medium text-charcoal text-center">
                       Aida Muluneh | Star Shine Moon Glow
                     </p>
                   </div>
@@ -316,7 +321,6 @@ export default function ArtWorkingGroupPage() {
                   </div>
                 </div>
               </div>
-
 
 
               {/* Part 3 */}
@@ -465,6 +469,18 @@ export default function ArtWorkingGroupPage() {
                   </div>
                 </div>
               </div>
+              {/* Expected Outputs */}
+              <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg mt-8">
+                <h3 className="font-playfair text-xl font-bold text-river-blue mb-4">
+                  Expected Outputs
+                </h3>
+                <ul className="list-disc list-inside space-y-2 text-charcoal font-lora">
+                  <li>A defined concept for <span className="font-bold">GERD inauguration artistic/sporting elements</span>.</li>
+                  <li>A draft outline for the <span className="font-bold">Children of the Nile Festival 2026</span>.</li>
+                  <li>A ratified <span className="font-bold">Nile Ambassadors Pledge</span>.</li>
+                  <li>A list of <span className="font-bold">immediate next steps</span> and assigned leads.</li>
+                </ul>
+              </section>
             </div>
           </div>
         </section>

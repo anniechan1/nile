@@ -81,52 +81,11 @@ export default function AcademicWorkingGroupPage() {
       </section>
 
       <main className="container mx-auto px-4 py-16">
-        {/* Session Objectives */}
-        <section className="mb-16">
-          <div className="bg-gradient-to-br from-river-blue/5 to-warm-gold/10 rounded-3xl p-8 shadow-xl border border-warm-gold/20">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-deep-orange rounded-lg flex items-center justify-center">
-                <Target className="h-6 w-6 text-white" />
-              </div>
-              <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">Session Objectives</h2>
-            </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">
-                    To establish a formal "Nile Basin University & Research Network."
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">
-                    To identify and launch 3 flagship collaborative research projects for 2025-2026.
-                  </p>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">
-                    To draft a common academic message on the occasion of the GERD inauguration.
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">
-                    To plan for the first Annual Rectors' Roundtable and the Children of the Nile Academy.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Session Agenda */}
         <section className="mb-16">
           <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue mb-8 text-center">
-            Session Agenda
+            Agenda
           </h2>
 
           <div className="space-y-8">
@@ -505,46 +464,7 @@ export default function AcademicWorkingGroupPage() {
           </div>
         </section>
 
-        {/* Expected Deliverables */}
-        <section className="mb-16">
-          <div className="bg-gradient-to-br from-deep-orange/5 to-warm-gold/10 rounded-3xl p-8 shadow-xl border border-deep-orange/20">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-deep-orange rounded-lg flex items-center justify-center">
-                <FileText className="h-6 w-6 text-white" />
-              </div>
-              <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">Expected Deliverables</h2>
-            </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">
-                    A ratified Charter for the Nile Basin University & Research Network.
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">
-                    A shortlist of 3 flagship collaborative research projects to be initiated in 2025.
-                  </p>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">
-                    A drafted framework for academic mobility and digital learning.
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">The finalized Academic Message for the GERD Inauguration.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />

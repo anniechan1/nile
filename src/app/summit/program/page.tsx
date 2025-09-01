@@ -440,7 +440,6 @@ export default function SummitPage() {
                       </ul>
                     </div>
 
-
                     {/* Group 1: Universities & Research */}
                     <Link href="/summit/working-groups/academic" className="block">
                       <div className="bg-blue-50 hover:bg-blue-600 hover:text-white p-4 rounded-lg cursor-pointer transition-all duration-300 group">
@@ -449,27 +448,13 @@ export default function SummitPage() {
                         </p>
                         <div className="flex items-center space-x-3 mb-4">
                           <img
-                            src="/images/jimma_uni.png"
-                            alt="Jimma University"
-                            className="w-20 h-20 object-contain"
-                          />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Jimma University</span>
-                        </div>
-                        <div className="flex items-center space-x-3 mb-4">
-                          <img
                             src="/images/speakers/dr_jemal.jpeg"
                             alt="Dr. Jemal Abafita"
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Dr. Jemal Abafita (President)</span>
-                        </div>
-                        <div className="flex items-center space-x-3 mb-4">
-                          <img
-                            src="/images/speakers/mkm.webp"
-                            alt="Asst. Prof. Dr. Mitslal Kifleyesus-Matschie"
-                            className="w-20 h-20 object-cover rounded-full shadow-md"
-                          />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Asst. Prof. Dr. Mitslal Kifleyesus-Matschie</span>
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Chair:</strong> Dr. Jemal Abafita (President, Jimma University)
+                          </span>
                         </div>
                         <div className="flex items-center space-x-3">
                           <img
@@ -477,55 +462,66 @@ export default function SummitPage() {
                             alt="Prof. Mammo Muchie"
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Prof. Mammo Muchie</span>
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Co-Chair:</strong> Prof. Mammo Muchie
+                          </span>
                         </div>
                       </div>
                     </Link>
 
-
+                    {/* Group 2: Civil Society Organizations */}
                     <Link href="/summit/working-groups/civil-society" className="block">
                       <div className="bg-yellow-50 hover:bg-yellow-600 hover:text-white p-4 rounded-lg cursor-pointer transition-all duration-300 group">
                         <p className="font-bold text-gray-800 group-hover:text-white text-sm mb-2">
-                          Group 2: Civil Society & Policy Advocacy
+                          Group 2: Civil Society Organizations
                         </p>
                         <div className="flex items-center space-x-3 mb-4">
                           <img
-                            src="/images/speakers/Mengistu.jpeg"
-                            alt="Prof. Mengistu Ketema"
-                            className="w-20 h-20 object-cover rounded-full shadow-md"
-                          />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Prof. Mengistu Ketema</span>
-                        </div>
-                        <div className="flex items-center space-x-3 mb-4">
-                          <img
                             src="/images/speakers/Gezehen.jpeg"
-                            alt="Dr. Gezehen Kebede"
+                            alt="Dr. Gezahegn Kebede"
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Dr. Gezehen Kebede</span>
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Chair:</strong> Dr. Gezahegn Kebede
+                          </span>
                         </div>
                         <div className="flex items-center space-x-3">
                           {/* <img
-                            src="/images/speakers/Dr_Alemayehu.jpeg"
-                            alt="Dr. Alemayehu"
+                            src="/images/speakers/Endashaw.jpeg"
+                            alt="Endashaw Mogessie"
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           /> */}
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Dr. Alemayehu</span>
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Co-Chair:</strong> Endashaw Mogessie
+                          </span>
                         </div>
                       </div>
                     </Link>
+                    {/* Group 3: Art, Culture and Sport */}
                     <Link href="/summit/working-groups/art" className="block">
                       <div className="bg-orange-50 hover:bg-orange-600 hover:text-white p-4 rounded-lg cursor-pointer transition-all duration-300 group">
                         <p className="font-bold text-gray-800 group-hover:text-white text-sm mb-2">
                           Group 3: Art, Culture and Sport
                         </p>
-                        <div className="flex items-center space-x-3">
+                        <div className="flex items-center space-x-3 mb-4">
                           <img
                             src="/images/speakers/Hailu.jpg"
                             alt="Artist Desalegn Hailu Mazengiya"
-                            className="w-20 h-20 rounded-full object-cover"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Artist Desaalegn Hailu (Ethiopia) with 10 Nile Nations artists</span>
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Chair:</strong> Artist Desalegn Hailu Mazengiya
+                          </span>
+                        </div>
+                        <div className="flex items-center space-x-3">
+                          <img
+                            src="/images/speakers/Haile.jpg"
+                            alt="Haile Gebrselassie"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Co-Chair:</strong> Haile Gebrselassie
+                          </span>
                         </div>
                       </div>
                     </Link>
@@ -534,6 +530,7 @@ export default function SummitPage() {
 
 
 
+                    {/* Group 4: Youth & Technology */}
                     <Link href="/summit/working-groups/technology" className="block">
                       <div className="bg-orange-50 hover:bg-orange-600 hover:text-white p-4 rounded-lg cursor-pointer transition-all duration-300 group">
                         <p className="font-bold text-gray-800 group-hover:text-white text-sm mb-2">
@@ -542,21 +539,26 @@ export default function SummitPage() {
                         <div className="flex items-center space-x-3 mb-4">
                           <img
                             src="/images/speakers/Felix.jpeg"
-                            alt="Felix"
+                            alt="Felix Matschie"
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Felix Matschie, Ecopia Group</span>
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Chair:</strong> Felix Matschie
+                          </span>
                         </div>
                         <div className="flex items-center space-x-3">
                           <img
                             src="/images/speakers/Samuel.jpeg"
-                            alt="Samuel"
+                            alt="Samuel Bahiru"
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Samuel Bahiru, Ticker Tape</span>
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Co-Chair:</strong> Samuel Bahiru
+                          </span>
                         </div>
                       </div>
                     </Link>
+                    {/* Group 5: Digital Guardians of the Nile: AI, Ethics & Cybersecurity */}
                     <Link href="/summit/working-groups/entrepreneurs" className="block">
                       <div className="bg-blue-50 hover:bg-blue-600 hover:text-white p-4 rounded-lg cursor-pointer transition-all duration-300 group">
                         <p className="font-bold text-gray-800 group-hover:text-white text-sm mb-2">
@@ -568,23 +570,19 @@ export default function SummitPage() {
                             alt="Dr. Mitslal Kifleyesus-Matschie"
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Dr. Mitslal Kifleyesus-Matschie</span>
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Chair:</strong> Dr. Mitslal Kifleyesus-Matschie
+                          </span>
                         </div>
-                        <div className="flex items-center space-x-3 mb-4">
+                        <div className="flex items-center space-x-3">
                           <img
                             src="/images/speakers/Dr_Jenn.jpeg"
                             alt="Dr. Jennifer Batamuliza"
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Dr. Jennifer Batamuliza</span>
-                        </div>
-                        <div className="flex items-center space-x-3">
-                          <img
-                            src="/images/speakers/Lebogang.jpg"
-                            alt="Lebogang Mbana"
-                            className="w-20 h-20 object-cover rounded-full shadow-md"
-                          />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">Lebogang Mbana</span>
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Co-Chair:</strong> Dr. Jennifer Batamuliza
+                          </span>
                         </div>
                       </div>
                     </Link>
@@ -602,207 +600,7 @@ export default function SummitPage() {
         <section className="mb-20 md:mb-32">
 
 
-          {/* More free-flowing images around the program section */}
 
-
-
-          {/* Day 2 - Action & Resolution
-            <div className="mb-16 md:mb-20">
-              <div className="bg-gradient-to-br from-warm-gold/10 to-river-blue/5 rounded-3xl p-8 md:p-12 shadow-xl border border-river-blue/20">
-                <div className="flex items-center space-x-4 mb-8">
-                  <div className="w-12 h-12 bg-river-blue rounded-xl flex items-center justify-center shadow-xl">
-                    <span className="text-white font-bold text-lg">2</span>
-                  </div>
-                  <div>
-                    <h3 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">
-                      Day 2: Action & Resolution
-                    </h3>
-                    <p className="text-charcoal font-lora">7 September 2025</p>
-                  </div>
-                </div>
-
-                <div className="space-y-8">
-                  {/* PLENARY 2: Stories of Collaboration *
-                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                    <div className="flex items-center space-x-4">
-                      <img
-                        src="/images/young_afri1.webp"
-                        alt="Young African leaders collaborating"
-                        className="w-80 h-48 object-cover rounded-xl shadow-md"
-                      />
-                      <div>
-                        <div className="flex items-center justify-between mb-4">
-                          <h4 className="font-playfair text-xl font-bold text-river-blue">
-                            PLENARY 2: Stories of Collaboration
-                          </h4>
-                          <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">
-                            09:00 - 10:30
-                          </span>
-                        </div>
-                        <ul className="space-y-2 text-sm font-lora text-charcoal">
-                          <li>
-                            • Showcase successful cross-border projects in the Nile Basin (e.g., a research partnership,
-                            a joint art exhibition, a youth tech exchange).
-                          </li>
-                          <li>• Short, inspiring talks from project leaders.</li>
-                          <li>• Focus: "What works and how can we scale it?"</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Virtual Networking Break 
-                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                    <div className="text-center">
-                      <h4 className="font-playfair text-xl font-bold text-river-blue">Virtual Networking Break</h4>
-                      <div className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full mt-2">
-                        10:30 - 11:00
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Working Groups II
-                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <h4 className="font-playfair text-xl font-bold text-river-blue">
-                          WORKING GROUP SESSIONS II (Parallel Breakouts)
-                        </h4>
-                        <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">
-                          11:00 - 13:00
-                        </span>
-                        <p className="text-sm text-charcoal font-lora mt-4">
-                          Each group reconvenes to finalize their outputs.
-                        </p>
-                        <div className="mt-4">
-                          <p className="font-bold text-sm text-charcoal mb-2">Key Tasks for each group:</p>
-                          <ul className="space-y-2 text-sm font-lora text-charcoal">
-                            <li>• Finalize your Group Summary Report (2-3 pages).</li>
-                            <li>• Draft your Message for the GERD Inauguration.</li>
-                            <li>
-                              • Plan and announce 1-2 concrete activities to be completed before the first symposium in
-                              Ethiopia in 2026 (e.g., "Launch a joint research paper," "Organize a virtual art
-                              exchange," "Start a mentorship program for entrepreneurs").
-                            </li>
-                            <li>• Begin drafting your section of the final resolution.</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <img
-                        src="/images/presenting1.webp"
-                        alt="Students presenting innovative ideas"
-                        className="w-82 h-52 object-cover rounded-xl shadow-md"
-                      />
-                    </div>
-                  </div>
-                  {/* Lunch Break 
-                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg flex justify-center items-center">
-                    <div className="text-center">
-                      <h4 className="font-playfair text-xl font-bold text-river-blue">LUNCH</h4>
-                      <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">
-                        13:00 - 14:00
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Final Plenary 
-                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                    <div className="flex items-center justify-between mb-4">
-                      <h4 className="font-playfair text-xl font-bold text-river-blue">
-                        FINAL PLENARY: Resolution for the Future
-                      </h4>
-                      <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">
-                        14:00 - 16:00
-                      </span>
-                    </div>
-                    <div className="grid md:grid-cols-3 gap-4">
-                      <div>
-                        <h5 className="font-bold text-deep-orange text-sm mb-2">
-                          Part 1: Presentation of Working Group Outcomes (60 mins)
-                        </h5>
-                        <p className="text-xs text-charcoal mb-2">Each Working Group Lead presents:</p>
-                        <ul className="text-xs text-charcoal space-y-1">
-                          <li>• Their announced activities for 2025-2026.</li>
-                          <li>• Their GERD Inauguration Message.</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h5 className="font-bold text-deep-orange text-sm mb-2">
-                          Part 2: Adoption of the Resolution (45 mins)
-                        </h5>
-                        <ul className="text-xs text-charcoal space-y-1">
-                          <li>• The draft resolution, compiled from all group reports, is presented.</li>
-                          <li>• Open floor for final comments and amendments.</li>
-                          <li>• Symbolic adoption of the resolution by acclamation.</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h5 className="font-bold text-deep-orange text-sm mb-2">
-                          Part 3: The Way Forward & Official Closing (15 mins)
-                        </h5>
-                        <ul className="text-xs text-charcoal space-y-1">
-                          <li>
-                            • Announcement: Save the Date for the First Children of the Nile Symposium in Ethiopia,
-                            2026.
-                          </li>
-                          <li>• Closing by the Central Organizing Committee.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        //   {/* Expected Outputs 
-        //   </div>
-        //   <div className="bg-gradient-to-br from-deep-orange/5 to-warm-gold/10 rounded-3xl p-8 md:p-12 shadow-xl border border-deep-orange/20">
-        //     <h3 className="font-playfair text-2xl font-bold text-river-blue mb-6 text-center">
-        //       Expected Outputs & Deliverables
-        //     </h3>
-        //     <p className="text-center text-charcoal font-lora mb-8">
-        //       By the end of the meeting, the following will be produced and compiled into a final report to be shared
-        //       with the governments of the 11 Nile Basin countries:
-        //     </p>
-        //     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        //       <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg text-center">
-        //         <div className="w-10 h-10 bg-river-blue rounded-lg flex items-center justify-center mx-auto mb-3">
-        //           <span className="text-white font-bold text-sm">📋</span>
-        //         </div>
-        //         <h4 className="font-bold text-river-blue text-sm mb-2">A Comprehensive Resolution</h4>
-        //         <p className="text-xs text-charcoal">
-        //           A unified document outlining the shared vision, principles, and calls to action for Nile Basin
-        //           cooperation.
-        //         </p>
-        //       </div>
-        //       <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg text-center">
-        //         <div className="w-10 h-10 bg-deep-orange rounded-lg flex items-center justify-center mx-auto mb-3">
-        //           <span className="text-white font-bold text-sm">5</span>
-        //         </div>
-        //         <h4 className="font-bold text-deep-orange text-sm mb-2">Five Working Group Summary Reports</h4>
-        //         <p className="text-xs text-charcoal">
-        //           Detailed reports from each sector (Academia, Art, Civil Society, Enterprise, Youth/Tech).
-        //         </p>
-        //       </div>
-        //       <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg text-center">
-        //         <div className="w-10 h-10 bg-warm-gold rounded-lg flex items-center justify-center mx-auto mb-3">
-        //           <span className="text-white font-bold text-sm">📅</span>
-        //         </div>
-        //         <h4 className="font-bold text-charcoal text-sm mb-2">A Plan of Action for 2025-2026</h4>
-        //         <p className="text-xs text-charcoal">
-        //           A list of announced concrete projects and activities from each working group.
-        //         </p>
-        //       </div>
-        //       <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg text-center">
-        //         <div className="w-10 h-10 bg-river-blue rounded-lg flex items-center justify-center mx-auto mb-3">
-        //           <span className="text-white font-bold text-sm">💬</span>
-        //         </div>
-        //         <h4 className="font-bold text-river-blue text-sm mb-2">Messages for the GERD Inauguration</h4>
-        //         <p className="text-xs text-charcoal">
-        //           Unified statements from each sector celebrating the dam as a catalyst for regional cooperation.
-        //         </p>
-        //       </div>
-        //     </div>*/}
 
         </section>
 

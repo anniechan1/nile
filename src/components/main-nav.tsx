@@ -90,10 +90,10 @@ export default function MainNav() {
                       Program
                     </Link>
                     <Link
-                      href="/summit/speakers-delegates"
+                      href="/summit/presidential-interview"
                       className="block w-full py-2 px-4 hover:bg-amber-700 text-left"
                     >
-                      Speakers & Delegates
+                      Presidential Interview
                     </Link>
                   </div>
                 </div>
@@ -234,11 +234,11 @@ export default function MainNav() {
                     Program
                   </Link>
                   <Link
-                    href="/summit/speakers-delegates"
+                    href="/summit/presidential-interview"
                     className="block py-2 px-2 text-white hover:bg-amber-800 rounded"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Speakers & Delegates
+                    Presidential Interview
                   </Link>
                 </div>
               )}

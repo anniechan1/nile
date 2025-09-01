@@ -81,40 +81,7 @@ export default function EntrepreneursWorkingGroupPage() {
           </div>
         </div>
 
-        {/* Part 1: Session Objectives */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Objectives</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">
-                  Establish a <span className="font-bold">Nile Basin AI & Digital Innovation Consortium</span> for collaboration on shared challenges.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">
-                  Draft a <span className="font-bold">Charter for the Ethical Use of AI and Data</span>, tailored to the Basin's peace and development priorities.
-                </span>
-              </li>
-            </ul>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">
-                  Identify key <span className="font-bold">cybersecurity threats</span> to transboundary water & energy systems and propose joint resilience measures.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">
-                  Formulate a <span className="font-bold">forward-looking technology message</span> for the GERD inauguration.
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
+
 
         {/* Part 2: Agenda */}
         <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
@@ -449,40 +416,8 @@ export default function EntrepreneursWorkingGroupPage() {
 
 
 
-        {/* Expected Deliverables */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
-          <h2 className="text-xl font-bold text-gray-900 mb-6">Expected Deliverables</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">
-                  Ratified <span className="font-bold">Charter for Ethical Use of AI & Data</span> in the Nile Basin
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">
-                  Drafted <span className="font-bold">Action Plan for Cybersecurity Cooperation & Peacebuilding</span>
-                </span>
-              </li>
-            </ul>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">
-                  Proposal for <span className="font-bold">Nile Basin AI & Digital Innovation Consortium</span>
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">
-                  Finalized <span className="font-bold">GERD Inauguration Technology Message</span>
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
+
+
       </div>
     </div>
   )

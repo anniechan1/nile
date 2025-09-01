@@ -53,57 +53,36 @@ export default function ArtWorkingGroupPage() {
                   <img
                     src="/images/speakers/Hailu.jpg"
                     alt="Artist Desalegn Hailu Mazengiya"
-                    className="w-20 h-20 rounded-full object-cover"
+                    className="w-24 h-24 rounded-full object-cover"
                   />
                   <div>
-                    <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Overall Chair</h3>
+                    <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Chair</h3>
                     <p className="text-sm text-charcoal font-bold">Artist Desalegn Hailu Mazengiya (Ethiopia)</p>
-                    <p className="text-sm text-charcoal">Cultural Stream</p>
+                    <p className="text-sm text-charcoal">Initiator of the Children of the Nile Initiative</p>
                   </div>
                 </div>
 
 
 
-                {/* Co-Chairs & Liaison Section */}
-                <div className="flex flex-col space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <img
-                      src="/images/speakers/dr_tsegaye.jpeg"
-                      alt="Tsegaye Degineh"
-                      className="w-20 h-20 rounded-full object-cover"
-                    />
-                    <div>
-                      <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Co-Chairs & Facilitation</h3>
-                      <p className="text-sm text-charcoal font-bold">Tsegaye Degineh (Ethiopia/Germany)</p>
-                      <p className="text-sm text-charcoal">Digital Strategist & Summit Facilitator</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center space-x-4">
-                    <img
-                      src="/images/speakers/mkm.webp"
-                      alt="Dr. Mitslal Kifleyesus-Matschie"
-                      className="w-20 h-20 rounded-full object-cover"
-                    />
-                    <div>
-                      <p className="text-sm text-charcoal font-bold">Dr. Mitslal Kifleyesus-Matschie (Ethiopia/Germany)</p>
-                      <p className="text-sm text-charcoal">Expert in Dual-Use Technologies & AI Ethics; <br />Founder, Ecopia Value Chain</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center space-x-4">
-                    <img
-                      src="/images/speakers/mika.jpeg"
-                      alt="Mika Chavala"
-                      className="w-20 h-20 rounded-full object-cover"
-                    />
-                    <div>
-                      <p className="text-sm text-charcoal font-bold">Mika Chavala (Tanzania)</p>
-                      <p className="text-sm text-charcoal">Founder, Swahili Nation One Africa Foundation; <br />Digital Content Creator & Pan-African Advocate</p>
-                    </div>
+                {/* Co-Chair */}
+                <div className="flex items-center space-x-4">
+                  <img
+                    src="/images/speakers/Haile.jpg"
+                    alt="Haile Gebrselassie"
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Co-Chair</h3>
+                    <p className="text-sm text-charcoal font-bold">
+                      Haile Gebrselassie (Ethiopia)
+                    </p>
+                    <p className="text-sm text-charcoal">
+                      Olympic Legend, World Marathon Champion, and Business Leader
+                    </p>
                   </div>
                 </div>
               </div>
+
 
 
 
@@ -119,47 +98,6 @@ export default function ArtWorkingGroupPage() {
 
 
 
-        {/* Session Objectives */}
-        <section className="mb-16">
-          <div className="bg-gradient-to-br from-river-blue/5 to-warm-gold/10 rounded-3xl p-8 shadow-xl border border-warm-gold/20">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-deep-orange rounded-lg flex items-center justify-center">
-                <Target className="h-6 w-6 text-white" />
-              </div>
-              <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">Objectives</h2>
-            </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">
-                    Brainstorm concrete, symbolic elements for the GERD inauguration that integrate art and sport.
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">
-                    Outline the core concept and key components of the "Children of the Nile Festival 2026".
-                  </p>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">
-                    Draft a pledge for a "Nile Ambassadors" network of artists and athletes.
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">
-                    Identify 3-5 immediate next steps to launch these initiatives.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
 
 
@@ -180,157 +118,216 @@ export default function ArtWorkingGroupPage() {
                   <h3 className="font-playfair text-xl font-bold text-river-blue">
                     Part 1: Opening & Framing the Session
                   </h3>
-                  <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">20 minutes</span>
                 </div>
 
                 <div className="space-y-6">
-                  {/* Welcome & Context */}
-                  <div className="flex items-start space-x-4">
+                  {/* Foundational Keynote */}
+                  <div className="flex items-start space-x-4 border-l-4 border-deep-orange pl-4">
                     <img
                       src="/images/speakers/Hailu.jpg"
                       alt="Artist Desalegn Hailu"
                       className="w-20 h-20 rounded-full object-cover"
                     />
                     <div>
-                      <p className="font-bold text-charcoal">Welcome & Context: The Role of Culture & Sport in Basin Unity</p>
-                      <p className="text-sm text-charcoal">Artist Desalegn Hailu & Sport Co-Chair (TBC)</p>
+                      <h4 className="font-bold text-charcoal mb-2">
+                        Foundational Keynote: "The Unifying Power of Art, Culture, and Sport" (15 mins)
+                      </h4>
+                      <p className="text-sm text-charcoal">
+                        <strong>Artist Desalegn Hailu</strong> (Ethiopia), Chair & Initiator
+                      </p>
                     </div>
                   </div>
 
-                  {/* Strategic Vision */}
-                  <div className="flex items-start space-x-4">
+                  {/* Voices of the Nile */}
+                  <div className="flex items-start space-x-4 border-l-4 border-river-blue pl-4">
+                    <div>
+                      <h4 className="font-bold text-charcoal mb-2">
+                        Voices of the Nile: A Roll Call for Unity (12 mins)
+                      </h4>
+                      <p className="text-sm text-charcoal">
+                        <strong>Moderated by:</strong> Haile Gebrselassie, Co-Chair
+                      </p>
+                      <ul className="list-disc list-inside text-sm text-charcoal mt-2">
+                        <li className="flex items-start space-x-4">
+                          <img
+                            src="/images/speakers/Haile.jpg"
+                            alt="Haile Gebrselassie"
+                            className="w-16 h-16 rounded-full object-cover"
+                          />
+                          <p>
+                            <strong>For Ethiopia:</strong> Haile Gebrselassie – Olympic Legend
+                          </p>
+                        </li>
+                        <li className="flex items-start space-x-4">
+                          <img
+                            src="/images/speakers/ahmed_abou.jpg"
+                            alt="Eng. Ahmed Abou Elgasim Hashim"
+                            className="w-16 h-16 rounded-full object-cover"
+                          />
+                          <p>
+                            <strong>For Sudan / The African Continent:</strong> Eng. Ahmed Abou Elgasim Hashim (ANOCA)
+                          </p>
+                        </li>
+                        <li className="flex items-start space-x-4">
+                          <img
+                            src="/images/speakers/Shadrack.jpeg"
+                            alt="Mr. Shadrack Maluki"
+                            className="w-16 h-16 rounded-full object-cover"
+                          />
+                          <p>
+                            <strong>For Kenya:</strong> Mr. Shadrack Maluki – President, Kenya National Olympics Committee
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  {/* Academic & Cultural Framework */}
+                  <div className="flex items-start space-x-4 border-l-4 border-warm-gold pl-4">
                     <img
-                      src="/images/speakers/mkm.webp"
-                      alt="Dr. Mitslal Kifleyesus-Matschie"
+                      src="/images/speakers/Deepti.png"
+                      alt="Deepti Kataria"
                       className="w-20 h-20 rounded-full object-cover"
                     />
                     <div>
-                      <p className="font-bold text-charcoal">Strategic Vision: "Intertwining Technology, Culture, and Peace"</p>
-                      <p className="text-sm text-charcoal">Dr. Mitslal Kifleyesus-Matschie (Ethiopia/Germany)</p>
+                      <h4 className="font-bold text-charcoal mb-2">
+                        Academic & Cultural Framework: "Fostering Unity Through Cultural Dialogue and Education" (3 mins)
+                      </h4>
+                      <p className="text-sm text-charcoal">
+                        <strong>Deepti Kataria</strong> (Egypt/India), General Secretary, Africa Study Centre
+                      </p>
                     </div>
                   </div>
+                </div>
+              </div>
 
-                  {/* Keynote Inspiration */}
-                  <div className="flex items-start space-x-4">
-                    <img
-                      src="/images/speakers/mika.jpeg"
-                      alt="Mika Chavala"
-                      className="w-20 h-20 rounded-full object-cover"
-                    />
-                    <div>
-                      <p className="font-bold text-charcoal">Keynote Inspiration: "Digital Storytelling for Continental Unity"</p>
-                      <p className="text-sm text-charcoal">Mika Chavala (Tanzania), Founder, Swahili Nation YouTube Channel & One Africa Foundation</p>
-                      <div className="bg-warm-gold/10 p-4 rounded-lg mt-2">
-                        <p className="text-sm text-charcoal italic">
-                          Mika Chavala is a strategic leader and founder of the Swahili Nation One Africa Foundation and Kairos Mega Investment. His YouTube channel, "Swahili Nation," boasts over 487,000 subscribers and is dedicated to preserving African heritage and fostering pan-African unity through knowledge sharing. An honorary citizen of Seoul and appointed Africa Insight ambassador, he is a visionary committed to youth development and transformative projects across the continent.
-                        </p>
-                      </div>
-                    </div>
+              {/* Part 2 */}
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="font-playfair text-xl font-bold text-river-blue">
+                    Part 2: Session Goals & Process Overview
+                  </h3>
+                  <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">5 minutes</span>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <img
+                    src="/images/speakers/mika.jpeg"
+                    alt="Mika Chavala"
+                    className="w-20 h-20 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="text-charcoal mb-2">
+                      <span className="font-bold">Mika Chavala</span> (Tanzania), Founder, Swahili Nation One Africa Foundation
+                    </p>
                   </div>
+                </div>
+              </div>
+              {/* Part 3 */}
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="font-playfair text-xl font-bold text-river-blue">
+                    Part 3: Lightning Round - Big Ideas for Action
+                  </h3>
+                  <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">40 minutes</span>
+                </div>
 
-                  {/* Session Goals & Process Overview */}
-                  <div className="flex items-start space-x-4">
+                <p className="text-sm text-charcoal font-lora mb-4">Moderated by Deepti Kataria</p>
+
+                <div className="space-y-6">
+                  {/* Special Presentation */}
+                  <div className="flex items-start space-x-4 border-l-4 border-deep-orange pl-4">
                     <img
                       src="/images/speakers/dr_tsegaye.jpeg"
                       alt="Tsegaye Degineh"
                       className="w-20 h-20 rounded-full object-cover"
                     />
                     <div>
-                      <p className="font-bold text-charcoal">Session Goals & Process Overview</p>
-                      <p className="text-sm text-charcoal">Tsegaye Degineh (Ethiopia/Germany), Digital Strategist & Facilitator</p>
-                      <div className="bg-deep-orange/10 p-4 rounded-lg mt-2">
-                        <p className="text-sm text-charcoal italic">
-                          Tsegaye Degineh is an Ethiopian-German digital strategist, software developer, and author. A pioneer in the German tech scene, he is known for his work on digital transformation and fostering dialogue between Africa and Europe. He brings expertise in leveraging digital tools for cultural storytelling and strategic facilitation.
-                        </p>
-                      </div>
+                      <h4 className="font-bold text-charcoal mb-2">
+                        Special Presentation: "Digital Tools for Cultural Collaboration"
+                      </h4>
+                      <p className="text-sm text-charcoal">
+                        Pre-shared presentation by <strong>Tsegaye Degineh</strong>
+                      </p>
                     </div>
                   </div>
-                </div>
-              </div>
 
-
-              {/* Part 2 */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-playfair text-xl font-bold text-river-blue">
-                    Part 2: Lightning Round - Big Ideas for Action
-                  </h3>
-                  <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">40 minutes</span>
-                </div>
-
-                <p className="text-sm text-charcoal font-lora mb-4">Moderated by Tsegaye Degineh</p>
-
-                {/* Text and Sun Boat Image Side-by-Side */}
-                <div className="flex flex-col md:flex-row md:items-start md:space-x-6">
-                  {/* Left Text */}
-                  <div className="space-y-4 flex-1">
-                    <div className="border-l-4 border-deep-orange pl-4">
-                      <p className="font-bold text-charcoal">The GERD Ceremony (Art): "A Light and Sound Spectacle for Unity"</p>
-                      <p className="text-sm text-charcoal">Aida Muluneh (Ethiopia), Photographer</p>
-                    </div>
-                    <div className="border-l-4 border-river-blue pl-4">
-                      <p className="font-bold text-charcoal">The GERD Ceremony (Sport): "A Unity Relay to the Dam"</p>
-                      <p className="text-sm text-charcoal">Representative from Athletics (TBC)</p>
-                    </div>
-                    <div className="border-l-4 border-warm-gold pl-4">
-                      <p className="font-bold text-charcoal">The 2026 Festival (Culture): "A Nile Basin Digital Museum"</p>
-                      <p className="text-sm text-charcoal">Mika Chavala (Tanzania)</p>
-                    </div>
-                    <div className="border-l-4 border-deep-orange pl-4">
-                      <p className="font-bold text-charcoal">The 2026 Festival (Sport): "The First Nile Basin Unity Football Cup"</p>
-                      <p className="text-sm text-charcoal">Sport Co-Chair (TBC)</p>
-                    </div>
-                    <div className="border-l-4 border-river-blue pl-4">
-                      <p className="font-bold text-charcoal">The Ambassador Program: "Using Our Platforms for Peace"</p>
-                      <p className="text-sm text-charcoal">Emi Mahmoud (Sudan), Poet & Activist</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Puzzle Layout for Remaining Images */}
-                <div className="grid grid-cols-3 gap-4 mt-6">
-                  {/* Aida Images */}
-                  <div className="col-span-3 md:col-span-2 flex flex-col items-center space-y-4">
-                    <div className="flex items-center space-x-4">
-                      <img
-                        src="/images/speakers/Aida.png"
-                        alt="Aida Muluneh"
-                        className="w-52 h-60 object-cover rounded-lg shadow-md"
-                      />
-                      <img
-                        src="/images/aida_art.jpg"
-                        alt="Aida Muluneh artwork"
-                        className="w-full h-64 object-contain rounded-lg"
-                      />
-                    </div>
-                    <p className="text-sm font-medium text-charcoal text-center">
-                      Aida Muluneh | Star Shine Moon Glow
-                    </p>
-                  </div>
-
-                  {/* Portrait Image (Emi Mahmoud) */}
-                  <div className="col-span-3 md:col-span-1">
+                  {/* The 2026 Festival (Culture) */}
+                  <div className="flex items-start space-x-4 border-l-4 border-river-blue pl-4">
                     <img
-                      src="/images/emi.webp"
-                      alt="Emtithal Mahmoud"
-                      className="w-full h-64 object-contain rounded-lg"
+                      src="/images/speakers/mika.jpeg"
+                      alt="Mika Chavala"
+                      className="w-20 h-20 rounded-full object-cover"
                     />
-                    <p className="text-sm font-medium text-charcoal text-center mt-2">
-                      Emtithal Mahmoud, Sudanese poet
-                    </p>
+                    <div>
+                      <h4 className="font-bold text-charcoal mb-2">
+                        The 2026 Festival (Culture): "A Nile Basin Digital Museum & Content Strategy"
+                      </h4>
+                      <p className="text-sm text-charcoal">
+                        <strong>Mika Chavala</strong> (Tanzania)
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* The 2026 Festival (Sport) */}
+                  <div className="flex items-start space-x-4 border-l-4 border-warm-gold pl-4">
+                    <img
+                      src="/images/speakers/Shadrack.jpeg"
+                      alt="Mr. Shadrack Maluki"
+                      className="w-20 h-20 rounded-full object-cover"
+                    />
+                    <div>
+                      <h4 className="font-bold text-charcoal mb-2">
+                        The 2026 Festival (Sport): "The Framework for a Nile Basin Unity Football Cup"
+                      </h4>
+                      <p className="text-sm text-charcoal">
+                        <strong>Mr. Shadrack Maluki</strong> (Kenya)
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* The Role of Continental Bodies */}
+                  <div className="flex items-start space-x-4 border-l-4 border-deep-orange pl-4">
+                    <img
+                      src="/images/speakers/ahmed_abou.jpg"
+                      alt="Eng. Ahmed Abou Elgasim Hashim"
+                      className="w-20 h-20 rounded-full object-cover"
+                    />
+                    <div>
+                      <h4 className="font-bold text-charcoal mb-2">
+                        The Role of Continental Bodies: "ANOCA's Support for Sport for Peace Initiatives"
+                      </h4>
+                      <p className="text-sm text-charcoal">
+                        <strong>Eng. Ahmed Abou Elgasim Hashim</strong> (ANOCA)
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* The Ambassador Program */}
+                  <div className="flex items-start space-x-4 border-l-4 border-river-blue pl-4">
+                    <img
+                      src="/images/speakers/emi.png"
+                      alt="Emi Mahmoud"
+                      className="w-20 h-20 rounded-full object-cover"
+                    />
+                    <div>
+                      <h4 className="font-bold text-charcoal mb-2">
+                        The Ambassador Program: "Using Our Platforms for Peace"
+                      </h4>
+                      <p className="text-sm text-charcoal">
+                        <strong>Emi Mahmoud</strong> (Sudan), Poet & Activist
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-
-
-              {/* Part 3 */}
+              {/* Part 4 */}
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 <div className="flex flex-col md:flex-row items-start md:space-x-6">
                   {/* Left Content */}
                   <div className="space-y-6 flex-1">
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="font-playfair text-xl font-bold text-river-blue">
-                        Part 3: Breakout Groups - From Ideas to Blueprints
+                        Part 4: Breakout Groups - From Ideas to Blueprints
                       </h3>
                       <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">45 minutes</span>
                     </div>
@@ -346,11 +343,16 @@ export default function ArtWorkingGroupPage() {
                           alt="Aida Muluneh"
                           className="w-16 h-16 rounded-full object-cover"
                         />
+                        <img
+                          src="/images/speakers/Haile.jpg"
+                          alt="Haile"
+                          className="w-16 h-16 rounded-full object-cover"
+                        />
 
                       </div>
                       <div className="flex-1">
                         <p className="font-bold text-charcoal">GERD Inauguration Symbolism: Designing the key artistic and sporting moments.</p>
-                        <p className="text-sm text-charcoal">Lead: Aida Muluneh & Sport Representative</p>
+                        <p className="text-sm text-charcoal">Lead: Aida Muluneh & Haile Gebrselassie</p>
                       </div>
                     </div>
 
@@ -363,14 +365,14 @@ export default function ArtWorkingGroupPage() {
                           className="w-16 h-16 rounded-full object-cover"
                         />
                         <img
-                          src="/images/speakers/mkm.webp"
-                          alt="Dr. Mitslal Kifleyesus-Matschie"
+                          src="/images/speakers/ahmed_abou.jpg"
+                          alt="Ahmed Abou Elgasim Hashim"
                           className="w-16 h-16 rounded-full object-cover"
                         />
                       </div>
                       <div className="flex-1">
                         <p className="font-bold text-charcoal">Children of the Nile Festival 2026: Outlining the event structure (marathon, football, exhibitions, digital content).</p>
-                        <p className="text-sm text-charcoal">Lead: Mika Chavala & Dr. Mitslal Kifleyesus-Matschie</p>
+                        <p className="text-sm text-charcoal">Lead: Mika Chavala & Eng. Ahmed Abou Elgasim Hashim</p>
                       </div>
                     </div>
 
@@ -382,15 +384,15 @@ export default function ArtWorkingGroupPage() {
                           alt="Emi Mahmoud"
                           className="w-16 h-16 rounded-full object-cover"
                         />
-                        <img
+                        {/* <img
                           src="/images/speakers/dr_tsegaye.jpeg"
                           alt="Tsegaye Degineh"
                           className="w-16 h-16 rounded-full object-cover"
-                        />
+                        /> */}
                       </div>
                       <div className="flex-1">
                         <p className="font-bold text-charcoal">Nile Ambassadors Pledge: Drafting the core mission statement and first actions for the network.</p>
-                        <p className="text-sm text-charcoal">Lead: Emi Mahmoud & Tsegaye Degineh</p>
+                        <p className="text-sm text-charcoal">Lead: Emi Mahmoud & ASC Representative</p>
                       </div>
                     </div>
                   </div>
@@ -404,11 +406,11 @@ export default function ArtWorkingGroupPage() {
                 </div>
               </div>
 
-              {/* Part 4 */}
+              {/* Part 5 */}
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="font-playfair text-xl font-bold text-river-blue">
-                    Part 4: Reporting Back & Adoption
+                    Part 5: Reporting Back & Adoption
                   </h3>
                   <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">30 minutes</span>
                 </div>
@@ -438,49 +440,80 @@ export default function ArtWorkingGroupPage() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="font-playfair text-xl font-bold text-river-blue">
-                    Part 5: Closing & Next Steps
+                    Part 5: Reporting Back & Adoption
                   </h3>
-                  <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">15 minutes</span>
+                  <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">30 minutes</span>
                 </div>
                 <div className="space-y-4">
+                  {/* Rapporteur Session */}
                   <div className="flex items-start space-x-3">
                     <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
                     <p className="text-charcoal font-lora">
-                      Reading of the <span className="font-bold">Adopted Pledge</span>.
+                      <strong>Rapporteur Session:</strong> Key blueprint points from each group presented by the <strong>Africa Study Centre Representative</strong>.
                     </p>
                   </div>
+
+                  {/* Adoption of the Nile Ambassadors Pledge */}
                   <div className="flex items-start space-x-3">
                     <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
                     <p className="text-charcoal font-lora">
-                      Announcement of the <span className="font-bold">Interim Steering Committee</span>.
+                      Collective refinement and <strong>adoption of the Nile Ambassadors Pledge</strong>.
                     </p>
                   </div>
+
+                  {/* Unified Action Plan */}
                   <div className="flex items-start space-x-3">
                     <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
                     <p className="text-charcoal font-lora">
-                      <span className="font-bold">Symbolic Handover:</span> An artist passes a digital sketchpad to an athlete, symbolizing the collaborative journey ahead.
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                    <p className="text-charcoal font-lora">
-                      Final United Closing Remarks: Dr. Mitslal Kifleyesus-Matschie & Artist Desalegn Hailu.
+                      Consolidation of ideas into a <strong>Unified Action Plan</strong>.
                     </p>
                   </div>
                 </div>
               </div>
-              {/* Expected Outputs */}
-              <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg mt-8">
-                <h3 className="font-playfair text-xl font-bold text-river-blue mb-4">
-                  Expected Outputs
-                </h3>
-                <ul className="list-disc list-inside space-y-2 text-charcoal font-lora">
-                  <li>A defined concept for <span className="font-bold">GERD inauguration artistic/sporting elements</span>.</li>
-                  <li>A draft outline for the <span className="font-bold">Children of the Nile Festival 2026</span>.</li>
-                  <li>A ratified <span className="font-bold">Nile Ambassadors Pledge</span>.</li>
-                  <li>A list of <span className="font-bold">immediate next steps</span> and assigned leads.</li>
-                </ul>
-              </section>
+
+
+              {/* Part 6 */}
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="font-playfair text-xl font-bold text-river-blue">
+                    Part 6: Closing & Next Steps
+                  </h3>
+                  <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">15 minutes</span>
+                </div>
+                <div className="space-y-4">
+                  {/* Reading of the Adopted Pledge */}
+                  <div className="flex items-start space-x-3">
+                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                    <p className="text-charcoal font-lora">
+                      Reading of the <strong>Adopted Pledge</strong>.
+                    </p>
+                  </div>
+
+                  {/* Announcement of the Interim Steering Committee */}
+                  <div className="flex items-start space-x-3">
+                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                    <p className="text-charcoal font-lora">
+                      Announcement of the <strong>Interim Steering Committee</strong> (including Desalegn Hailu as Honorary Chair).
+                    </p>
+                  </div>
+
+                  {/* Final United Closing Remarks */}
+                  <div className="flex items-start space-x-3">
+                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                    <p className="text-charcoal font-lora">
+                      Final United Closing Remarks: <strong>Artist Desalegn Hailu</strong> & <strong>Haile Gebrselassie</strong>.
+                    </p>
+                  </div>
+
+                  {/* Official Handover to Rapporteur */}
+                  <div className="flex items-start space-x-3">
+                    <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
+                    <p className="text-charcoal font-lora">
+                      Official Handover to Rapporteur: The session outputs are formally handed over to the <strong>Africa Study Centre</strong> for synthesis and the creation of a formal summary report.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

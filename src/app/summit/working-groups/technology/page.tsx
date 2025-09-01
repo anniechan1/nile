@@ -86,39 +86,6 @@ export default function TechnologyWorkingGroupPage() {
       </section>
 
       <main className="container mx-auto px-4 py-16">
-        {/* Session Objectives */}
-        <section className="mb-16">
-          <div className="bg-gradient-to-br from-river-blue/5 to-warm-gold/10 rounded-3xl p-8 shadow-xl border border-warm-gold/20">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-deep-orange rounded-lg flex items-center justify-center">
-                <Target className="h-6 w-6 text-white" />
-              </div>
-              <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">Objectives</h2>
-            </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">To build a formal <span className="font-bold">Nile Youth & Technology Network</span>.</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">To launch a <span className="font-bold">digital collaboration platform</span> for innovators across the basin.</p>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">To promote and connect <span className="font-bold">youth-led startups</span> across the 11 countries.</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="w-2 h-2 bg-deep-orange rounded-full mt-2 flex-shrink-0"></span>
-                  <p className="text-charcoal font-lora">To draft a common <span className="font-bold">Youth & Tech message</span> for the GERD inauguration.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Session Agenda */}
         <section className="mb-16">
@@ -456,24 +423,7 @@ export default function TechnologyWorkingGroupPage() {
               </div>
 
             </div>
-            {/* Expected Deliverables */}
-            <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg mt-8">
-              <h3 className="font-playfair text-xl font-bold text-river-blue mb-4">Expected Deliverables</h3>
-              <ul className="list-disc list-inside space-y-2 text-charcoal text-sm">
-                <li>
-                  A ratified <span className="font-bold">action plan</span> for the Nile Youth & Technology Network.
-                </li>
-                <li>
-                  A drafted <span className="font-bold">framework</span> for the Nile Digital Academy and Youth Tech Startup Network.
-                </li>
-                <li>
-                  A launch plan for the <span className="font-bold">#ChildrenOfTheNile</span> digital storytelling campaign.
-                </li>
-                <li>
-                  The finalized <span className="font-bold">Youth & Tech Message for the GERD Inauguration</span>.
-                </li>
-              </ul>
-            </section>
+
           </div>
         </section>
       </main>

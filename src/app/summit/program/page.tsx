@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import MainNav from "@/components/main-nav"
 import { Button } from "@/components/ui/button"
-import { Calendar, MapPin, Award, Handshake, ArrowRight, Users, Globe } from "lucide-react"
+import { Calendar, MapPin, Award, Handshake, ArrowRight, Users, Globe, Clock } from "lucide-react"
 import Footer from "@/components/footer"
 import Link from "next/link"
 
@@ -56,6 +56,9 @@ export default function SummitPage() {
             A prestigious gathering celebrating the Nile's cultural and intellectual heritage through artistic
             expression, academic discourse, and sustainable innovation.
           </p>
+
+
+
 
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSe1LBQ7nSDlQsDUeGyE-DFuVsB0gnm2A8Rt3jvBy5j22wer3g/viewform?usp=header"
@@ -111,6 +114,36 @@ export default function SummitPage() {
                 <p className="text-charcoal font-lora">6 September 2025</p>
               </div>
             </div>
+
+
+            {/* President's Quote Section */}
+            <div className="flex items-center justify-center mt-12 space-x-6 mb-16">
+              <img
+                src="/images/president.jpg"
+                alt="President of Ethiopia"
+                className="w-24 h-24 object-cover rounded-full shadow-md"
+              />
+              <div className="max-w-2xl">
+                <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed text-center mb-6">
+                  <em>
+                    "This gathering is a unique opportunity to reflect on the Nile as more than a river—it is a living testimony to our shared past and a foundation for our collective future."
+                  </em>
+                </p>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="font-lora text-xs md:text-sm text-charcoal">
+                    – H.E. President Taye Atske Selassie Amde
+                  </p>
+                  <Link
+                    href="/summit/presidential-interview"
+                    className="text-deep-orange font-bold hover:underline"
+                  >
+                    Read the full interview
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+
             <div className="relative z-10">
               <div className="grid md:grid-cols-2 gap-8 mb-12">
 
@@ -244,6 +277,28 @@ export default function SummitPage() {
                             alt="Speaker from Sudan"
                             className="w-16 h-16 object-cover rounded-full shadow-md"
                           /> */}
+
+
+                          <img
+                            src="/images/speakers/Deepti.png"
+                            alt="Deepti Kataria"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <div>
+                            <strong className="text-deep-orange !text-deep-orange">Egypt/India</strong>
+                            <br />
+                            <strong>Deepti Kataria, General Secretary, Africa Study Centre</strong>
+                            <br />
+                            Fostering Unity Through Cultural Dialogue and Education
+                          </div>
+
+
+
+
+
+                        </li>
+                        <li className="flex items-start space-x-4">
+
                           <div>
                             <strong className="text-deep-orange !text-deep-orange">Sudan</strong>
                             <br />
@@ -251,6 +306,7 @@ export default function SummitPage() {
                             <br />
                             Mobile Solutions for Youth Employment
                           </div>
+
                         </li>
                         <li className="flex items-start space-x-4">
                           <img
@@ -294,20 +350,7 @@ export default function SummitPage() {
                             Equity & Access in the Digital Age
                           </div>
                         </li>
-                        <li className="flex items-start space-x-4">
-                          {/* <img
-                            src=""
-                            alt="Speaker from Uganda"
-                            className="w-16 h-16 object-cover rounded-full shadow-md"
-                          /> */}
-                          <div>
-                            <strong className="text-deep-orange !text-deep-orange">Uganda</strong>
-                            <br />
-                            <strong>CSO Representative</strong>
-                            <br />
-                            Success Stories in Community-Led Adaptation
-                          </div>
-                        </li>
+
                       </ul>
                     </div>
                   </div>

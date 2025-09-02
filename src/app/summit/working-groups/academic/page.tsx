@@ -30,6 +30,20 @@ export default function AcademicWorkingGroupPage() {
               "Building an Academic Bridge Across 11 Nations: Knowledge, Cooperation, and a Shared Future for the Nile"
             </p>
 
+            <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+              <div className="flex items-center space-x-2 bg-deep-orange/10 px-4 py-2 rounded-full">
+                <Globe className="h-4 w-4 text-deep-orange" />
+                <span className="font-bold text-deep-orange text-sm">Online</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-river-blue/10 px-4 py-2 rounded-full">
+                <Calendar className="h-4 w-4 text-river-blue" />
+                <span className="font-bold text-river-blue text-sm">Saturday, 6 September 2025</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-warm-gold/20 px-4 py-2 rounded-full">
+                <Clock className="h-4 w-4 text-charcoal" />
+                <span className="font-bold text-charcoal text-sm">14:00-16:30 EAT</span>
+              </div>
+            </div>
 
 
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
@@ -172,6 +186,34 @@ export default function AcademicWorkingGroupPage() {
 
                 <div className="border-l-4 border-warm-gold pl-4">
                   <h4 className="font-bold text-charcoal mb-2">
+                    Kenya: "Regional Academic Collaboration for Sustainable Nile Basin Development"
+                  </h4>
+                  <div className="flex items-start space-x-3 mb-2">
+                    <img
+                      src="/images/speakers/dan.png"
+                      alt="Dr. Dan Noel Odaba"
+                      className="w-24 h-24 rounded-full object-cover"
+                    />
+                    <div>
+                      <p className="text-sm text-charcoal">
+                        <Link
+                          href="/summit/speakers#dan-noel-odaba"
+                          className="text-river-blue hover:text-river-blue-dark underline"
+                        >
+                          Ph.D. Dan Noel Odaba
+                        </Link>
+                        , Director, Southern Africa
+                      </p>
+                      <p className="text-xs text-charcoal mt-2">
+                        An experienced leader in regional development, Dr. Odaba will speak on the critical role of academic partnerships
+                        and knowledge exchange in fostering sustainable and cooperative development across the Nile Basin nations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-warm-gold pl-4">
+                  <h4 className="font-bold text-charcoal mb-2">
                     Kenya/USA: "Ubuntu Leadership: Harnessing Knowledge Systems for Transformative Education in Africa"
                   </h4>
                   <div className="flex items-start space-x-3 mb-2">
@@ -199,6 +241,9 @@ export default function AcademicWorkingGroupPage() {
                   </div>
 
                 </div>
+
+
+
 
                 <div className="border-l-4 border-deep-orange pl-4">
                   <h4 className="font-bold text-charcoal mb-2">
@@ -330,7 +375,7 @@ export default function AcademicWorkingGroupPage() {
                         href="/summit/speakers#geci-karuri"
                         className="text-river-blue hover:text-river-blue-dark underline"
                       >
-                        Prof. Geci Karuri-Sebina (South Africa/Kenya)
+                        Prof. Geci Karuri-Sebina (South Africa)
                       </Link>
                     </p>
                   </div>

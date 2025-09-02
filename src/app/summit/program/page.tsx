@@ -155,7 +155,7 @@ export default function SummitPage() {
                       <Users className="h-5 w-5 text-white" />
                     </div>
                     <h3 className="font-playfair text-xl font-bold text-river-blue">Opening Session</h3>
-                    <span className="text-sm text-charcoal bg-warm-gold/20 px-2 py-1 rounded">09:00 – 09:20</span>
+                    <span className="text-sm text-charcoal bg-warm-gold/20 px-2 py-1 rounded">09:00 – 09:20 EAT</span>
                   </div>
                   <div className="space-y-4 text-sm font-lora text-charcoal">
                     <div>
@@ -207,7 +207,7 @@ export default function SummitPage() {
                       <Award className="h-5 w-5 text-white" />
                     </div>
                     <h3 className="font-playfair text-xl font-bold text-river-blue">Keynote Statements</h3>
-                    <span className="text-sm text-charcoal bg-warm-gold/20 px-2 py-1 rounded">09:20 – 09:50</span>
+                    <span className="text-sm text-charcoal bg-warm-gold/20 px-2 py-1 rounded">09:20 – 09:50 EAT</span>
                   </div>
                   <ul className="space-y-6 text-sm font-lora text-charcoal">
                     <li className="flex items-start space-x-4">
@@ -252,7 +252,7 @@ export default function SummitPage() {
                           <Globe className="h-5 w-5 text-white" />
                         </div>
                         <h3 className="font-playfair text-lg font-bold text-river-blue">Voices Across the Nile</h3>
-                        <span className="text-sm text-charcoal bg-warm-gold/20 px-2 py-1 rounded">10:00 – 10:40</span>
+                        <span className="text-sm text-charcoal bg-warm-gold/20 px-2 py-1 rounded">10:00 – 10:40 EAT</span>
                       </div>
 
                       <p className="text-sm text-charcoal font-lora">
@@ -366,7 +366,7 @@ export default function SummitPage() {
                           <Handshake className="h-5 w-5 text-white" />
                         </div>
                         <h3 className="font-playfair text-lg font-bold text-river-blue">Synthesis, Closing & Transition</h3>
-                        <span className="text-sm text-charcoal bg-warm-gold/20 px-2 py-1 rounded">10:40 – 11:30</span>
+                        <span className="text-sm text-charcoal bg-warm-gold/20 px-2 py-1 rounded">10:40 – 11:30 EAT</span>
                       </div>
                       <ul className="space-y-6 text-sm font-lora text-charcoal">
                         {/* Moderated Reflection */}

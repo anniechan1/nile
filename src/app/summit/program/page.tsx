@@ -123,7 +123,7 @@ export default function SummitPage() {
                 alt="President of Ethiopia"
                 className="w-24 h-24 object-cover rounded-full shadow-md"
               />
-              <div className="max-w-2xl">
+              <div className="max-w-3xl">
                 <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed text-center mb-6">
                   <em>
                     "This gathering is a unique opportunity to reflect on the Nile as more than a river—it is a living testimony to our shared past and a foundation for our collective future."
@@ -289,7 +289,7 @@ export default function SummitPage() {
                             <br />
                             <strong>Deepti Kataria, General Secretary, Africa Study Centre</strong>
                             <br />
-                            Fostering Unity Through Cultural Dialogue and Education
+                            "Fostering Unity Through Cultural Dialogue and Education"
                           </div>
 
 

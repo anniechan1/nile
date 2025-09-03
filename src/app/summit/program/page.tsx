@@ -311,6 +311,7 @@ export default function SummitPage() {
                         <li className="flex items-start space-x-4">
                           <img
                             src="/images/speakers/Prof_John.jpeg"
+
                             alt="Speaker from Kenya"
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
@@ -617,7 +618,7 @@ export default function SummitPage() {
                             <strong>Chair:</strong> Dr. Mitslal Kifleyesus-Matschie
                           </span>
                         </div>
-                        <div className="flex items-center space-x-3">
+                        <div className="flex items-center space-x-3 mb-4">
                           <img
                             src="/images/speakers/Dr_Jenn.jpeg"
                             alt="Dr. Jennifer Batamuliza"
@@ -627,8 +628,90 @@ export default function SummitPage() {
                             <strong>Co-Chair:</strong> Dr. Jennifer Batamuliza
                           </span>
                         </div>
+                        <div className="flex items-center space-x-3">
+                          <img
+                            src="/images/speakers/Eugene_Rwagasore.png"
+                            alt="Mr. Eugene Rwagasore"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Mr. Eugene Rwagasore</strong>, CTO and Co-founder at Pindo Inc.
+                            <br />
+                            "Entrepreneurial Innovation in AI for Basin Solutions"
+                          </span>
+                        </div>
                       </div>
                     </Link>
+
+                    {/* Group 6: Enterprises of the Nile (Panel and Working Group) */}
+                    <Link href="/summit/working-groups/enterprises" className="block">
+                      <div className="bg-green-50 hover:bg-green-600 hover:text-white p-4 rounded-lg cursor-pointer transition-all duration-300 group">
+                        <p className="font-bold text-gray-800 group-hover:text-white text-sm mb-2">
+                          Group 6: Enterprises of the Nile (Panel and Working Group)
+                        </p>
+
+                        {/* Panelists */}
+                        <h4 className="font-bold text-gray-800 group-hover:text-white text-sm mb-4">Panelists:</h4>
+                        <div className="space-y-4">
+                          <div className="flex items-start space-x-3">
+                            <img
+                              src="/images/speakers/irvine.jpeg"
+                              alt="Ms. Irvine Floreale"
+                              className="w-20 h-20 object-cover rounded-full shadow-md"
+                            />
+                            <span className="text-xs text-gray-600 group-hover:text-white/90">
+                              <strong>Ms. Irvine Floreale</strong>, Burundi
+                            </span>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            {/* <img
+                              src="/images/speakers/Mary_Constantino.png"
+                              alt="Ms. Mary Constantino"
+                              className="w-20 h-20 object-cover rounded-full shadow-md"
+                            /> */}
+                            <span className="text-xs text-gray-600 group-hover:text-white/90">
+                              <strong>Ms. Mary Constantino</strong>, South Sudan
+                            </span>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <img
+                              src="/images/speakers/denise.png"
+                              alt="Ms. Denise Umubyeyi"
+                              className="w-20 h-20 object-cover rounded-full shadow-md"
+                            />
+                            <span className="text-xs text-gray-600 group-hover:text-white/90">
+                              <strong>Ms. Denise Umubyeyi</strong>, Rwanda
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* Working Group */}
+                        <h4 className="font-bold text-gray-800 group-hover:text-white text-sm mt-6 mb-4">Working Group:</h4>
+                        <div className="space-y-4">
+                          <div className="flex items-start space-x-3">
+                            <img
+                              src="/images/speakers/anon.jpeg"
+                              alt="Ms. Elizabeth Anon"
+                              className="w-20 h-20 object-cover rounded-full shadow-md"
+                            />
+                            <span className="text-xs text-gray-600 group-hover:text-white/90">
+                              <strong>Ms. Elizabeth Anon</strong>, South Sudan
+                            </span>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <img
+                              src="/images/speakers/ange.jpeg"
+                              alt="Ange Muco Muyubira"
+                              className="w-20 h-20 object-cover rounded-full shadow-md"
+                            />
+                            <span className="text-xs text-gray-600 group-hover:text-white/90">
+                              <strong>Ms. Ange Muco Muyubira</strong>, Burundi
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+
                   </div>
                 </div>
               </div>

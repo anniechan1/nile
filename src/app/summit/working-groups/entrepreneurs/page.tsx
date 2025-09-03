@@ -251,7 +251,7 @@ export default function EntrepreneursWorkingGroupPage() {
                         <div>
                           <p className="font-bold">Mr. Eugene Rwagasore (Kenya): Entrepreneurial Innovation in AI for Basin Solutions</p>
                           <p className="text-sm text-gray-600 italic mt-2">
-                            AI Entrepreneur, Co-founder and CTO of Pindo
+                            CTO and Co-founder at Pindo Inc.
                           </p>
                         </div>
                         <img

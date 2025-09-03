@@ -76,7 +76,7 @@ export default function TechnologyWorkingGroupPage() {
                     <p className="text-sm text-charcoal">
                       • <strong>Samuel Bahiru </strong>(Ethiopia)
                     </p>
-                    <p className="text-sm text-charcoal">Chief Technology Officer & Co-Founder, TickerTape Technologies</p>
+                    <p className="text-sm text-charcoal">Chief Technology Officer & Co-Founder, Ticker Tape Technologies</p>
                   </div>
                 </div>
               </div>
@@ -96,9 +96,9 @@ export default function TechnologyWorkingGroupPage() {
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="font-playfair text-xl font-bold text-river-blue">Part 1: Framing the Session</h3>
-                <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">30 minutes</span>
+                <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">45 mins | 14:00 - 14:45 EAT</span>
               </div>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-[3fr_1fr] gap-6">
                 {/* Left Content */}
                 <div className="space-y-6">
                   {/* Welcome */}
@@ -109,7 +109,7 @@ export default function TechnologyWorkingGroupPage() {
                       className="w-20 h-20 rounded-full object-cover"
                     />
                     <div>
-                      <p className="font-bold text-charcoal">Welcome, Official Opening & Introduction to the Working Group</p>
+                      <p className="font-bold text-charcoal">Welcome, Official Opening & Introduction to the Working Group <span className="text-sm text-gray-500">(10 mins)</span></p>
                       <p className="text-sm text-charcoal">
                         <strong>Felix Matschie</strong> (Ethiopia/Germany), Strategic Lead, Ecopia Group.  <br /><br />
                         <em>A co-founder of the initiative, Felix will open the session and frame the critical role of youth and technology in building a shared future for the Nile.</em>
@@ -125,7 +125,7 @@ export default function TechnologyWorkingGroupPage() {
                       className="w-20 h-20 rounded-full object-cover"
                     />
                     <div>
-                      <p className="font-bold text-charcoal">Statement of Purpose & Session Objectives</p>
+                      <p className="font-bold text-charcoal">Statement of Purpose & Session Objectives <span className="text-sm text-gray-500">(5 mins)</span></p>
                       <p className="text-sm text-charcoal">
                         <strong>Samuel Bahiru</strong> (Ethiopia), CTO & Co-Founder, Ticker Tape Technologies. <br /><br />
                         <em>A visionary technologist and entrepreneur, Samuel will outline the session's goals for fostering cross-border collaboration and innovation among the Nile Basin's youth.</em>
@@ -141,7 +141,7 @@ export default function TechnologyWorkingGroupPage() {
                       className="w-20 h-20 rounded-full object-cover"
                     />
                     <div>
-                      <p className="font-bold text-charcoal">Keynote 1: Digital Skills for Africa's Next Generation</p>
+                      <p className="font-bold text-charcoal">Keynote 1: Digital Skills for Africa's Next Generation <span className="text-sm text-gray-500">(15 mins)</span></p>
                       <p className="text-sm text-charcoal">
                         <strong>Anele Simon</strong> (South Africa), Acting Secretary General, ICOYACA. <br /><br />
                         <em>A leading advocate for youth and digital empowerment, Anele will discuss strategies for equipping young people with the skills needed to thrive in the digital economy and become drivers of sustainable development.</em>
@@ -151,16 +151,18 @@ export default function TechnologyWorkingGroupPage() {
 
                   {/* Keynote 2 */}
                   <div className="flex items-start space-x-4">
-                    {/* <img
-                      src="/images/speakers/Fred.jpeg"
-                      alt="Fred Mpala"
+                    <img
+                      src="/images/speakers/Felix.jpeg"
+                      alt="Felix Abraham Matschie"
                       className="w-20 h-20 rounded-full object-cover"
-                    /> */}
+                    />
                     <div>
-                      <p className="font-bold text-charcoal">Keynote 2: Digital Health Access for Youth Empowerment</p>
+                      <p className="font-bold text-charcoal">Keynote 2: How Technology-driven Commerce Creates Cross-Border Ecosystems <span className="text-sm text-gray-500">(7.5&nbsp;mins)</span></p>
                       <p className="text-sm text-charcoal">
-                        <strong>Fred Mpala</strong> (Uganda), Health Card. <br /><br />
-                        <em>A social entrepreneur focused on health-tech solutions, Fred will explore how digital tools can revolutionize healthcare access and create new opportunities for youth engagement and employment in the sector.</em>
+                        <strong>Felix Abraham Matschie</strong> (Ethiopia/Germany) <br /><br />
+                        <em>
+                          How we, the youth of the Nile countries, can leverage technology to induce greater cross-border economic integration by creating digital ecosystems.
+                        </em>
                       </p>
                     </div>
                   </div>
@@ -180,16 +182,35 @@ export default function TechnologyWorkingGroupPage() {
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="font-playfair text-xl font-bold text-river-blue">
-                  Part 2: Lightning Talks – Youth Innovations
+                  Part 2: Lightning Talks – Youth Innovations from the Basin
                 </h3>
-                <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">60 minutes</span>
+                <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">60 mins | 15:00 - 16:00 EAT</span>
               </div>
               <p className="text-sm text-charcoal font-lora mb-4">Moderated by Felix Matschie</p>
 
+              <div className="bg-warm-gold/10 p-4 rounded-lg mb-6">
+                <p className="text-sm text-charcoal font-lora font-bold">
+                  Showcasing Ideas for a Digital Future <span className="text-gray-500">(5-10 mins each)</span>:
+                </p>
+              </div>
               {/* Content and Images */}
-              <div className="flex flex-col md:flex-row items-start md:space-x-6">
+              <div className="grid md:grid-cols-[3fr_1fr] gap-6">
                 {/* Left Content */}
-                <div className="space-y-6 flex-1">
+                <div className="space-y-6">
+
+                  {/* International */}
+                  <div className="border-l-4 border-warm-gold pl-4">
+                    <h4 className="font-bold text-charcoal mb-2">
+                      International: “Health Card, how closing data gaps in healthcare enables coverage for all”
+                    </h4>
+                    <p className="text-sm text-charcoal">
+                      <strong>Fred Mpala</strong> (Uganda), Health Card. <br /><br />
+                      <em>
+                        A social entrepreneur focused on health-tech solutions, Fred will explore how digital tools can revolutionize
+                        healthcare access and create new opportunities for youth engagement and employment in the sector.
+                      </em>
+                    </p>
+                  </div>
                   {/* Sudan */}
                   <div className="border-l-4 border-deep-orange pl-4">
                     <h4 className="font-bold text-charcoal mb-2">Sudan: "Mobile Solutions for Youth Employment"</h4>
@@ -307,7 +328,7 @@ export default function TechnologyWorkingGroupPage() {
                 <h3 className="font-playfair text-xl font-bold text-river-blue">
                   Part 3: Breakout Groups – Designing Digital Futures
                 </h3>
-                <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">45 minutes</span>
+                <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">45 mins | 16:00 - 16:45 EAT</span>
               </div>
 
               <p className="text-sm text-charcoal mb-6">
@@ -319,7 +340,7 @@ export default function TechnologyWorkingGroupPage() {
                 <div className="bg-gradient-to-br from-deep-orange/10 to-deep-orange/5 border-l-4 border-deep-orange rounded-lg p-6 shadow-md">
                   <h4 className="font-bold text-deep-orange mb-2">Group 1: How to Leverage Technology to Improve Your Communities</h4>
                   <p className="text-sm text-charcoal">
-                    <strong>Facilitator:</strong> Fred Mpala (Chief of Technology at Healthcard), with experience in LiveScience, Healthcare, and Financial Services at various Fortune 500 companies.  <br /><br />
+                    <strong>Facilitator:</strong> Fred Mpala (Chief of Technology at Healthcard) & Felix Matschie, with experience in LiveScience, Healthcare, and Financial Services at various Fortune 500 companies.  <br /><br />
                     <em>This group will focus on highlighting methods and actions youth groups can take to leverage technology to enhance their local communities and have tangible and direct impact.</em>
                   </p>
                 </div>
@@ -351,7 +372,7 @@ export default function TechnologyWorkingGroupPage() {
                 <h3 className="font-playfair text-xl font-bold text-river-blue">
                   Part 4: Reporting Back & Adoption
                 </h3>
-                <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">30 minutes</span>
+                <span className="text-sm text-charcoal bg-warm-gold/20 px-3 py-1 rounded-full">20 minutes</span>
               </div>
 
               <p className="text-sm text-charcoal mb-6">Moderated by Chair, Felix Matschie</p>
@@ -361,7 +382,7 @@ export default function TechnologyWorkingGroupPage() {
                 <div className="flex items-start space-x-3">
                   <span className="w-2 h-2 bg-river-blue rounded-full mt-2 flex-shrink-0"></span>
                   <p className="text-sm text-charcoal">
-                    Rapporteurs present key outcomes and action points from each group. <strong>(15 mins)</strong>
+                    Rapporteurs present key outcomes and action points from each group. <strong>(5 mins)</strong>
                   </p>
                 </div>
 
@@ -373,7 +394,7 @@ export default function TechnologyWorkingGroupPage() {
                   </p>
                 </div>
                 <div className="pl-6">
-                  <p className="text-sm text-charcoal">• <strong>Fred Mpala</strong> – Health Card</p>
+
                   <p className="text-sm text-charcoal">• <strong>Wim Vanhelleputte</strong> (Safaricom Ethiopia) (TBC)</p>
                 </div>
 

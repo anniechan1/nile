@@ -162,6 +162,42 @@ export default function CivilSocietyWorkingGroupPage() {
               <p className="text-sm text-charcoal font-lora mb-4">Moderated by Endashaw Mogessie</p>
 
               <div className="space-y-6">
+
+
+                {/* Fostering Unity Through Cultural Dialogue and Education */}
+                <div className="flex items-start space-x-4 border-l-4 border-deep-orange pl-4">
+                  <img
+                    src="/images/speakers/Deepti.png"
+                    alt="Deepti Kataria"
+                    className="w-20 h-20 rounded-full object-cover"
+                  />
+                  <div>
+                    <h4 className="font-bold text-charcoal mb-2">
+                      Fostering Unity Through Cultural Dialogue and Education
+                    </h4>
+                    <p className="text-sm text-charcoal">
+                      <strong>Deepti Kataria</strong> (General Secretary, Africa Study Centre)
+                    </p>
+                  </div>
+                </div>
+
+                {/* Renewable Energy Innovations and Community-Based Solutions */}
+                <div className="flex items-start space-x-4 border-l-4 border-river-blue pl-4">
+                  <img
+                    src="/images/speakers/Prof_Daniel_Egbe.png"
+                    alt="Prof. Daniel A. M. Egbe"
+                    className="w-20 h-20 rounded-full object-cover"
+                  />
+                  <div>
+                    <h4 className="font-bold text-charcoal mb-2">
+                      Renewable Energy Innovations and Community-Based Solutions
+                    </h4>
+                    <p className="text-sm text-charcoal">
+                      <strong>Prof. Daniel A. M. Egbe</strong> (University of Rwanda)
+                    </p>
+                  </div>
+                </div>
+
                 {/* Research Insights */}
                 <div className="flex items-start space-x-4 border-l-4 border-deep-orange pl-4">
                   <img
@@ -171,7 +207,7 @@ export default function CivilSocietyWorkingGroupPage() {
                   />
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">
-                      Research Insights: Opportunities for CSO-Led Action in Eastern Africa (7 mins)
+                      Research Insights: Opportunities for CSO-Led Action in Eastern Africa
                     </h4>
                     <p className="text-sm text-charcoal">
                       <strong>Dr. Amare Hailesilassie</strong> (IWMI)
@@ -191,7 +227,7 @@ export default function CivilSocietyWorkingGroupPage() {
                   />
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">
-                      Innovative Practices in Water and Land Management: A Model for CSO Collaboration (7 mins)
+                      Innovative Practices in Water and Land Management: A Model for CSO Collaboration
                     </h4>
                     <p className="text-sm text-charcoal">
                       <strong>Dr. Gete Zeleke</strong> (WLRC)
@@ -211,7 +247,7 @@ export default function CivilSocietyWorkingGroupPage() {
                   />
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">
-                      Advocating for Change: Uniting CSOs for Equitable Trade in the Nile Basin (7 mins)
+                      Advocating for Change: Uniting CSOs for Equitable Trade in the Nile Basin
                     </h4>
                     <p className="text-sm text-charcoal">
                       <strong>Mr. Max Koffi</strong> (Equal Trade Alliance)
@@ -224,7 +260,7 @@ export default function CivilSocietyWorkingGroupPage() {
 
                 {/* Q&A */}
                 <div className="border-l-4 border-deep-orange pl-4">
-                  <h4 className="font-bold text-charcoal mb-2">Q&A with Speakers (9 mins)</h4>
+                  <h4 className="font-bold text-charcoal mb-2">Q&A with Speakers</h4>
 
                 </div>
               </div>

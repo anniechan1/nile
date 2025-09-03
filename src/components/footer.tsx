@@ -80,7 +80,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center space-x-2 text-river-blue">
               <MapPin className="h-5 w-5" />
-              <span className="font-merriweather font-medium">Online</span>
+              <span className="font-merriweather font-medium">Addis Ababa / Online</span>
             </div>
           </div>
 
@@ -111,14 +111,14 @@ export default function Footer() {
           {/* Navigation Links */}
           <div className="flex flex-wrap justify-center space-x-6 md:space-x-12 text-base md:text-lg mb-8">
             <Link
-              href="/about"
+              href="/about/our-vision"
               className="text-river-blue hover:text-warm-gold transition-colors font-semibold font-merriweather"
             >
               About
             </Link>
 
             <Link
-              href="/summit"
+              href="/summit/program"
               className="text-river-blue hover:text-warm-gold transition-colors font-semibold font-merriweather"
             >
               Summit 2025

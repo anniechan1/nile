@@ -198,13 +198,37 @@ export default function TechnologyWorkingGroupPage() {
                 {/* Left Content */}
                 <div className="space-y-6">
 
+
+
+
+
+                  <div className="border-l-4 border-warm-gold pl-4">
+                    <h4 className="font-bold text-charcoal mb-2">
+                      Tanzania: "A Nile Basin Digital Museum & Content Strategy"
+                    </h4>
+                    <div className="flex items-start space-x-4">
+                      <img
+                        src="/images/speakers/mika.jpeg"
+                        alt="Mika Chavala"
+                        className="w-20 h-20 rounded-full object-cover"
+                      />
+
+                      <p className="text-sm text-charcoal">
+                        <strong>Mika Chavala</strong>, Founder, Swahili Nation One Africa Foundation <br /><br />
+                        <em>
+                          A goal-driven and strategic leader with an outstanding record of managing multiple teams. Founder of Swahili Nation - One Africa. He created a YouTube channel (<a href="https://www.youtube.com/@SWAHILINATION" target="_blank" rel="noopener noreferrer" className="text-river-blue hover:underline">Swahili Nation</a>)  that now has more than 231K subscribers. His platform is intended to defend the image and heritage of Africa and share knowledge to create a bridge for unity and a peaceful Africa.
+                        </em>
+                      </p>
+                    </div>
+                  </div>
+
                   {/* International */}
                   <div className="border-l-4 border-warm-gold pl-4">
                     <h4 className="font-bold text-charcoal mb-2">
-                      International: “Health Card, how closing data gaps in healthcare enables coverage for all”
+                      Uganda: “Health Card, how closing data gaps in healthcare enables coverage for all”
                     </h4>
                     <p className="text-sm text-charcoal">
-                      <strong>Fred Mpala</strong> (Uganda), Health Card. <br /><br />
+                      <strong>Fred Mpala</strong>, Health Card. <br /><br />
                       <em>
                         A social entrepreneur focused on health-tech solutions, Fred will explore how digital tools can revolutionize
                         healthcare access and create new opportunities for youth engagement and employment in the sector.

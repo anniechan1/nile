@@ -48,23 +48,47 @@ export default function HomePage() {
           </div>
 
           {/* Enhanced Quote with Attribution */}
-          <div className="mb-8">
-            <blockquote
-              className="font-playfair text-lg md:text-xl lg:text-2xl leading-relaxed max-w-4xl mx-auto mb-2 text-rich-white font-light italic hero-quote-shadow"
-              style={{ lineHeight: "1.6" }}
-            >
-              "This event grows from Ethiopia's soil but belongs to all Nile nations. We build it together—brushstroke
-              by brushstroke, idea by idea." — Desalegn Hailu Mazengiya
-              {/* <span className="text-warm-gold font-medium not-italic ml-2"></span> */}
-            </blockquote>
+          <div className="mb-8 flex flex-col space-y-6">
+            {/* President's Quote */}
+            <div className="flex items-start space-x-4">
+              {/* Image on the left */}
+              <img
+                src="/images/president.jpg"
+                alt="H.E. President Taye Atske Selassie Amde"
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover shadow-md"
+              />
+              <div className="flex-1">
+                <blockquote
+                  className="font-playfair text-sm md:text-lg lg:text-xl leading-relaxed max-w-4xl mb-2 text-rich-white font-light italic hero-quote-shadow"
+                  style={{ lineHeight: "1.6" }}
+                >
+                  "This gathering is a unique opportunity to reflect on the Nile as more than a river—it is a living testimony to
+                  our shared past and a foundation for our collective future." – H.E. President Taye Atske Selassie Amde
+                </blockquote>
+                {/* Added link to read the full interview */}
+                <Link href="/summit/presidential-interview">
+                  <span className="text-warm-gold hover:underline font-bold block text-left">
+                    Read the full interview
+                  </span>
+                </Link>
+              </div>
+            </div>
+            {/* Desalegn Hailu Mazengiya's Quote */}
+            <div className="flex items-center space-x-4">
+              {/* Image on the left */}
+              <img
+                src="/images/speakers/Hailu.jpg"
+                alt="Desalegn Hailu Mazengiya"
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover shadow-md"
+              />
+              <blockquote
+                className="font-playfair text-sm md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto mb-2 text-rich-white font-light italic hero-quote-shadow"
+                style={{ lineHeight: "1.6" }}
+              >
+                "This event grows from Ethiopia's soil but belongs to all Nile nations. We build it together—brushstroke by brushstroke, idea by idea." — Desalegn Hailu Mazengiya
+              </blockquote>
+            </div>
           </div>
-
-          {/* Enhanced Description */}
-          <p className="font-lora text-base md:text-lg leading-relaxed max-w-4xl mx-auto mb-8 text-rich-white font-normal hero-quote-shadow">
-            The Nile is more than a river—it is the story of us all. Join us for a historic gathering of artists,
-            academics, and innovators from all 11 Nile Basin nations to celebrate our shared heritage and envision a
-            united future.
-          </p>
 
           {/* Enhanced CTA Button - Smaller */}
           <Link href={REGISTRATION_URL} target="_blank" rel="noopener noreferrer">
@@ -151,7 +175,7 @@ export default function HomePage() {
                 <span>6–7 September 2025</span>
                 <span>|</span>
                 <MapPin className="h-4 w-4" />
-                <span>Online</span>
+                <span>Addis Ababa / Online</span>
               </div>
             </div>
 

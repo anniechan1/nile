@@ -45,7 +45,7 @@ export default function SummitPage() {
 
             <div className="inline-flex items-center space-x-3 bg-deep-orange backdrop-blur-sm px-5 py-2.5 rounded-full text-rich-white font-bold text-sm md:text-base mb-6 shadow-lg">
               <MapPin className="h-4 w-4" />
-              <span>Online</span>
+              <span>Addis Ababa / Online</span>
               <span>|</span>
               <Calendar className="h-4 w-4" />
               <span>6–7 September 2025</span>
@@ -78,18 +78,37 @@ export default function SummitPage() {
 
       <main className="container mx-auto px-4 py-16 md:py-20">
         {/* Free-flowing Images Section */}
-        <section className="mb-20 md:mb-32 relative">
-          <div className="absolute right-4 top-20 w-76 h-48 rounded-2xl overflow-hidden shadow-lg transform rotate-6 z-10">
-            <img src="/images/scholar.webp" alt="Academic conference" className="w-full h-full object-cover" />
-          </div>
 
-          <div className="text-center mb-12 md:mb-16 relative z-20">
-            <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed font-medium">
-              The summit will convene distinguished leaders from arts, academia, government, and diplomacy across all
-              Nile Basin nations.
+
+
+
+        {/* President's Quote Section */}
+        <div className="flex items-center justify-center mt-12 space-x-6 mb-16">
+          <img
+            src="/images/president.jpg"
+            alt="President of Ethiopia"
+            className="w-24 h-24 object-cover rounded-full shadow-md"
+          />
+          <div className="max-w-3xl">
+            <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed text-center mb-6">
+              <em>
+                "This gathering is a unique opportunity to reflect on the Nile as more than a river—it is a living testimony to our shared past and a foundation for our collective future."
+              </em>
             </p>
+            <div className="flex items-center justify-between mt-2">
+              <p className="font-lora text-xs md:text-sm text-charcoal">
+                – H.E. President Taye Atske Selassie Amde
+              </p>
+              <Link
+                href="/summit/presidential-interview"
+                className="text-deep-orange font-bold hover:underline"
+              >
+                Read the full interview
+              </Link>
+            </div>
+
           </div>
-        </section>
+        </div>
 
         {/* Grand Opening Plenary */}
         <section className="mb-20 md:mb-32">
@@ -115,33 +134,6 @@ export default function SummitPage() {
               </div>
             </div>
 
-
-            {/* President's Quote Section */}
-            <div className="flex items-center justify-center mt-12 space-x-6 mb-16">
-              <img
-                src="/images/president.jpg"
-                alt="President of Ethiopia"
-                className="w-24 h-24 object-cover rounded-full shadow-md"
-              />
-              <div className="max-w-3xl">
-                <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed text-center mb-6">
-                  <em>
-                    "This gathering is a unique opportunity to reflect on the Nile as more than a river—it is a living testimony to our shared past and a foundation for our collective future."
-                  </em>
-                </p>
-                <div className="flex items-center justify-between mt-2">
-                  <p className="font-lora text-xs md:text-sm text-charcoal">
-                    – H.E. President Taye Atske Selassie Amde
-                  </p>
-                  <Link
-                    href="/summit/presidential-interview"
-                    className="text-deep-orange font-bold hover:underline"
-                  >
-                    Read the full interview
-                  </Link>
-                </div>
-              </div>
-            </div>
 
 
             <div className="relative z-10">
@@ -668,6 +660,19 @@ export default function SummitPage() {
                         {/* Panelists */}
                         <h4 className="font-bold text-gray-800 group-hover:text-white text-sm mb-4">Panelists:</h4>
                         <div className="space-y-4">
+
+                          <div className="flex items-start space-x-3">
+                            <img
+                              src="/images/speakers/mika.jpeg"
+                              alt="Mika Chavala"
+                              className="w-20 h-20 object-cover rounded-full shadow-md"
+                            />
+                            <span className="text-xs text-gray-600 group-hover:text-white/90">
+                              <strong>Mika Chavala</strong>, Tanzania
+                            </span>
+                          </div>
+
+
                           <div className="flex items-start space-x-3">
                             <img
                               src="/images/speakers/irvine.jpeg"

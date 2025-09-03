@@ -211,7 +211,7 @@ export default function AcademicWorkingGroupPage() {
                         </Link>
                       </p>
                       <p className="text-xs text-charcoal mt-2">
-                        Associate Professor: Innovation Policy and Management, Wits Business School
+                        Associate Professor: Innovation Policy and Management, University of the Witwatersrand, Johannesburg,
                       </p>
                     </div>
                   </div>

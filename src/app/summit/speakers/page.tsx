@@ -134,6 +134,41 @@ export default function SpeakersPage() {
             </div>
           </section>
 
+          {/* Dan Noel Odaba */}
+          <section id="dan-noel-odaba" className="scroll-mt-24">
+            <div className="bg-gradient-to-br from-river-blue/5 to-warm-gold/10 rounded-3xl p-8 shadow-xl border border-warm-gold/20">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <div className="relative">
+                    <img
+                      src="/images/speakers/dan.png"
+                      alt="Dan Noel Odaba"
+                      className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-2">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">
+                      Dan Noel Odaba
+                    </h2>
+                    <div className="flex items-center space-x-2 bg-deep-orange/10 px-3 py-1 rounded-full">
+                      <MapPin className="h-4 w-4 text-deep-orange" />
+                      <span className="text-sm font-bold text-deep-orange">Kenya</span>
+                    </div>
+                  </div>
+                  <div className="space-y-4 text-charcoal font-lora">
+                    <p>
+                      I am an Experiential Learning Facilitator, an Academia and Researcher of International
+                      Relations and Disaster Risk Management (DRM), having taught in Public and Private
+                      Universities in Kenya. A Specialist in Peacebuilding and Conflict Prevention / Resolution
+                      and Development studies with 18 years of teaching and research.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
 
           {/* Prof. John Kalu Osiri */}
@@ -386,6 +421,44 @@ export default function SpeakersPage() {
 
                     </p>
 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Mr. Max Koffi */}
+          <section id="max-koffi" className="scroll-mt-24">
+            <div className="bg-gradient-to-br from-warm-gold/5 to-river-blue/10 rounded-3xl p-8 shadow-xl border border-warm-gold/20">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <div className="relative">
+                    <img
+                      src="/images/speakers/max1.png"
+                      alt="Mr. Max Koffi"
+                      className="w-full h-72 object-cover object-top rounded-2xl shadow-lg"
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-2">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">
+                      Mr. Max Koffi
+                    </h2>
+                  </div>
+                  <div className="space-y-4 text-charcoal font-lora">
+                    <p>
+                      I was born in West Africa and spent my early years in Togo, Guinea, and Mali before growing up in the Republic of Congo, where I studied psychology. My life has taken me across the continent, visiting countries like Benin, Cameroon, Egypt, Nigeria, Ghana, Ivory Coast, and Angola. These experiences have ingrained in me a deep sense of Pan-Africanism, as I’ve seen firsthand the commonalities that bind us as Africans.
+                    </p>
+                    <p>
+                      From a young age, I’ve been passionate about history, particularly troubled by the arbitrary borders imposed on Africa during colonization. This injustice fueled my dream of one day playing a role in the reunification of Africa. Witnessing my heroes, like Kwame Nkrumah, struggle and fail in their attempts to unify Africa has only strengthened my determination to succeed where they faced challenges.
+                    </p>
+                    <p>
+                      This conviction has guided me throughout my life, even as I’ve built a professional career in the Netherlands. In 2012, I founded ‘Africa In Motion’ in collaboration with fellow members of the African diaspora. Our goal was to bring Africans together to advocate for fairer trade policies. In 2022, I initiated the Equal Trade Alliance, a campaign dedicated to promoting the Equal Trade Certification—a new economic model that seeks to transform how African raw materials are traded. Our vision, known as the Ubuntu Economy, aims to ensure that the revenues from the final products of African raw materials are shared equally with African producers, breaking away from the exploitative trade systems imposed during colonial times.
+                    </p>
+                    <p>
+                      I am deeply committed to the economic decolonization of Africa, and it is my life’s mission to eradicate poverty and see Africa united within our lifetime.
+                    </p>
                   </div>
                 </div>
               </div>

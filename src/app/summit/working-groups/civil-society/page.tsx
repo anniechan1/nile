@@ -255,10 +255,18 @@ export default function CivilSocietyWorkingGroupPage() {
                       Advocating for Change: Uniting CSOs for Equitable Trade in the Nile Basin
                     </h4>
                     <p className="text-sm text-charcoal">
-                      <strong>Mr. Max Koffi</strong> (Equal Trade Alliance)
-                      <br />
-                      <br />
+                      <Link
+                        href="/summit/speakers#max-koffi"
+                        className="font-bold underline hover:text-deep-orange-dark"
+                        style={{ color: "#FF5722" }} // Explicitly set the color
+                      >
+                        Mr. Max Koffi
+                      </Link>
+                      (Equal Trade Alliance)
 
+                      <br />
+                      <br />
+                      <p>Born in West Africa and spent his early years in Togo, Guinea, and Mali before growing up in the Republic of Congo, where he studied psychology. His life has taken him across the continent, visiting countries like Benin, Cameroon, Egypt, Nigeria, Ghana, Ivory Coast, and Angola. These experiences have ingrained in him a deep sense of Pan-Africanism, as he’s seen firsthand the commonalities that bind us as Africans.</p>
                     </p>
                   </div>
                 </div>
@@ -319,7 +327,13 @@ export default function CivilSocietyWorkingGroupPage() {
                     <div>
                       <h4 className="font-bold text-river-blue mb-2">Identifying Joint Advocacy & Action Themes</h4>
                       <p className="text-sm text-charcoal">
-                        <strong>Lead:</strong> Mr. Max Koffi
+                        <strong>Lead:</strong> <Link
+                          href="/summit/speakers#max-koffi"
+                          className="font-bold underline hover:text-deep-orange-dark"
+                          style={{ color: "#FF5722" }} // Explicitly set the color
+                        >
+                          Mr. Max Koffi
+                        </Link>
                         <br />
                         <br />
                         <em>

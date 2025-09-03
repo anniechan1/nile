@@ -161,7 +161,14 @@ export default function SummitPage() {
                         <div>
                           <strong>Dr. Gezehen Kebede, Ethiopian Civil Society Organizations Council</strong>
                           <br />
-                          WWelcome and open the conference, and read the message of the President from his interview
+                          Welcome and open the conference, and read the{" "}
+                          <Link
+                            href="/summit/presidential-interview"
+                            className="text-deep-orange font-bold hover:underline"
+                            style={{ color: "#FF5722" }} // Inline style to override parent color
+                          >
+                            message of the President from his interview
+                          </Link>
                         </div>
                       </div>
                       <div className="flex items-start space-x-4 mt-4">

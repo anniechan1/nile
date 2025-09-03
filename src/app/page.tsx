@@ -59,7 +59,7 @@ export default function HomePage() {
               />
               <div className="flex-1">
                 <blockquote
-                  className="font-playfair text-sm md:text-lg lg:text-xl leading-relaxed max-w-4xl mb-2 text-rich-white font-light italic hero-quote-shadow"
+                  className="font-playfair text-sm md:text-lg lg:text-xl leading-relaxed max-w-5xl mb-2 text-rich-white font-light italic hero-quote-shadow"
                   style={{ lineHeight: "1.6" }}
                 >
                   "This gathering is a unique opportunity to reflect on the Nile as more than a river—it is a living testimony to

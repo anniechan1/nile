@@ -40,7 +40,7 @@ export default function HomePage() {
             {/* Event Details */}
             <div className="inline-flex items-center space-x-3 bg-deep-orange backdrop-blur-sm px-5 py-2.5 rounded-full text-rich-white font-bold text-sm md:text-base mb-6 shadow-lg">
               <MapPin className="h-4 w-4" />
-              <span>Addis Ababa</span>
+              <span>Addis Ababa / Online</span>
               <span>|</span>
               <Calendar className="h-4 w-4" />
               <span>6–7 September 2025</span>
@@ -233,7 +233,7 @@ export default function HomePage() {
                 Event Overview
               </h2>
               <p className="font-lora text-base md:text-lg text-charcoal leading-relaxed font-medium max-w-4xl mx-auto">
-                Join us for the Children of the Nile – A Shared Present & Future summit in Addis Ababa on 6–7 September
+                Join us for the Children of the Nile – A Shared Present & Future summit in Addis Ababa or online on 6–7 September
                 2025. This hybrid event brings together artists, scholars, entrepreneurs, and policymakers from all Nile
                 Basin countries to:
               </p>

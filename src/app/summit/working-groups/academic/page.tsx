@@ -154,9 +154,13 @@ export default function AcademicWorkingGroupPage() {
 
               <div className="space-y-6">
 
+
+
+
+
                 <div className="border-l-4 border-river-blue pl-4">
                   <h4 className="font-bold text-charcoal mb-2">
-                    South Africa/Kenya: "Foresight and Innovation: Using Futures Thinking to Navigate Nile Basin
+                    Kenya: "Foresight and Innovation: Using Futures Thinking to Navigate Nile Basin
                     Challenges"
                   </h4>
                   <div className="flex items-start space-x-3 mb-2">
@@ -178,6 +182,34 @@ export default function AcademicWorkingGroupPage() {
                         Scholar-practitioner and Associate Professor at the University of Witwatersrand. With decades of
                         experience in foresight and innovation, she will outline how strategic futures thinking can guide
                         sustainable development and cooperation across the 11 nations.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div className="border-l-4 border-river-blue pl-4">
+                  <h4 className="font-bold text-charcoal mb-2">
+                    Benin
+                  </h4>
+                  <div className="flex items-start space-x-3 mb-2">
+                    <img
+                      src="/images/speakers/Diran.jpg"
+                      alt="Diran Soumonni"
+                      className="w-24 h-24 rounded-full object-cover"
+                    />
+                    <div>
+                      <p className="text-sm text-charcoal">
+                        <Link
+                          href="/summit/speakers#diran-soumonni"
+                          className="text-river-blue hover:text-river-blue-dark underline"
+                        >
+                          Ph.D. Diran Soumonni
+                        </Link>
+                      </p>
+                      <p className="text-xs text-charcoal mt-2">
+                        Associate Professor: Innovation Policy and Management, Wits Business School
                       </p>
                     </div>
                   </div>
@@ -214,7 +246,7 @@ export default function AcademicWorkingGroupPage() {
 
                 <div className="border-l-4 border-warm-gold pl-4">
                   <h4 className="font-bold text-charcoal mb-2">
-                    Kenya/USA: "Ubuntu Leadership: Harnessing Knowledge Systems for Transformative Education in Africa"
+                    Nigeria: "Ubuntu Leadership: Harnessing Knowledge Systems for Transformative Education in Africa"
                   </h4>
                   <div className="flex items-start space-x-3 mb-2">
                     <img
@@ -375,7 +407,7 @@ export default function AcademicWorkingGroupPage() {
                         href="/summit/speakers#geci-karuri"
                         className="text-river-blue hover:text-river-blue-dark underline"
                       >
-                        Prof. Geci Karuri-Sebina (South Africa)
+                        Prof. Geci Karuri-Sebina (Kenya)
                       </Link>
                     </p>
                   </div>
@@ -397,7 +429,7 @@ export default function AcademicWorkingGroupPage() {
                         href="/summit/speakers#john-osiri"
                         className="text-river-blue hover:text-river-blue-dark underline"
                       >
-                        Prof. John Kalu Osiri (Kenya/USA)
+                        Prof. John Kalu Osiri (Nigeria)
                       </Link>
                     </p>
                   </div>

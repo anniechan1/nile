@@ -308,7 +308,7 @@ export default function SummitPage() {
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
                           <div>
-                            <strong className="text-deep-orange !text-deep-orange">Kenya</strong>
+                            <strong className="text-deep-orange !text-deep-orange">Nigeria</strong>
                             <br />
                             <strong>Prof. John Kalu Osiri, Chancellor, Osiri University</strong>
                             <br />
@@ -489,7 +489,8 @@ export default function SummitPage() {
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
-                            <strong>Chair:</strong> Dr. Jemal Abafita (President, Jimma University)
+                            <strong>Chair: Dr. Jemal Abafita</strong>
+                            <p>President, Jimma University</p>
                           </span>
                         </div>
                         <div className="flex items-center space-x-3">
@@ -499,7 +500,8 @@ export default function SummitPage() {
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
-                            <strong>Co-Chair:</strong> Prof. Mammo Muchie
+                            <strong>Co-Chair: Prof. Mammo Muchie</strong>
+                            <p>DST/NRF Rated Research Professor at the Tshwane University of Technology, Pretoria, South Africa</p>
                           </span>
                         </div>
                       </div>
@@ -520,7 +522,8 @@ export default function SummitPage() {
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
-                            Deepti Kataria
+                            <strong>Chair: Deepti Kataria</strong>
+                            <p>General Secretary, Africa Study Centre</p>
                           </span>
                         </div>
 
@@ -533,7 +536,8 @@ export default function SummitPage() {
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
-                            <strong>Chair:</strong> Dr. Gezahegn Kebede
+                            <strong>Chair: Dr. Gezahegn Kebede</strong>
+                            <p>Regional Director for East Africa, Max Foundation</p>
                           </span>
                         </div>
                         <div className="flex items-center space-x-3">
@@ -562,6 +566,7 @@ export default function SummitPage() {
                           />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
                             <strong>Chair:</strong> Artist Desalegn Hailu Mazengiya
+                            <p>Initiator of the Children of the Nile Initiative</p>
                           </span>
                         </div>
                         <div className="flex items-center space-x-3">
@@ -571,7 +576,8 @@ export default function SummitPage() {
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
-                            <strong>Co-Chair:</strong> Haile Gebrselassie
+                            <strong>Co-Chair: Haile Gebrselassie</strong>
+                            <p>Olympic Legend, World Marathon Champion, and Business Leader</p>
                           </span>
                         </div>
                       </div>
@@ -594,7 +600,8 @@ export default function SummitPage() {
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
-                            <strong>Chair:</strong> Felix Matschie
+                            <strong>Chair: Felix Matschie</strong>
+                            <p>Strategic Lead, Ecopia Group</p>
                           </span>
                         </div>
                         <div className="flex items-center space-x-3">
@@ -604,13 +611,14 @@ export default function SummitPage() {
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
-                            <strong>Co-Chair:</strong> Samuel Bahiru
+                            <strong>Co-Chair: Samuel Bahiru</strong>
+                            <p>Chief Technology Officer & Co-Founder, Ticker Tape Technologies</p>
                           </span>
                         </div>
                       </div>
                     </Link>
                     {/* Group 5: Digital Guardians of the Nile: AI, Ethics & Cybersecurity */}
-                    <Link href="/summit/working-groups/entrepreneurs" className="block">
+                    <Link href="/summit/working-groups/digital-guardians" className="block">
                       <div className="bg-blue-50 hover:bg-blue-600 hover:text-white p-4 rounded-lg cursor-pointer transition-all duration-300 group">
                         <p className="font-bold text-gray-800 group-hover:text-white text-sm mb-2">
                           Group 5: Digital Guardians of the Nile: AI, Ethics & Cybersecurity
@@ -622,7 +630,8 @@ export default function SummitPage() {
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
-                            <strong>Chair:</strong> Dr. Mitslal Kifleyesus-Matschie
+                            <strong>Chair: Dr. Mitslal Kifleyesus-Matschie</strong>
+                            <p>Founder, Ecopia; <br />Assistant Professor, Jimma University </p>
                           </span>
                         </div>
                         <div className="flex items-center space-x-3 mb-4">
@@ -632,7 +641,8 @@ export default function SummitPage() {
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
-                            <strong>Co-Chair:</strong> Dr. Jennifer Batamuliza
+                            <strong>Co-Chair: Dr. Jennifer Batamuliza</strong>
+                            <p>Senior Researcher, African Centre for Technology Studies</p>
                           </span>
                         </div>
                         <div className="flex items-center space-x-3">
@@ -642,95 +652,99 @@ export default function SummitPage() {
                             className="w-20 h-20 object-cover rounded-full shadow-md"
                           />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
-                            <strong>Mr. Eugene Rwagasore</strong>, CTO and Co-founder at Pindo Inc.
-                            <br />
-                            "Entrepreneurial Innovation in AI for Basin Solutions"
+                            <strong>Mr. Eugene Rwagasore</strong>
+                            <p>CTO and Co-founder at Pindo Inc.</p>
                           </span>
                         </div>
                       </div>
                     </Link>
 
                     {/* Group 6: Enterprises of the Nile (Panel and Working Group) */}
-                    <Link href="/summit/working-groups/enterprises" className="block">
-                      <div className="bg-green-50 hover:bg-green-600 hover:text-white p-4 rounded-lg cursor-pointer transition-all duration-300 group">
-                        <p className="font-bold text-gray-800 group-hover:text-white text-sm mb-2">
-                          Group 6: Enterprises of the Nile (Panel and Working Group)
-                        </p>
+                    <div className="bg-green-50 p-4 rounded-lg group">
+                      <p className="font-bold text-gray-800 text-sm mb-2">
+                        Group 6: Enterprises of the Nile (Panel and Working Group)
+                      </p>
 
-                        {/* Panelists */}
-                        <h4 className="font-bold text-gray-800 group-hover:text-white text-sm mb-4">Panelists:</h4>
-                        <div className="space-y-4">
+                      {/* Panelists */}
+                      <h4 className="font-bold text-gray-800 group-hover:text-white text-sm mb-4">Panelists:</h4>
+                      <div className="space-y-4">
 
-                          <div className="flex items-start space-x-3">
-                            <img
-                              src="/images/speakers/mika.jpeg"
-                              alt="Mika Chavala"
-                              className="w-20 h-20 object-cover rounded-full shadow-md"
-                            />
-                            <span className="text-xs text-gray-600 group-hover:text-white/90">
-                              <strong>Mika Chavala</strong>, Tanzania
-                            </span>
-                          </div>
+                        <div className="flex items-start space-x-3">
+                          <img
+                            src="/images/speakers/mika.jpeg"
+                            alt="Mika Chavala"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Mika Chavala</strong>, Tanzania
+                            <p>Founder, Swahili Nation One Africa Foundation</p>
+                          </span>
+                        </div>
 
 
-                          <div className="flex items-start space-x-3">
-                            <img
-                              src="/images/speakers/irvine.jpeg"
-                              alt="Ms. Irvine Floreale"
-                              className="w-20 h-20 object-cover rounded-full shadow-md"
-                            />
-                            <span className="text-xs text-gray-600 group-hover:text-white/90">
-                              <strong>Ms. Irvine Floreale</strong>, Burundi
-                            </span>
-                          </div>
-                          <div className="flex items-start space-x-3">
-                            {/* <img
+                        <div className="flex items-start space-x-3">
+                          <img
+                            src="/images/speakers/irvine.jpeg"
+                            alt="Ms. Irvine Floreale"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Ms. Irvine Floreale Murame</strong>, Burundi
+                            <p>Managing Director, Infinity Group</p>
+                          </span>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          {/* <img
                               src="/images/speakers/Mary_Constantino.png"
                               alt="Ms. Mary Constantino"
                               className="w-20 h-20 object-cover rounded-full shadow-md"
                             /> */}
-                            <span className="text-xs text-gray-600 group-hover:text-white/90">
-                              <strong>Ms. Mary Constantino</strong>, South Sudan
-                            </span>
-                          </div>
-                          <div className="flex items-start space-x-3">
-                            <img
-                              src="/images/speakers/denise.png"
-                              alt="Ms. Denise Umubyeyi"
-                              className="w-20 h-20 object-cover rounded-full shadow-md"
-                            />
-                            <span className="text-xs text-gray-600 group-hover:text-white/90">
-                              <strong>Ms. Denise Umubyeyi</strong>, Rwanda
-                            </span>
-                          </div>
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Ms. Mary Constantino</strong>, South Sudan
+                          </span>
                         </div>
-
-                        {/* Working Group */}
-                        <h4 className="font-bold text-gray-800 group-hover:text-white text-sm mt-6 mb-4">Working Group:</h4>
-                        <div className="space-y-4">
-                          <div className="flex items-start space-x-3">
-                            <img
-                              src="/images/speakers/anon.jpeg"
-                              alt="Ms. Elizabeth Anon"
-                              className="w-20 h-20 object-cover rounded-full shadow-md"
-                            />
-                            <span className="text-xs text-gray-600 group-hover:text-white/90">
-                              <strong>Ms. Elizabeth Anon</strong>, South Sudan
-                            </span>
-                          </div>
-                          <div className="flex items-start space-x-3">
-                            <img
-                              src="/images/speakers/ange.jpeg"
-                              alt="Ange Muco Muyubira"
-                              className="w-20 h-20 object-cover rounded-full shadow-md"
-                            />
-                            <span className="text-xs text-gray-600 group-hover:text-white/90">
-                              <strong>Ms. Ange Muco Muyubira</strong>, Burundi
-                            </span>
-                          </div>
+                        <div className="flex items-start space-x-3">
+                          <img
+                            src="/images/speakers/denise.png"
+                            alt="Ms. Denise Umubyeyi"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Ms. Denise Umubyeyi</strong>, Rwanda
+                            <p>Country Director, Practical Action</p>
+                          </span>
                         </div>
                       </div>
-                    </Link>
+
+                      {/* Working Group */}
+                      <h4 className="font-bold text-gray-800 group-hover:text-white text-sm mt-6 mb-4">Working Group:</h4>
+                      <div className="space-y-4">
+                        <div className="flex items-start space-x-3">
+                          <img
+                            src="/images/speakers/anon.jpeg"
+                            alt="Ms. Elizabeth Anon"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Ms. Elizabeth Anon</strong>, South Sudan
+                            <p>Gender Advisor, AVSI Foundation</p>
+                          </span>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <img
+                            src="/images/speakers/ange.jpeg"
+                            alt="Ange Muco Muyubira"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Ms. Ange Muco Muyubira</strong>, Burundi
+                            <p>Founder & Executive Director, Kaz'O'zah</p>
+                          </span>
+                        </div>
+                      </div>
+
+                    </div>
+
 
                   </div>
                 </div>
@@ -740,7 +754,7 @@ export default function SummitPage() {
             </div>
 
           </div>
-        </section>
+        </section >
 
 
         <section className="mb-20 md:mb-32">
@@ -786,10 +800,10 @@ export default function SummitPage() {
             </div>
           </div>
         </section>
-      </main>
+      </main >
 
       {/* Footer */}
-      <Footer />
+      < Footer />
     </div >
   )
 }

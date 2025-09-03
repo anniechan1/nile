@@ -63,7 +63,7 @@ export default function SpeakersPage() {
                     </h2>
                     <div className="flex items-center space-x-2 bg-deep-orange/10 px-3 py-1 rounded-full">
                       <MapPin className="h-4 w-4 text-deep-orange" />
-                      <span className="text-sm font-bold text-deep-orange">South Africa/Kenya</span>
+                      <span className="text-sm font-bold text-deep-orange">Kenya</span>
                     </div>
                   </div>
 
@@ -90,6 +90,52 @@ export default function SpeakersPage() {
             </div>
           </section>
 
+
+          {/* PhD Diran Soumonni */}
+          <section id="diran-soumonni" className="scroll-mt-24">
+            <div className="bg-gradient-to-br from-warm-gold/10 to-river-blue/5 rounded-3xl p-8 shadow-xl border border-river-blue/20">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <div className="relative">
+                    <img
+                      src="/images/speakers/Diran.jpg"
+                      alt="PhD Diran Soumonni"
+                      className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-2">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">
+                      Ph.D. Diran Soumonni
+                    </h2>
+                    <div className="flex items-center space-x-2 bg-deep-orange/10 px-3 py-1 rounded-full">
+                      <MapPin className="h-4 w-4 text-deep-orange" />
+                      <span className="text-sm font-bold text-deep-orange">Benin</span>
+                    </div>
+                  </div>
+                  <div className="space-y-4 text-charcoal font-lora">
+                    <p>
+                      Diran Soumonni is an Associate Professor of Innovation Policy and Management at the
+                      University of the Witwatersrand, in Johannesburg, South Africa. His teaching and research
+                      interests include comparative innovation systems, energy innovation, and innovation for
+                      sustainability. Inspired by Global South and Global African thinkers on sustainable
+                      industrialisation, his current research advances a more holistic and historically-grounded
+                      perspective on ‘endogenous innovation’.
+                    </p>
+                    <p>
+                      He currently serves on the scientific committees of the International Network on Appropriate
+                      Technology (INAT), of the African Network for the Economics of Learning, Innovation and
+                      Competence Building Systems (AFRICALICS), and of the Wits Innovation Centre (WIC).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
           {/* Prof. John Kalu Osiri */}
           <section id="john-osiri" className="scroll-mt-24">
             <div className="bg-gradient-to-br from-warm-gold/10 to-river-blue/5 rounded-3xl p-8 shadow-xl border border-river-blue/20">
@@ -110,7 +156,7 @@ export default function SpeakersPage() {
                     </h2>
                     <div className="flex items-center space-x-2 bg-deep-orange/10 px-3 py-1 rounded-full">
                       <MapPin className="h-4 w-4 text-deep-orange" />
-                      <span className="text-sm font-bold text-deep-orange">Kenya/USA</span>
+                      <span className="text-sm font-bold text-deep-orange">Nigeria</span>
                     </div>
                   </div>
 

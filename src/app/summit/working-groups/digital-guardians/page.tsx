@@ -116,7 +116,7 @@ export default function EntrepreneursWorkingGroupPage() {
                           alt="Prof. Geci Karuri-Sebina"
                           className="w-20 h-20 rounded-full object-cover"
                         />
-                        <p className="text-sm text-gray-600">Prof. Geci Karuri-Sebina (South Africa)</p>
+                        <p className="text-sm text-gray-600">Prof. Geci Karuri-Sebina (Kenya)</p>
                       </div>
                     </li>
                     <li>
@@ -138,7 +138,7 @@ export default function EntrepreneursWorkingGroupPage() {
                           alt="Prof. John Kalu Osiri"
                           className="w-20 h-20 rounded-full object-cover"
                         />
-                        <p className="text-sm text-gray-600">Prof. John Kalu Osiri (Kenya/USA)</p>
+                        <p className="text-sm text-gray-600">Prof. John Kalu Osiri (Nigeria)</p>
                       </div>
                     </li>
                   </ul>
@@ -153,20 +153,7 @@ export default function EntrepreneursWorkingGroupPage() {
                     className="w-full h-auto rounded-lg shadow-md mb-4"
                   />
                   {/* Ubuntu Image */}
-                  <img
-                    src="/images/Ubuntu.webp"
-                    alt="Ubuntu 25.04 Plucky Puffin Desktop"
-                    className="w-full h-auto rounded-lg shadow-md mt-40"
-                  />
-                  <p className="text-sm text-gray-600 text-center mt-2">
-                    Ubuntu 25.04 Plucky Puffin
-                    <br />
-                    Canonical Ltd., GPL &lt;
-                    <a href="http://www.gnu.org/licenses/gpl.html" className="text-blue-600 hover:underline">
-                      http://www.gnu.org/licenses/gpl.html
-                    </a>
-                    &gt;, via Wikimedia Commons
-                  </p>
+
                 </div>
               </div>
             </div>
@@ -251,7 +238,7 @@ export default function EntrepreneursWorkingGroupPage() {
                         <div>
                           <p className="font-bold">Mr. Eugene Rwagasore (Kenya): Entrepreneurial Innovation in AI for Basin Solutions</p>
                           <p className="text-sm text-gray-600 italic mt-2">
-                            CTO and Co-founder at Pindo Inc.
+                            CTO and Co-founder at Pindo Inc. Full-stack software engineer with a focus on building applications for resource-constrained markets. Experienced in building web and mobile applications.
                           </p>
                         </div>
                         <img

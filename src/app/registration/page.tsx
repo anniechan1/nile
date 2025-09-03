@@ -29,7 +29,7 @@ export default function RegistrationPage() {
 
               <div className="inline-flex items-center space-x-2 bg-deep-orange backdrop-blur-sm px-4 py-2 rounded-full text-rich-white font-bold text-sm mb-8 shadow-lg">
                 <MapPin className="h-3 w-3" />
-                <span>Addis Ababa / Online</span>
+                <span>Online</span>
                 <span>|</span>
                 <Calendar className="h-3 w-3" />
                 <span>6–7 September 2025</span>

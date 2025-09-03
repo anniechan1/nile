@@ -5,14 +5,14 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Children of the Nile - A Shared Present & Future",
   description:
-    "A historic Pan-African summit uniting artists, academics, and innovators from all 11 Nile Basin nations. Join us September 6-7, 2025 in Addis Ababa or online for cultural celebration, academic collaboration, and sustainable innovation.",
+    "A historic Pan-African summit uniting artists, academics, and innovators from all 11 Nile Basin nations. Join us September 6-7, 2025 online for cultural celebration, academic collaboration, and sustainable innovation.",
   keywords:
     "Nile Basin summit, Pan-African unity, cultural collaboration, academic partnership, sustainable innovation, Ethiopia summit 2025, Nile Basin cooperation, African artists, university collaboration, cross-border dialogue, Addis Ababa conference, Nile heritage, African culture, transboundary cooperation, youth innovation",
   authors: [{ name: "Children of the Nile team" }],
   openGraph: {
     title: "Children of the Nile - A Shared Present & Future",
     description:
-      "Historic Pan-African summit uniting 11 Nile Basin nations through art, academia, and innovation. September 6-7, 2025 in Addis Ababa or online.",
+      "Historic Pan-African summit uniting 11 Nile Basin nations through art, academia, and innovation. September 6-7, 2025 online.",
     type: "website",
     locale: "en_US",
 

@@ -45,7 +45,7 @@ export default function SummitPage() {
 
             <div className="inline-flex items-center space-x-3 bg-deep-orange backdrop-blur-sm px-5 py-2.5 rounded-full text-rich-white font-bold text-sm md:text-base mb-6 shadow-lg">
               <MapPin className="h-4 w-4" />
-              <span>Addis Ababa / Online</span>
+              <span>Online</span>
               <span>|</span>
               <Calendar className="h-4 w-4" />
               <span>6–7 September 2025</span>

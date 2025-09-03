@@ -161,7 +161,7 @@ export default function SummitPage() {
                         <div>
                           <strong>Dr. Gezehen Kebede, Ethiopian Civil Society Organizations Council</strong>
                           <br />
-                          Welcome and open the conference
+                          WWelcome and open the conference, and read the message of the President from his interview
                         </div>
                       </div>
                       <div className="flex items-start space-x-4 mt-4">
@@ -515,17 +515,6 @@ export default function SummitPage() {
                         </p>
 
 
-                        <div className="flex items-center space-x-3 mb-4">
-                          <img
-                            src="/images/speakers/Deepti.png"
-                            alt="Deepti Kataria"
-                            className="w-20 h-20 object-cover rounded-full shadow-md"
-                          />
-                          <span className="text-xs text-gray-600 group-hover:text-white/90">
-                            <strong>Chair: Deepti Kataria</strong>
-                            <p>General Secretary, Africa Study Centre</p>
-                          </span>
-                        </div>
 
 
 
@@ -540,18 +529,38 @@ export default function SummitPage() {
                             <p>Regional Director for East Africa, Max Foundation</p>
                           </span>
                         </div>
-                        <div className="flex items-center space-x-3">
-                          {/* <img
-                            src="/images/speakers/Endashaw.jpeg"
+
+
+                        <div className="flex items-center space-x-3 mb-4">
+                          <img
+                            src="/images/speakers/Endashaw.jpg"
                             alt="Endashaw Mogessie"
                             className="w-20 h-20 object-cover rounded-full shadow-md"
-                          /> */}
+                          />
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
                             <strong>Co-Chair:</strong> Endashaw Mogessie
                           </span>
                         </div>
+
+
+                        <div className="flex items-center space-x-3 mb-4">
+                          <img
+                            src="/images/speakers/Deepti.png"
+                            alt="Deepti Kataria"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <span className="text-xs text-gray-600 group-hover:text-white/90">
+                            <strong>Deepti Kataria</strong>
+                            <p>General Secretary, Africa Study Centre</p>
+                          </span>
+                        </div>
+
                       </div>
+
+
                     </Link>
+
+
                     {/* Group 3: Art, Culture and Sport */}
                     <Link href="/summit/working-groups/art" className="block">
                       <div className="bg-orange-50 hover:bg-orange-600 hover:text-white p-4 rounded-lg cursor-pointer transition-all duration-300 group">

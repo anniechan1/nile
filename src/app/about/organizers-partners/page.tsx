@@ -26,12 +26,13 @@ export default function OrganizersPartnersPage() {
     },
     {
       name: "ASSIST",
-      subtitle: "Chaired by Prof. Mamo",
+      subtitle: "Chaired by Prof. Mammo Muchie",
       description: "Coordinating scientific and educational frameworks.",
       logo: "/images/assist.png",
       url: "https://assistsarchi.wixsite.com/assist",
       borderColor: "border-river-blue",
       shadowColor: "bg-river-blue/20",
+
     },
     {
       name: "Equal Trade Alliance",

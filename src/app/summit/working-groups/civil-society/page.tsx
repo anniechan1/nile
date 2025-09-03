@@ -58,7 +58,7 @@ export default function CivilSocietyWorkingGroupPage() {
                   <div>
                     <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Chair</h3>
                     <p className="text-sm text-charcoal">
-                      • <strong>Dr. Gezahegn Kebede Gebrehana</strong>
+                      <strong>Dr. Gezahegn Kebede Gebrehana</strong>
                     </p>
                     <p className="text-sm text-charcoal">Regional Director for East Africa, Max Foundation</p>
                   </div>
@@ -66,15 +66,20 @@ export default function CivilSocietyWorkingGroupPage() {
 
                 {/* Co-Chair Section */}
                 <div className="flex items-center space-x-4">
-                  <div className="w-24 h-24 rounded-full bg-deep-orange/20 flex items-center justify-center">
-                    {/* <span className="text-deep-orange font-bold text-lg">EM</span> */}
-                  </div>
+                  <img
+                    src="/images/speakers/Endashaw.jpg"
+                    alt="Endashaw Mogessie<"
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
                   <div>
+
+
                     <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Co-Chair</h3>
                     <p className="text-sm text-charcoal">
-                      • <strong>Endashaw Mogessie</strong>
+                      <strong>Endashaw Mogessie</strong>
                     </p>
                   </div>
+
                 </div>
               </div>
             </div>

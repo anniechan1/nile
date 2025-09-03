@@ -189,6 +189,8 @@ export default function AcademicWorkingGroupPage() {
                 </div>
 
 
+
+
                 <div className="border-l-4 border-river-blue pl-4">
                   <h4 className="font-bold text-charcoal mb-2">
                     Benin
@@ -310,8 +312,7 @@ export default function AcademicWorkingGroupPage() {
 
                 <div className="border-l-4 border-river-blue pl-4">
                   <h4 className="font-bold text-charcoal mb-2">
-                    India/Sudan: "Peace Education and Knowledge Diplomacy: The Academic Foundation for Lasting Nile
-                    Cooperation"
+                    India/Sudan: "The GERD can become an Exemplary Model for all Humanity to Live in One World Community with the Collaboration of the 11 Children of the Nile"
                   </h4>
                   <div className="flex items-start space-x-3 mb-2">
                     <img
@@ -325,7 +326,7 @@ export default function AcademicWorkingGroupPage() {
                           href="/summit/speakers#mohd-malik"
                           className="text-river-blue hover:text-river-blue-dark underline"
                         >
-                          Dr. Mohd Ashaq Malik
+                          Dr. Mohammad Ashaq Malik
                         </Link>
                         , Adjunct Professor, University of Gondar
                       </p>
@@ -337,6 +338,26 @@ export default function AcademicWorkingGroupPage() {
                     </div>
                   </div>
 
+                </div>
+              </div>
+              <div className="border-l-4 border-warm-gold pl-4">
+                <h4 className="font-bold text-charcoal mb-2">
+                  Ethiopia: Empowering Women and Youth with GERD's Renewable Energy to Make Them Resilient Citizens
+                </h4>
+                <div className="flex items-start space-x-3 mb-2">
+                  <img
+                    src="/images/speakers/Hannah.png"
+                    alt="Professor Hannah Mariam Meherete Selassie"
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="text-sm text-charcoal">
+                      <strong>Professor Hannah Mariam Meherete Selassie</strong>
+                    </p>
+                    <p className="text-xs text-charcoal mt-2">
+                      Board Chairperson for "Ye QaQe New Years" to Empower Women and Youth for Resilient Citizens
+                    </p>
+                  </div>
                 </div>
               </div>
 

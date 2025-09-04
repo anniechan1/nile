@@ -48,36 +48,58 @@ export default function AcademicWorkingGroupPage() {
 
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
               <div className="grid md:grid-cols-2 gap-6 text-left">
-                {/* Chair Section */}
-                <div className="flex items-center space-x-4">
-                  <img
-                    src="/images/speakers/dr_jemal.jpeg"
-                    alt="Dr. Jemal Abafita"
-                    className="w-24 h-24 rounded-full object-cover"
-                  />
-                  <div>
-                    <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Chair</h3>
-                    <p className="text-sm text-charcoal"><strong>Dr. Jemal Abafita</strong></p>
-                    <p className="text-sm text-charcoal">President of Jimma University (Ethiopia)</p>
-                  </div>
-                </div>
 
-                {/* Co-Chair Section */}
-                <div className="flex items-center space-x-4">
-                  <img
-                    src="/images/speakers/mammo.png"
-                    alt="Prof. Mammo Muchie"
-                    className="w-24 h-24 rounded-full object-cover"
-                  />
-                  <div>
-                    <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Co-Chair</h3>
-                    <p className="text-sm text-charcoal"><strong>Prof. Mammo Muchie</strong></p>
-                    <p className="text-sm text-charcoal">
-                      DST/NRF SARChI Professor in Innovation Studies, TUT, South Africa & Steering Committee -
-                      Universities & Research
-                    </p>
+
+                <Link
+                  href="https://en.wikipedia.org/wiki/Jemal_Abafita_Ababulgu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300"
+                >
+                  <div className="flex items-center space-x-4">
+                    <img
+                      src="/images/speakers/dr_jemal.jpeg"
+                      alt="Dr. Jemal Abafita"
+                      className="w-24 h-24 rounded-full object-cover shadow-md"
+                    />
+                    <div>
+                      <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Chair</h3>
+                      <p className="text-sm text-charcoal">
+                        <strong>Dr. Jemal Abafita</strong>
+                      </p>
+                      <p className="text-sm text-charcoal">President of Jimma University (Ethiopia)</p>
+                    </div>
                   </div>
-                </div>
+                </Link>
+              </div>
+
+              {/* Co-Chair Section */}
+              <div className="flex items-center space-x-4">
+                <Link
+                  href="https://acts-net.org/team/prof-mammo-muchie/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300"
+                >
+                  <div className="flex items-center space-x-4">
+                    <img
+                      src="/images/speakers/mammo.png"
+                      alt="Prof. Mammo Muchie"
+                      className="w-24 h-24 rounded-full object-cover shadow-md"
+                    />
+                    <div>
+                      <h3 className="font-playfair text-lg font-bold text-river-blue mb-2">Co-Chair</h3>
+                      <p className="text-sm text-charcoal">
+                        <strong>Prof. Mammo Muchie</strong>
+                      </p>
+                      <p className="text-sm text-charcoal">
+                        DST/NRF SARChI Professor in Innovation Studies, TUT, South Africa & Steering Committee -
+                        Universities & Research
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+
               </div>
               <div className="mt-4 pt-4 border-t border-warm-gold/20">
                 <div className="flex items-center justify-center space-x-4">
@@ -217,6 +239,33 @@ export default function AcademicWorkingGroupPage() {
                   </div>
 
                 </div>
+                {/* Professor Stephen Little */}
+                <div className="border-l-4 border-river-blue pl-4">
+                  {/* <h4 className="font-bold text-charcoal mb-2"></h4> */}
+                  <div className="flex items-start space-x-3 mb-2">
+                    <img
+                      src="/images/speakers/Stephan.jpg"
+                      alt="Professor Stephen Little"
+                      className="w-24 h-24 rounded-full object-cover"
+                    />
+                    <div>
+                      <p className="text-sm text-charcoal">
+                        <Link
+                          href="/summit/speakers#stephen-little"
+                          className="text-river-blue hover:text-river-blue-dark underline"
+                        >
+                          Professor Stephen Little
+                        </Link>
+                      </p>
+                      <p className="text-xs text-charcoal mt-2">
+                        Director, Centre for Pan African Studies, Hume Institute for Postgraduate Studies
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+
 
                 <div className="border-l-4 border-warm-gold pl-4">
                   <h4 className="font-bold text-charcoal mb-2">

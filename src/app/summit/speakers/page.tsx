@@ -65,6 +65,20 @@ export default function SpeakersPage() {
                       <MapPin className="h-4 w-4 text-deep-orange" />
                       <span className="text-sm font-bold text-deep-orange">Kenya</span>
                     </div>
+                    <Link
+                      href="https://www.linkedin.com/in/gecik/?originalSubdomain=za"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-4"
+                    >
+                      <img
+                        src="/images/linkedin.svg"
+                        alt="LinkedIn"
+                        className="w-6 h-6 hover:opacity-80 transition-opacity"
+                      />
+                    </Link>
+
+
                   </div>
 
                   <div className="space-y-4 text-charcoal font-lora">
@@ -134,6 +148,49 @@ export default function SpeakersPage() {
             </div>
           </section>
 
+
+
+          {/* Prof. Stephen Little */}
+          <section id="stephen-little" className="scroll-mt-24">
+            <div className="bg-gradient-to-br from-warm-gold/10 to-river-blue/5 rounded-3xl p-8 shadow-xl border border-river-blue/20">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <div className="relative">
+                    <img
+                      src="/images/speakers/Stephan.jpg"
+                      alt="Prof. Stephen Little"
+                      className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-2">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">
+                      Prof. Stephen Little
+                    </h2>
+                    <div className="flex items-center space-x-2 bg-deep-orange/10 px-3 py-1 rounded-full">
+                      <MapPin className="h-4 w-4 text-deep-orange" />
+                      <span className="text-sm font-bold text-deep-orange"></span>
+                    </div>
+                  </div>
+                  <div className="space-y-4 text-charcoal font-lora">
+                    <p>
+                      Stephen Little is the founding Director of the Centre for Pan-African Studies, Hume Institute for Postgraduate Studies, Lausanne, Professor Extraordinaire, Tshwane University of Technology and Adjunct Professor, University of Gondar, Ethiopia.
+                    </p>
+                    <p>
+                      He holds a BSc in Architecture, an MSc in Applied Psychology from Aston University, UK, and a PhD on the organisational impact of computer-aided design from the Royal College of Art, London.
+                    </p>
+                    <p>
+                      He is a Fellow of the Regional Studies Association and Chaired the Asia Pacific Technology Network from 2008 to 2016.
+                    </p>
+                    <p>
+                      Previous appointments include Griffith University Queensland, University of Wollongong NSW, Manchester Metropolitan University UK, and the Open University UK, where he was a co-director of the cross-faculty Centre for Innovation, Knowledge and Development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           {/* Dan Noel Odaba */}
           <section id="dan-noel-odaba" className="scroll-mt-24">
             <div className="bg-gradient-to-br from-river-blue/5 to-warm-gold/10 rounded-3xl p-8 shadow-xl border border-warm-gold/20">

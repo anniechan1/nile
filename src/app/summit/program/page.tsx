@@ -140,7 +140,6 @@ export default function SummitPage() {
               <div className="grid md:grid-cols-2 gap-8 mb-12">
 
                 {/* Opening Session */}
-
                 <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="w-8 h-8 bg-deep-orange rounded-lg flex items-center justify-center">
@@ -151,54 +150,79 @@ export default function SummitPage() {
                   </div>
                   <div className="space-y-4 text-sm font-lora text-charcoal">
                     <div>
+                      {/* Dr. Gezehen Kebede */}
+                      <Link
+                        href="https://www.linkedin.com/in/dr-gezahegn-kebede-gebrehana-4353332b/?originalSubdomain=et"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300"
+                      >
+                        <div className="flex items-start space-x-4">
+                          <img
+                            src="/images/speakers/Gezehen.jpeg"
+                            alt="Dr. Gezehen Kebede"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <div>
+                            <strong>Dr. Gezehen Kebede, Ethiopian Civil Society Organizations Council</strong>
+                            <br />
+                            Welcome and open the conference, and read the{" "}
+                            <Link
+                              href="/summit/presidential-interview"
+                              className="text-deep-orange font-bold hover:underline"
+                              style={{ color: "#FF5722" }}
+                            >
+                              message of the President from his interview
+                            </Link>
+                          </div>
+                        </div>
+                      </Link>
 
-                      <div className="flex items-start space-x-4">
-                        <img
-                          src="/images/speakers/Gezehen.jpeg"
-                          alt="Dr. Gezehen Kebede"
-                          className="w-20 h-20 object-cover rounded-full shadow-md"
-                        />
-                        <div>
-                          <strong>Dr. Gezehen Kebede, Ethiopian Civil Society Organizations Council</strong>
-                          <br />
-                          Welcome and open the conference, and read the{" "}
-                          <Link
-                            href="/summit/presidential-interview"
-                            className="text-deep-orange font-bold hover:underline"
-                            style={{ color: "#FF5722" }} // Inline style to override parent color
-                          >
-                            message of the President from his interview
-                          </Link>
+                      {/* Artist Desaalegn Hailu */}
+                      <Link
+                        href="https://www.unesco.org/creativity/ja/biography/8548"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300 mt-4"
+                      >
+                        <div className="flex items-start space-x-4">
+                          <img
+                            src="/images/speakers/Hailu.jpg"
+                            alt="Artist Desaalegn Hailu"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <div>
+                            <strong>Artist Desaalegn Hailu, initiator of the Children of Nile</strong>
+                            <br />
+                            Set vision and purpose for the Children of the Nile Initiative
+                          </div>
                         </div>
-                      </div>
-                      <div className="flex items-start space-x-4 mt-4">
-                        <img
-                          src="/images/speakers/Hailu.jpg"
-                          alt="Artist Desaalegn Hailu"
-                          className="w-20 h-20 object-cover rounded-full shadow-md"
-                        />
-                        <div>
-                          <strong>Artist Desaalegn Hailu, initiator of the Children of Nile</strong>
-                          <br />
-                          Set vision and purpose for the Children of the Nile Initiative
+                      </Link>
+
+                      {/* Prof. Dr. Afework Kassu */}
+                      <Link
+                        href="https://en.wikipedia.org/wiki/Afework_Kassu_Gizaw"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300 mt-4"
+                      >
+                        <div className="flex items-start space-x-4">
+                          <img
+                            src="/images/speakers/afework.png"
+                            alt="Prof. Dr. Afework Kassu"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <div>
+                            <strong>Prof. Dr. Afework Kassu – Head AHRI, former State Minister of Science and Technology of Ethiopia</strong>
+                            <br />
+                            “Science, Innovation, and Youth Leadership for a Shared Nile Future”
+                          </div>
                         </div>
-                      </div>
-                      <div className="flex items-start space-x-4 mt-4">
-                        <img
-                          src="/images/speakers/afework.png"
-                          alt="Prof. Dr. Afework Kassu"
-                          className="w-20 h-20 object-cover rounded-full shadow-md"
-                        />
-                        <div>
-                          <strong>Prof. Dr. Afework Kassu – Head AHRI, former State Minister of Science and Technology of Ethiopia</strong>
-                          <br />
-                          “Science, Innovation, and Youth Leadership for a Shared Nile Future”
-                        </div>
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 </div>
-                {/* Keynote Statements */}
+
                 {/* Keynote Statements */}
                 <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                   <div className="flex items-center space-x-3 mb-4">
@@ -209,17 +233,26 @@ export default function SummitPage() {
                     <span className="text-sm text-charcoal bg-warm-gold/20 px-2 py-1 rounded">09:20 – 09:50 EAT</span>
                   </div>
                   <ul className="space-y-6 text-sm font-lora text-charcoal">
-                    <li className="flex items-start space-x-4">
-                      <img
-                        src="/images/speakers/mammo.png"
-                        alt="Prof. Mammo Muchie"
-                        className="w-16 h-16 object-cover rounded-full shadow-md"
-                      />
-                      <div>
-                        <strong>Prof. Mammo Muchie (Ethiopia/South Africa)</strong>
-                        <br />
-                        “Ubuntu and the Children of the Nile: Shared Humanity for Shared Futures”
-                      </div>
+                    <li>
+                      <Link
+                        href="https://acts-net.org/team/prof-mammo-muchie/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300"
+                      >
+                        <div className="flex items-start space-x-4">
+                          <img
+                            src="/images/speakers/mammo.png"
+                            alt="Prof. Mammo Muchie"
+                            className="w-16 h-16 object-cover rounded-full shadow-md"
+                          />
+                          <div>
+                            <strong>Prof. Mammo Muchie (Ethiopia/South Africa)</strong>
+                            <br />
+                            “Ubuntu and the Children of the Nile: Shared Humanity for Shared Futures”
+                          </div>
+                        </div>
+                      </Link>
                     </li>
                     <li className="flex items-start space-x-4">
                       {/* <img
@@ -271,11 +304,6 @@ export default function SummitPage() {
                       <h4 className="font-bold text-river-blue mb-4">List of Speakers by Country Affiliation</h4>
                       <ul className="space-y-6 text-sm font-lora text-charcoal">
                         <li className="flex items-start space-x-4">
-                          {/* <img
-                            src=""
-                            alt="Speaker from Sudan"
-                            className="w-16 h-16 object-cover rounded-full shadow-md"
-                          /> */}
 
 
                           <img
@@ -307,34 +335,51 @@ export default function SummitPage() {
                           </div>
 
                         </li>
-                        <li className="flex items-start space-x-4">
-                          <img
-                            src="/images/speakers/Prof_John.jpeg"
-
-                            alt="Speaker from Kenya"
-                            className="w-20 h-20 object-cover rounded-full shadow-md"
-                          />
-                          <div>
-                            <strong className="text-deep-orange !text-deep-orange">Nigeria</strong>
-                            <br />
-                            <strong>Prof. John Kalu Osiri, Chancellor, Osiri University</strong>
-                            <br />
-                            Ubuntu Leadership & Ethics
-                          </div>
+                        <li>
+                          <Link
+                            href="https://www.linkedin.com/in/jkosiri/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300"
+                          >
+                            <div className="flex items-start space-x-4">
+                              <img
+                                src="/images/speakers/Prof_John.jpeg"
+                                alt="Prof. John Kalu Osiri"
+                                className="w-20 h-20 object-cover rounded-full shadow-md"
+                              />
+                              <div>
+                                <strong className="text-deep-orange">Nigeria</strong>
+                                <br />
+                                <strong>Prof. John Kalu Osiri, Chancellor, Osiri University</strong>
+                                <br />
+                                Ubuntu Leadership & Ethics
+                              </div>
+                            </div>
+                          </Link>
                         </li>
-                        <li className="flex items-start space-x-4">
-                          <img
-                            src="/images/speakers/Dr_Jenn.jpeg"
-                            alt="Speaker from Rwanda"
-                            className="w-20 h-20 object-cover rounded-full shadow-md"
-                          />
-                          <div>
-                            <strong className="text-deep-orange !text-deep-orange">Rwanda</strong>
-                            <br />
-                            <strong>Dr. Jennifer Batamuliza, Specialist in Data Sovereignty & STEM Education</strong>
-                            <br />
-                            Co-Chair & Speaker
-                          </div>
+                        <li>
+                          <Link
+                            href="https://www.linkedin.com/in/dr-batamuliza-jennifer-3abbaa80/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300"
+                          >
+                            <div className="flex items-start space-x-4">
+                              <img
+                                src="/images/speakers/Dr_Jenn.jpeg"
+                                alt="Dr. Jennifer Batamuliza"
+                                className="w-20 h-20 object-cover rounded-full shadow-md"
+                              />
+                              <div>
+                                <strong className="text-deep-orange">Rwanda</strong>
+                                <br />
+                                <strong>Dr. Jennifer Batamuliza, Specialist in Data Sovereignty & STEM Education</strong>
+                                <br />
+                                Co-Chair & Speaker
+                              </div>
+                            </div>
+                          </Link>
                         </li>
                         <li className="flex items-start space-x-4">
                           {/* <img
@@ -371,59 +416,75 @@ export default function SummitPage() {
                       <ul className="space-y-6 text-sm font-lora text-charcoal">
                         {/* Moderated Reflection */}
                         <li>
-                          <strong>Moderated Reflection: "One River, Many Voices"</strong>
-
-                          <div className="flex items-start space-x-4 mt-2">
-                            <img
-                              src="/images/speakers/Prof_John.jpeg"
-                              alt="Prof. John Kalu Osiri"
-                              className="w-20 h-20 object-cover rounded-full shadow-md"
-                            />
-                            <div>
-
-
-                              15-minute dialogue with selected speakers from the “Voices” on the question:
-                              <br />
-                              <em>“What does it mean to be a Child of the Nile today?”</em>
+                          <Link
+                            href="https://www.linkedin.com/in/jkosiri/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300"
+                          >
+                            <strong>Moderated Reflection: "One River, Many Voices"</strong>
+                            <div className="flex items-start space-x-4 mt-2">
+                              <img
+                                src="/images/speakers/Prof_John.jpeg"
+                                alt="Prof. John Kalu Osiri"
+                                className="w-20 h-20 object-cover rounded-full shadow-md"
+                              />
+                              <div>
+                                15-minute dialogue with selected speakers from the “Voices” on the question:
+                                <br />
+                                <em>“What does it mean to be a Child of the Nile today?”</em>
+                              </div>
                             </div>
-                          </div>
+                          </Link>
                         </li>
 
                         {/* Summary & Call to Action */}
                         <li>
-                          <strong>Summary & Call to Action</strong>
-                          <br />
-                          <div className="flex items-start space-x-4 mt-2">
-                            <img
-                              src="/images/speakers/Prof_John.jpeg"
-                              alt="Prof. John Kalu Osiri"
-                              className="w-20 h-20 object-cover rounded-full shadow-md"
-                            />
-                            <div>
-                              <strong>Prof. John Kalu Osiri</strong>
-                              <br />
-                              Synthesizes key messages and inspires action, emphasizing the purpose of the working groups.
+                          <Link
+                            href="https://www.linkedin.com/in/jkosiri/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300"
+                          >
+                            <strong>Summary & Call to Action</strong>
+                            <div className="flex items-start space-x-4 mt-2">
+                              <img
+                                src="/images/speakers/Prof_John.jpeg"
+                                alt="Prof. John Kalu Osiri"
+                                className="w-20 h-20 object-cover rounded-full shadow-md"
+                              />
+                              <div>
+                                <strong>Prof. John Kalu Osiri</strong>
+                                <br />
+                                Synthesizes key messages and inspires action, emphasizing the purpose of the working groups.
+                              </div>
                             </div>
-                          </div>
+                          </Link>
                         </li>
-
                         {/* Transition to Working Groups */}
                         <li>
-                          <strong>Transition to Working Groups</strong>
-                          <br />
-                          <div className="flex items-start space-x-4 mt-2">
-                            <img
-                              src="/images/speakers/Gezehen.jpeg"
-                              alt="Dr. Gezehen Kebede"
-                              className="w-20 h-20 object-cover rounded-full shadow-md"
-                            />
-                            <div>
-                              <strong>Dr. Gezehen Kebede</strong>
-                              <br />
-                              Announces the five breakout sessions, closes the plenary, and directs participants to their group rooms.
+                          <Link
+                            href="https://www.linkedin.com/in/dr-gezahegn-kebede-gebrehana-4353332b/?originalSubdomain=et"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300"
+                          >
+                            <strong>Transition to Working Groups</strong>
+                            <div className="flex items-start space-x-4 mt-2">
+                              <img
+                                src="/images/speakers/Gezehen.jpeg"
+                                alt="Dr. Gezehen Kebede"
+                                className="w-20 h-20 object-cover rounded-full shadow-md"
+                              />
+                              <div>
+                                <strong>Dr. Gezehen Kebede</strong>
+                                <br />
+                                Announces the five breakout sessions, closes the plenary, and directs participants to their group rooms.
+                              </div>
                             </div>
-                          </div>
+                          </Link>
                         </li>
+
                       </ul>
                     </div>
 

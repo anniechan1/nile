@@ -15,7 +15,7 @@ export default function SpeakersPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Link
-              href="/summit/working-groups/academic"
+              href="/summit/program"
               className="inline-flex items-center text-river-blue hover:text-river-blue-dark mb-6 transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
@@ -421,6 +421,77 @@ export default function SpeakersPage() {
 
                     </p>
 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+          {/* Dr. Rahel Belete Balkew */}
+          <section id="rahel-belete" className="scroll-mt-24">
+            <div className="bg-gradient-to-br from-river-blue/5 to-warm-gold/10 rounded-3xl p-8 shadow-xl border border-warm-gold/20">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <div className="relative">
+                    <img
+                      src="/images/speakers/Rahel.jpeg"
+                      alt="Dr. Rahel Belete Balkew"
+                      className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-2">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">
+                      Dr. Rahel Belete Balkew
+                    </h2>
+                  </div>
+                  <div className="space-y-4 text-charcoal font-lora">
+                    <p>
+                      Dr. Rahel is a Co-founder and Deputy Managing Director of Kilimanjaro Global Consulting Training and Innovation. Kilimanjaro Global is established with a broad social entrepreneurial vision of capacity building of the youths, empowering with skills to remove insecurity and instill confidence. Envision a nation free from unemployment and ensure fruitful engagement in the economic development of the country by attaining innovation, entrepreneurship and digital literacy.
+                    </p>
+                    <p>
+                      Dr. Rahel is currently serving as the Vice President of the Clinton Health Access Initiative (CHAI), and as Country Director of the Ethiopia Office. She is a strategic thinker and a self-motivated professional with a proven track record of success in project cycle management, social marketing, networking and advocacy, management and leadership. She holds a PhD from Bulacan State University Philippines in 2015, in Business Administration, MBA in Business Administration from Puna University in India; Masters in Organizational Leadership from Azusa Pacific University, California.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          {/* Dr. Addis Kassahun Mulat */}
+          <section id="addis-kassahun" className="scroll-mt-24">
+            <div className="bg-gradient-to-br from-warm-gold/5 to-river-blue/10 rounded-3xl p-8 shadow-xl border border-warm-gold/20">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-1">
+                  <div className="relative">
+                    <img
+                      src="/images/speakers/Addis.jpeg"
+                      alt="Dr. Addis Kassahun Mulat"
+                      className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-2">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <h2 className="font-playfair text-2xl md:text-3xl font-bold text-river-blue">
+                      Dr. Addis Kassahun Mulat
+                    </h2>
+                  </div>
+                  <div className="space-y-4 text-charcoal font-lora">
+                    <p>
+                      Dr. Mulat is Co-founder of Kilimanjaro Consulting and Innovation Hub (KIH). KIH is established in 2010 with a broad social entrepreneurial vision of capacity building of the youths, empowering with skills to remove insecurity and instill confidence.
+                    </p>
+                    <p>
+                      Dr. Mulat has about thirty years of strategic planning and leadership, managerial and technical programs experiences in diverse areas with Multilateral, Bilateral, International NGOs, private sector development and government programs in Ethiopia, Eastern & Southern African countries. He was formerly served the Government of Ethiopia in the fight against HIV/AIDS under the Global Fund (GFATM) programs, UNAIDS assisting the Donors’ Forum. He served the World Bank multimillion USD financed Africa Regional Capacity Building Networks (ARCAN) project based in Dar es Salaam covering Ethiopia, Kenya and Tanzania including Zanzibar with multitasking roles as Deputy Regional Coordinator and M&E Specialist. Once he moved to Ethiopia to join USAID financed Community Health Program as Deputy Country Director.
+                    </p>
+                    <p>
+                      From September 2011 onward, he has been working as Co-Founder & Managing Director for Kilimanjaro Global Consulting. He has played as a team lead for various consultancy assignments with different sectors. Dr. Mulat is the first Duke Global Health Policy Fellow at Duke Global Health Institute (DGHI) in Duke University, Northern Carolina, USA. Currently, he is an active Executive Member and Vice President of the Ethiopian Economics Association (EEA).
+                    </p>
                   </div>
                 </div>
               </div>

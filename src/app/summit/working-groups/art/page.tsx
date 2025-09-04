@@ -218,6 +218,20 @@ export default function ArtWorkingGroupPage() {
                   <div>
                     <p className="text-charcoal mb-2">
                       <span className="font-bold">Mika Chavala</span> (Tanzania), Founder, Swahili Nation One Africa Foundation
+
+                    </p>
+                    <p className="text-sm text-charcoal mt-2">
+                      Mika Chavala is a strategic leader known for managing diverse teams. He founded the Swahili Nation One Africa Foundation and Kairos Mega Investment, and launched the popular <a
+                        href="https://www.youtube.com/@SWAHILINATION"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-bold hover:underline"
+                        style={{ color: "#FF5722" }} // Explicitly set the color
+                      >
+                        Swahili Nation
+                      </a> YouTube channel with over 487,000 subscribers.
+                      <br />
+                      In 2020, he received honorary citizenship from the Seoul Metropolitan Government and became an Africa Insight ambassador in 2021. In 2024, he launched Kairos Mega Investment to tackle hunger, health issues, and enhance education, focusing on youth development.
                     </p>
                   </div>
                 </div>
@@ -263,7 +277,18 @@ export default function ArtWorkingGroupPage() {
                         The 2026 Festival (Culture): "A Nile Basin Digital Museum & Content Strategy"
                       </h4>
                       <p className="text-sm text-charcoal">
-                        <strong>Mika Chavala</strong> (Tanzania)
+                        <strong>Mika Chavala</strong> (Tanzania) is a strategic leader known for managing diverse teams. He founded the Swahili Nation One Africa Foundation and Kairos Mega Investment, and launched the popular <a
+                          href="https://www.youtube.com/@SWAHILINATION"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-bold hover:underline"
+                          style={{ color: "#FF5722" }} // Explicitly set the color
+                        >
+                          Swahili Nation
+                        </a> YouTube channel with over 487,000 subscribers.
+                        <br />
+                        In 2020, he received honorary citizenship from the Seoul Metropolitan Government and became an Africa Insight ambassador in 2021. In 2024, he launched Kairos Mega Investment to tackle hunger, health issues, and enhance education, focusing on youth development.
+
                       </p>
                     </div>
                   </div>
@@ -373,6 +398,7 @@ export default function ArtWorkingGroupPage() {
                       <div className="flex-1">
                         <p className="font-bold text-charcoal">Children of the Nile Festival 2026: Outlining the event structure (marathon, football, exhibitions, digital content).</p>
                         <p className="text-sm text-charcoal">Lead: Mika Chavala & Eng. Ahmed Abou Elgasim Hashim</p>
+                        <br></br>
                       </div>
                     </div>
 

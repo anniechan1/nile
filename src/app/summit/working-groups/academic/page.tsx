@@ -389,8 +389,57 @@ export default function AcademicWorkingGroupPage() {
                   </div>
                 </div>
 
+
+
               </div>
 
+
+              <div className="border-l-4 border-deep-orange pl-4">
+                <div className="flex items-start space-x-3 mb-2">
+                  <img
+                    src="/images/speakers/Rahel.jpeg"
+                    alt="Dr. Rahel Belete Balkew"
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="text-sm text-charcoal">
+                      <Link
+                        href="/summit/speakers#rahel-belete"
+                        className="text-river-blue hover:text-river-blue-dark underline"
+                      >
+                        Dr. Rahel Belete Balkew
+                      </Link>
+                    </p>
+                    <p className="text-xs text-charcoal mt-2">
+                      Co-founder of Kilimanjaro Global; Vice President, The Ethiopian Economics Association (EEA)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="border-l-4 border-deep-orange pl-4">
+                <div className="flex items-start space-x-3 mb-2">
+                  <img
+                    src="/images/speakers/Addis.jpeg"
+                    alt="Dr. Addis Kassahun Mulat"
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="text-sm text-charcoal">
+                      <Link
+                        href="/summit/speakers#addis-kassahun"
+                        className="text-river-blue hover:text-river-blue-dark underline"
+                      >
+                        Dr. Addis Kassahun Mulat
+                      </Link>
+                    </p>
+                    <p className="text-xs text-charcoal mt-2">
+                      Co-founder & Deputy Managing Director, Kilimanjaro Global Consulting Training and Innovation
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div className="mt-6 pt-4 border-t border-warm-gold/20">
                 <div className="flex items-start space-x-3">
                   <span className="text-xs text-charcoal bg-deep-orange/20 px-2 py-1 rounded mt-1">15 mins</span>

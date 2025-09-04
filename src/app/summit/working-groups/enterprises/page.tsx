@@ -180,11 +180,7 @@ export default function EnterprisesWorkingGroupPage() {
 
 
                     <div className="flex items-start space-x-4">
-                      {/* <img
-                        src="/images/speakers/mika.jpeg"
-                        alt="Mika Chavala"
-                        className="w-16 h-16 object-cover rounded-full shadow-md"
-                      /> */}
+
                       <p className="text-sm text-charcoal">
                         <strong>Yousif Jamal </strong> (Sudan) - Entrepreneur & Business Leader
                       </p>

@@ -271,6 +271,29 @@ export default function CivilSocietyWorkingGroupPage() {
                   </div>
                 </div>
 
+
+                {/* Dr. Addis Kassahun Mulat */}
+                <div className="flex items-start space-x-4 border-l-4 border-warm-gold pl-4">
+                  <img
+                    src="/images/speakers/Addis.jpeg"
+                    alt="Dr. Addis Kassahun Mulat"
+                    className="w-20 h-20 rounded-full object-cover"
+                  />
+                  <div>
+
+                    <p className="text-sm text-charcoal">
+                      <Link
+                        href="/summit/speakers#addis-kassahun"
+                        className="font-bold underline hover:text-deep-orange-dark"
+                        style={{ color: "#FF5722" }}
+                      >
+                        Dr. Addis Kassahun Mulat
+                      </Link><p>Co-founder & Deputy Managing Director, Kilimanjaro Global Consulting Training and Innovation</p>
+                    </p>
+                  </div>
+                </div>
+
+
                 {/* Q&A */}
                 <div className="border-l-4 border-deep-orange pl-4">
                   <h4 className="font-bold text-charcoal mb-2">Q&A with Speakers</h4>

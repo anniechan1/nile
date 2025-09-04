@@ -216,7 +216,17 @@ export default function TechnologyWorkingGroupPage() {
                       <p className="text-sm text-charcoal">
                         <strong>Mika Chavala</strong>, Founder, Swahili Nation One Africa Foundation <br /><br />
                         <em>
-                          A goal-driven and strategic leader with an outstanding record of managing multiple teams. Founder of Swahili Nation - One Africa. He created a YouTube channel (<a href="https://www.youtube.com/@SWAHILINATION" target="_blank" rel="noopener noreferrer" className="text-river-blue hover:underline">Swahili Nation</a>)  that now has more than 231K subscribers. His platform is intended to defend the image and heritage of Africa and share knowledge to create a bridge for unity and a peaceful Africa.
+                          Mika Chavala is a strategic leader known for managing diverse teams. He founded the Swahili Nation One Africa Foundation and Kairos Mega Investment, and launched the popular <a
+                            href="https://www.youtube.com/@SWAHILINATION"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-bold hover:underline"
+                            style={{ color: "#FF5722" }} // Explicitly set the color
+                          >
+                            Swahili Nation
+                          </a> YouTube channel with over 487,000 subscribers.
+                          <br />
+                          In 2020, he received honorary citizenship from the Seoul Metropolitan Government and became an Africa Insight ambassador in 2021. In 2024, he launched Kairos Mega Investment to tackle hunger, health issues, and enhance education, focusing on youth development.
                         </em>
                       </p>
                     </div>

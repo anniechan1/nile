@@ -317,7 +317,7 @@ export default function TechnologyWorkingGroupPage() {
                         className="w-20 h-20 rounded-full object-cover"
                       />
                       <p className="text-sm text-charcoal">
-                        <strong>Wim Vanhelleputte</strong> (CEO, Safaricom Ethiopia) (TBC).
+                        <strong>Wim Vanhelleputte</strong> (CEO, Safaricom Ethiopia).
                         <br /><br />
                         <em>Sharing experiences from the field on how Telco and Fintech services can enhance local communities and lead to more cohesive regional collaboration.</em>
                       </p>
@@ -429,7 +429,7 @@ export default function TechnologyWorkingGroupPage() {
                 </div>
                 <div className="pl-6">
 
-                  <p className="text-sm text-charcoal">• <strong>Wim Vanhelleputte</strong> (Safaricom Ethiopia) (TBC)</p>
+                  <p className="text-sm text-charcoal">• <strong>Wim Vanhelleputte</strong> (Safaricom Ethiopia) </p>
                 </div>
 
                 {/* Adoption of the Action Plan */}

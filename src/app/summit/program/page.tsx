@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import MainNav from "@/components/main-nav"
 import { Button } from "@/components/ui/button"
-import { Calendar, MapPin, Award, Handshake, ArrowRight, Users, Globe, Clock } from "lucide-react"
+import { Calendar, MapPin, Award, Handshake, ArrowRight, Users, Globe, Clock, Download } from "lucide-react"
 import Footer from "@/components/footer"
 import Link from "next/link"
 
@@ -71,6 +71,21 @@ export default function SummitPage() {
             >
               Register Now
               <ArrowRight className="h-5 w-5 ml-2" />
+            </Button>
+          </Link>
+          <Link
+            href="/documents/FullProgram.pdf" // Path to the FullProgram.pdf file
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+
+          >
+            <Button
+              size="sm"
+              className="bg-warm-gold hover:bg-warm-gold-dark text-rich-white font-bold px-8 py-3 text-lg rounded-full shadow-xl transform hover:scale-105 transition-all duration-300 font-merriweather"
+            >
+              Download Program
+              <Download className="h-5 w-5 ml-2" />
             </Button>
           </Link>
         </div>
@@ -920,6 +935,20 @@ export default function SummitPage() {
                   >
                     Register Now
                     <ArrowRight className="h-4 w-4 ml-2" />
+                  </Button>
+                </Link>
+                <Link
+                  href="/documents/FullProgram.pdf" // Path to the FullProgram.pdf file
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                >
+                  <Button
+                    size="sm"
+                    className="bg-warm-gold hover:bg-warm-gold-dark text-rich-white font-bold px-8 py-3 text-lg rounded-full shadow-xl transform hover:scale-105 transition-all duration-300 font-merriweather"
+                  >
+                    Download Program
+                    <Download className="h-5 w-5 ml-2" />
                   </Button>
                 </Link>
               </div>

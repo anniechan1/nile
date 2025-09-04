@@ -233,7 +233,7 @@ export default function AcademicWorkingGroupPage() {
                         </Link>
                       </p>
                       <p className="text-xs text-charcoal mt-2">
-                        Associate Professor: Innovation Policy and Management, University of the Witwatersrand, Johannesburg,
+                        Associate Professor: Innovation Policy and Management, University of the Witwatersrand, Johannesburg
                       </p>
                     </div>
                   </div>
@@ -241,7 +241,7 @@ export default function AcademicWorkingGroupPage() {
                 </div>
                 {/* Professor Stephen Little */}
                 <div className="border-l-4 border-river-blue pl-4">
-                  {/* <h4 className="font-bold text-charcoal mb-2"></h4> */}
+                  <h4 className="font-bold text-charcoal mb-2">United Kingdom</h4>
                   <div className="flex items-start space-x-3 mb-2">
                     <img
                       src="/images/speakers/Stephan.jpg"
@@ -258,7 +258,8 @@ export default function AcademicWorkingGroupPage() {
                         </Link>
                       </p>
                       <p className="text-xs text-charcoal mt-2">
-                        Director, Centre for Pan African Studies, Hume Institute for Postgraduate Studies
+                        Director Centre for Pan-African Studies, Hume Institute for Postgraduate Studies<br />
+                        Professor Extraordinaire, SARChI Innovation Research Group, Tshwane University of Technology
                       </p>
                     </div>
                   </div>
@@ -396,12 +397,19 @@ export default function AcademicWorkingGroupPage() {
                 <div className="flex items-start space-x-3 mb-2">
                   <img
                     src="/images/speakers/Hannah.png"
-                    alt="Professor Hannah Mariam Meherete Selassie"
+                    alt="Prof. Hannah Mariam Meherete Selassie"
                     className="w-24 h-24 rounded-full object-cover"
                   />
                   <div>
                     <p className="text-sm text-charcoal">
-                      <strong>Professor Hannah Mariam Meherete Selassie</strong>
+                      <Link
+                        href="https://www.linkedin.com/in/hannah-mariam-meherete-selassie-593b97b/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-river-blue hover:text-river-blue-dark underline"
+                      >
+                        Prof. Hannah Mariam Meherete Selassie
+                      </Link>
                     </p>
                     <p className="text-xs text-charcoal mt-2">
                       Board Chairperson for "Ye QaQe New Years" to Empower Women and Youth for Resilient Citizens
@@ -466,29 +474,114 @@ export default function AcademicWorkingGroupPage() {
                 </div>
               </div>
 
-
-              <div className="border-l-4 border-deep-orange pl-4">
+              <div className="border-l-4 border-river-blue pl-4">
+                <h4 className="font-bold text-charcoal mb-2">United States</h4>
                 <div className="flex items-start space-x-3 mb-2">
                   <img
-                    src="/images/speakers/Addis.jpeg"
-                    alt="Dr. Addis Kassahun Mulat"
+                    src="/images/speakers/Hilary.jpeg"
+                    alt="Hilary I. Inyang"
                     className="w-24 h-24 rounded-full object-cover"
                   />
                   <div>
                     <p className="text-sm text-charcoal">
                       <Link
-                        href="/summit/speakers#addis-kassahun"
+                        href="https://www.linkedin.com/in/hilaryinyang/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-river-blue hover:text-river-blue-dark underline"
                       >
-                        Dr. Addis Kassahun Mulat
+                        Hilary I. Inyang
                       </Link>
                     </p>
                     <p className="text-xs text-charcoal mt-2">
-                      Co-founder & Deputy Managing Director, Kilimanjaro Global Consulting Training and Innovation
+                      US Ambassador's Distinguished Scholar to Ethiopia<br /> President and Chief Executive Officer, Global Institute of Sustainable Development, Advanced Analysis and Design (GISDAAD)/GEISE.
                     </p>
                   </div>
                 </div>
               </div>
+
+              {/* Jeylan Wolyie */}
+              <div className="border-l-4 border-river-blue pl-4">
+                <h4 className="font-bold text-charcoal mb-2">Ethiopia</h4>
+                <div className="flex items-start space-x-3 mb-2">
+                  <img
+                    src="/images/speakers/Jeylan.jpeg"
+                    alt="Jeylan Wolyie"
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="text-sm text-charcoal">
+                      <Link
+                        href="https://www.linkedin.com/in/jeylan-wolyie-1526603a/?originalSubdomain=et"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-river-blue hover:text-river-blue-dark underline"
+                      >
+                        Jeylan Wolyie
+                      </Link>
+                    </p>
+                    <p className="text-xs text-charcoal mt-2">
+                      Professor of Cultural and Social Analysis with a PhD in Peace and Conflict Resolution, Haramaya University
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Mulatwa Wolde Woldargay */}
+              <div className="border-l-4 border-river-blue pl-4">
+                <h4 className="font-bold text-charcoal mb-2">Ethiopia</h4>
+                <div className="flex items-start space-x-3 mb-2">
+                  <img
+                    src="/images/speakers/Mulatwa.png"
+                    alt="Mulatwa Wolde Woldargay"
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="text-sm text-charcoal">
+                      <Link
+                        href="https://www.linkedin.com/in/mulatwa-wolde-woldargay-9112b4103/?originalSubdomain=et"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-river-blue hover:text-river-blue-dark underline"
+                      >
+                        Mulatwa Wolde Woldargay
+                      </Link>, General Manager, NGO
+                    </p>
+                    <p className="text-xs text-charcoal mt-2">
+
+                      Mulatwa Wolde Woldargay is internationally experienced in sustainable development, climate change justice, gender mainstreaming, public service and good governance evaluation, strategy design, research, and executive leadership. He has a proven track record of implementation through complex challenges in multinational and international institutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Kimani Nehusi */}
+              <div className="border-l-4 border-river-blue pl-4">
+                <h4 className="font-bold text-charcoal mb-2">United States</h4>
+                <div className="flex items-start space-x-3 mb-2">
+                  <img
+                    src="/images/speakers/Kimani.png"
+                    alt="Kimani Nehusi"
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="text-sm text-charcoal">
+                      <Link
+                        href="https://liberalarts.temple.edu/directory/kimani-nehusi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-river-blue hover:text-river-blue-dark underline"
+                      >
+                        Kimani Nehusi
+                      </Link>
+                    </p>
+                    <p className="text-xs text-charcoal mt-2">
+                      Associate Professor, African American Studies at Temple University
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
               <div className="mt-6 pt-4 border-t border-warm-gold/20">
                 <div className="flex items-start space-x-3">
                   <span className="text-xs text-charcoal bg-deep-orange/20 px-2 py-1 rounded mt-1">15 mins</span>
@@ -496,6 +589,8 @@ export default function AcademicWorkingGroupPage() {
                 </div>
               </div>
             </div>
+
+
 
             {/* Part 3 */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">

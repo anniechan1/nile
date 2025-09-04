@@ -150,6 +150,31 @@ export default function SummitPage() {
                   </div>
                   <div className="space-y-4 text-sm font-lora text-charcoal">
                     <div>
+
+
+                      {/* H.E. Ambassador Nebiyu Tedla */}
+                      <Link
+                        href="https://x.com/AmbNebiyuTedla"
+                        className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300"
+                      >
+                        <div className="flex items-start space-x-4">
+                          <img
+                            src="/images/speakers/nebiyu.png"
+                            alt="H.E. Ambassador Nebiyu Tedla"
+                            className="w-20 h-20 object-cover rounded-full shadow-md"
+                          />
+                          <div>
+                            <strong>H.E. Ambassador Nebiyu Tedla, Spokesperson of the Ministry of Foreign Affairs</strong>
+                            <br />
+                            Share the  <Link
+                              href="/summit/presidential-interview"
+                              className="text-deep-orange font-bold hover:underline"
+                              style={{ color: "#FF5722" }}
+                            >President’s message from his recent interview</Link>
+                          </div>
+                        </div>
+                      </Link>
+
                       {/* Dr. Gezehen Kebede */}
                       <Link
                         href="https://www.linkedin.com/in/dr-gezahegn-kebede-gebrehana-4353332b/?originalSubdomain=et"
@@ -166,14 +191,8 @@ export default function SummitPage() {
                           <div>
                             <strong>Dr. Gezehen Kebede, Ethiopian Civil Society Organizations Council</strong>
                             <br />
-                            Welcome and open the conference, and read the{" "}
-                            <Link
-                              href="/summit/presidential-interview"
-                              className="text-deep-orange font-bold hover:underline"
-                              style={{ color: "#FF5722" }}
-                            >
-                              message of the President from his interview
-                            </Link>
+                            Welcome and open the conference
+
                           </div>
                         </div>
                       </Link>
@@ -254,18 +273,7 @@ export default function SummitPage() {
                         </div>
                       </Link>
                     </li>
-                    <li className="flex items-start space-x-4">
-                      {/* <img
-                        src="/images/speakers/mammo.png"
-                        alt="Mrs. Patricia Raye"
-                        className="w-16 h-16 object-cover rounded-full shadow-md"
-                      /> */}
-                      <div>
-                        <strong>Mrs. Patricia Raye (Uganda), Ministry of Finance – Climate Finance Unit</strong>
-                        <br />
-                        “Mobilizing Climate Finance for Transboundary Nile Cooperation”
-                      </div>
-                    </li>
+
                   </ul>
                 </div>
               </div>
@@ -303,26 +311,28 @@ export default function SummitPage() {
                     <div className="flex-1">
                       <h4 className="font-bold text-river-blue mb-4">List of Speakers by Country Affiliation</h4>
                       <ul className="space-y-6 text-sm font-lora text-charcoal">
-                        <li className="flex items-start space-x-4">
-
-
-                          <img
-                            src="/images/speakers/Deepti.png"
-                            alt="Deepti Kataria"
-                            className="w-20 h-20 object-cover rounded-full shadow-md"
-                          />
-                          <div>
-                            <strong className="text-deep-orange !text-deep-orange">Egypt/India</strong>
-                            <br />
-                            <strong>Deepti Kataria, General Secretary, Africa Study Centre</strong>
-                            <br />
-                            "Fostering Unity Through Cultural Dialogue and Education"
-                          </div>
-
-
-
-
-
+                        {/* Deepti Kataria */}
+                        {/* Deepti Kataria */}
+                        <li>
+                          <Link
+                            href="/summit/speakers/deepti-kataria" // Link to a separate page for Deepti Kataria
+                            className="block hover:bg-[#FFFAF0] p-4 rounded-lg transition-all duration-300"
+                          >
+                            <div className="flex items-start space-x-4">
+                              <img
+                                src="/images/speakers/Deepti.png"
+                                alt="Deepti Kataria"
+                                className="w-20 h-20 object-cover rounded-full shadow-md"
+                              />
+                              <div>
+                                <strong className="text-deep-orange">Egypt/India</strong>
+                                <br />
+                                <strong>Deepti Kataria, General Secretary, Africa Study Centre</strong>
+                                <br />
+                                "Fostering Unity Through Cultural Dialogue and Education"
+                              </div>
+                            </div>
+                          </Link>
                         </li>
                         <li className="flex items-start space-x-4">
 

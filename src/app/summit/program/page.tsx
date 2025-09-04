@@ -214,10 +214,18 @@ export default function SummitPage() {
                             <strong>Artist Desaalegn Hailu, initiator of the Children of Nile</strong>
                             <br />
                             Set vision and purpose for the Children of the Nile Initiative
+                            <br />
+                            <a
+                              href="/documents/Hailu_Interview.pdf"
+                              download
+                              style={{ color: "#FF5722", fontWeight: "bold" }}
+                              className="hover:underline mt-2 inline-block"
+                            >
+                              Interview with Artist Hailu
+                            </a>
                           </div>
                         </div>
                       </Link>
-
                       {/* Prof. Dr. Afework Kassu */}
                       <Link
                         href="https://en.wikipedia.org/wiki/Afework_Kassu_Gizaw"
@@ -235,6 +243,15 @@ export default function SummitPage() {
                             <strong>Prof. Dr. Afework Kassu – Head AHRI, former State Minister of Science and Technology of Ethiopia</strong>
                             <br />
                             “Science, Innovation, and Youth Leadership for a Shared Nile Future”
+                            <br />
+                            <a
+                              href="/documents/Prof_Afework_Interview.pdf"
+                              download
+                              style={{ color: "#FF5722", fontWeight: "bold" }}
+                              className="hover:underline mt-2 inline-block"
+                            >
+                              Interview with Prof. Afework
+                            </a>
                           </div>
                         </div>
                       </Link>
@@ -654,6 +671,14 @@ export default function SummitPage() {
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
                             <strong>Chair:</strong> Artist Desalegn Hailu Mazengiya
                             <p>Initiator of the Children of the Nile Initiative</p>
+                            <a
+                              href="/documents/Hailu_Interview.pdf"
+                              download
+                              style={{ color: "#FF5722", fontWeight: "bold" }}
+                              className="hover:underline mt-2 inline-block"
+                            >
+                              Interview with Artist Desalegn Hailu
+                            </a>
                           </span>
                         </div>
                         <div className="flex items-center space-x-3">
@@ -669,7 +694,6 @@ export default function SummitPage() {
                         </div>
                       </div>
                     </Link>
-
 
 
 
@@ -719,6 +743,14 @@ export default function SummitPage() {
                           <span className="text-xs text-gray-600 group-hover:text-white/90">
                             <strong>Chair: Dr. Mitslal Kifleyesus-Matschie</strong>
                             <p>Founder, Ecopia; <br />Assistant Professor, Jimma University </p>
+                            <a
+                              href="/documents/Mitslal_Interview.pdf"
+                              download
+                              style={{ color: "#FF5722", fontWeight: "bold" }}
+                              className="hover:underline mt-2 inline-block"
+                            >
+                              Interview with Dr. Mitslal
+                            </a>
                           </span>
                         </div>
                         <div className="flex items-center space-x-3 mb-4">
@@ -766,6 +798,18 @@ export default function SummitPage() {
                             <span className="text-xs text-gray-600 group-hover:text-white/90">
                               <strong>Mika Chavala</strong>, Tanzania
                               <p>Founder, Swahili Nation One Africa Foundation</p>
+                            </span>
+                          </div>
+
+                          <div className="flex items-start space-x-3">
+                            <img
+                              src="/images/speakers/chris.jpeg"
+                              alt="Christoph Schneider-Yattara"
+                              className="w-20 h-20 object-cover rounded-full shadow-md"
+                            />
+                            <span className="text-xs text-gray-600 group-hover:text-white/90">
+                              <strong>Christoph Schneider-Yattara</strong>, Ethiopia
+                              <p>Executive Director, Chamber of Businesses of Africa Descent</p>
                             </span>
                           </div>
 

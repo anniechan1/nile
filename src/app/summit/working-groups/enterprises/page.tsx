@@ -146,7 +146,7 @@ export default function EnterprisesWorkingGroupPage() {
                       <img
                         src="/images/speakers/irvine.jpeg"
                         alt="Ms. Irvine Floreale"
-                        className="w-16 h-16 object-cover rounded-full shadow-md"
+                        className="w-20 h-20 object-cover rounded-full shadow-md"
                       />
                       <p className="text-sm text-charcoal">
                         <strong>Ms. Irvine Floreale Murame</strong> (Burundi) - Managing Director, Infinity Group
@@ -158,7 +158,7 @@ export default function EnterprisesWorkingGroupPage() {
                       <img
                         src="/images/speakers/anon.jpeg"
                         alt="Ms. Elizabeth Anon"
-                        className="w-16 h-16 object-cover rounded-full shadow-md"
+                        className="w-20 h-20 object-cover rounded-full shadow-md"
                       />
                       <p className="text-sm text-charcoal">
                         <strong>Ms. Elizabeth Anon</strong> (South Sudan) - Gender Advisor, AVSI Foundation
@@ -171,7 +171,7 @@ export default function EnterprisesWorkingGroupPage() {
                       <img
                         src="/images/speakers/denise.png"
                         alt="Ms. Denise Umubyeyi"
-                        className="w-16 h-16 object-cover rounded-full shadow-md"
+                        className="w-20 h-20 object-cover rounded-full shadow-md"
                       />
                       <p className="text-sm text-charcoal">
                         <strong>Ms. Denise Umubyeyi</strong> (Rwanda) - Country Director, Practical Action

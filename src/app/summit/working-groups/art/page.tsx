@@ -257,11 +257,34 @@ export default function ArtWorkingGroupPage() {
                     />
                     <div>
                       <h4 className="font-bold text-charcoal mb-2">
-                        Special Presentation: "Digital Tools for Cultural Collaboration"
+                        The Power of Sport to Inspire Peace and Unity
                       </h4>
+
                       <p className="text-sm text-charcoal">
-                        Pre-shared presentation by <strong>Tsegaye Degineh</strong>
+                        Pre-shared presentation by <a
+                          href="https://degineh.com/?page_id=3"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-bold hover:underline"
+                          style={{ color: "#FF5722" }}
+                        >
+                          Tsegaye Degineh
+                        </a>
                       </p>
+                      <p className="text-sm text-charcoal mt-2">
+                        Dr. Tsegaye Degineh reflects on Nelson Mandela’s words that “Sport has the power to change the world.” In his talk, he highlights how sport inspires, unites people, and fosters growth, discipline, resilience, and respect. He connects these values to national pride, peacebuilding, and the social power of sport to transform conflict into cooperation—showing how it can bring the Nile nations closer together and strengthen unity across borders.
+                      </p>
+
+
+
+                      {/* Video Section */}
+                      <div className="mt-4 flex justify-center">
+                        <video controls className="w-full max-w-[200px] rounded-lg shadow-lg">
+                          <source src="/videos/sport.mp4" type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+
                     </div>
                   </div>
 

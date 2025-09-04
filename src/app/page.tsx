@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Calendar, MapPin, Globe, ArrowRight } from "lucide-react"
+import { Calendar, MapPin, Globe, ArrowRight, Download } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import MainNav from "@/components/main-nav"
 import Footer from "@/components/footer"
@@ -91,15 +91,28 @@ export default function HomePage() {
           </div>
 
           {/* Enhanced CTA Button - Smaller */}
-          <Link href={REGISTRATION_URL} target="_blank" rel="noopener noreferrer">
-            <Button
-              size="default"
-              className="bg-deep-orange hover:bg-deep-orange-dark text-rich-white font-bold px-6 py-2.5 text-base rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 font-merriweather"
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link href={REGISTRATION_URL} target="_blank" rel="noopener noreferrer">
+              <Button
+                size="default"
+                className="bg-deep-orange hover:bg-deep-orange-dark text-rich-white font-bold px-6 py-2.5 text-base rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 font-merriweather"
+              >
+                Register Now
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </Button>
+            </Link>
+            <a
+              href="/documents/FullProgram.pdf"
+              download
+              className="bg-warm-gold hover:bg-warm-gold-dark text-rich-white font-bold px-6 py-2.5 text-base rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 font-merriweather flex items-center"
             >
-              Register Now
-              <ArrowRight className="h-4 w-4 ml-2" />
-            </Button>
-          </Link>
+              <Download className="h-4 w-4 mr-2" />
+              Download Program
+            </a>
+
+
+
+          </div>
         </div>
       </section>
 

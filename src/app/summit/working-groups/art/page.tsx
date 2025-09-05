@@ -193,7 +193,14 @@ export default function ArtWorkingGroupPage() {
                         Academic & Cultural Framework: "Fostering Unity Through Cultural Dialogue and Education" (3 mins)
                       </h4>
                       <p className="text-sm text-charcoal">
-                        <strong>Deepti Kataria</strong> (Egypt/India), General Secretary, Africa Study Centre
+                        <Link
+                          href="https://www.linkedin.com/in/deepti-kataria-23b9283/?originalSubdomain=eg"
+                          className="font-bold underline hover:text-deep-orange-dark"
+                          style={{ color: "#FF5722" }} // Explicitly set the color
+                        >
+                          Deepti Kataria
+                        </Link>{" "}
+                        (Egypt/India), General Secretary, Africa Study Centre
                       </p>
                     </div>
                   </div>

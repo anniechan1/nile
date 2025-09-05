@@ -181,10 +181,38 @@ export default function CivilSocietyWorkingGroupPage() {
                       Fostering Unity Through Cultural Dialogue and Education
                     </h4>
                     <p className="text-sm text-charcoal">
-                      <strong>Deepti Kataria</strong> (General Secretary, Africa Study Centre)
+                      <Link
+                        href="https://www.linkedin.com/in/deepti-kataria-23b9283/?originalSubdomain=eg"
+                        className="font-bold underline hover:text-deep-orange-dark"
+                        style={{ color: "#FF5722" }} // Explicitly set the color
+                      >
+                        Deepti Kataria
+                      </Link>{" "}
+                      (General Secretary, Africa Study Centre)
+                    </p>
+                    <p className="text-sm text-charcoal mt-2">
+                      Deepti Kataria opens the event with a welcoming message, calling on all 11 Nile countries to come together on one platform to share ideas and explore opportunities for cooperation.
                     </p>
                   </div>
+
                 </div>
+
+                <div className="mt-4 flex justify-center">
+                  <video
+                    controls
+                    className="rounded-lg shadow-md"
+                    style={{
+                      width: "400px", // Set the width to 400px
+                      height: "225px", // Set the height to 225px (16:9 aspect ratio)
+                      maxWidth: "100%", // Ensure responsiveness
+                    }}
+                  >
+                    <source src="/videos/Deepti_msg.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+
 
                 {/* Renewable Energy Innovations and Community-Based Solutions */}
                 <div className="flex items-start space-x-4 border-l-4 border-river-blue pl-4">

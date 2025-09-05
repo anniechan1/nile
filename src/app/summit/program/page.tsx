@@ -190,6 +190,20 @@ export default function SummitPage() {
                           </div>
                         </div>
                       </Link>
+                      <div className="mt-4">
+                        <video
+                          controls
+                          className="w-full rounded-lg shadow-md"
+                          style={{
+                            maxWidth: "600px", // Optional: Limit the video width
+                            margin: "0 auto", // Center the video
+                            display: "block", // Ensure centering works
+                          }}
+                        >
+                          <source src="/videos/nebiyu_speech.mp4" type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
 
                       {/* Dr. Gezehen Kebede */}
                       <Link

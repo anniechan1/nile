@@ -37,7 +37,7 @@ export default function EnterprisesWorkingGroupPage() {
               </div>
               <div className="flex items-center space-x-2 bg-river-blue/10 px-4 py-2 rounded-full">
                 <Calendar className="h-4 w-4 text-river-blue" />
-                <span className="font-bold text-river-blue text-sm">Sunday, 7 September 2025</span>
+                <span className="font-bold text-river-blue text-sm">Saturday, 6 September 2025</span>
               </div>
               <div className="flex items-center space-x-2 bg-warm-gold/20 px-4 py-2 rounded-full">
                 <Clock className="h-4 w-4 text-charcoal" />

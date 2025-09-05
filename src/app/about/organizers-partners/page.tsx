@@ -4,17 +4,19 @@ import Footer from "@/components/footer"
 import Link from "next/link"
 
 export default function OrganizersPartnersPage() {
-  const keyPartners = [
-    {
-      name: "Ecopia PLC",
-      subtitle: "Chaired by Dr. Mitslal Kifleyesus-Matschie",
-      description: "Steering sustainable enterprises and green innovation.",
-      logo: "/images/ecopia.png",
-      url: "https://www.ecopiagroup.com/",
-      borderColor: "border-warm-gold",
-      shadowColor: "bg-warm-gold/20",
 
-    },
+
+  const ecopia = {
+    name: "Ecopia PLC",
+    subtitle: "Chaired by Dr. Mitslal Kifleyesus-Matschie",
+    description: "Steering sustainable enterprises and green innovation.",
+    logo: "/images/ecopia.png",
+    url: "https://www.ecopiagroup.com/",
+    borderColor: "border-warm-gold",
+    shadowColor: "bg-warm-gold/20",
+  }
+  const keyPartners = [
+
     {
       name: "Bethlehem Ze-Ethiopia",
       subtitle: "Founded by Desalegn Hailu Mazengiya (Artist)",
@@ -84,13 +86,63 @@ export default function OrganizersPartnersPage() {
         </div>
       </section>
 
+
+
+      {/* Key Organizer and Funder Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-b from-sand to-off-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-river-blue mb-6">
+                Key Organizer and Funder
+              </h2>
+            </div>
+
+            {/* Ecopia PLC */}
+            <div className="max-w-4xl mx-auto">
+              <div className="relative">
+                <div className="absolute -top-4 -left-4 w-full h-full bg-warm-gold/10 transform rotate-1"></div>
+                <div className="relative p-4 md:p-8">
+                  <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+                    <Link
+                      href={ecopia.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-shrink-0"
+                    >
+                      <div className="w-32 h-32 md:w-40 md:h-40 relative hover:scale-105 transition-transform duration-300 mx-auto md:mx-0">
+                        <img
+                          src={ecopia.logo}
+                          alt={`${ecopia.name} logo`}
+                          className="absolute inset-0 w-full h-full object-contain"
+                        />
+                      </div>
+                    </Link>
+                    <div className="flex-1 text-center md:text-left">
+                      <h3 className="font-playfair text-lg md:text-2xl font-bold text-river-blue mb-2">
+                        {ecopia.name}
+                      </h3>
+                      <p className="font-lora text-xs md:text-lg text-charcoal italic mb-2">
+                        {ecopia.subtitle}
+                      </p>
+                      <p className="font-lora text-sm md:text-lg text-charcoal leading-relaxed">
+                        {ecopia.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Lead Organizer Section */}
       <section className="py-16 md:py-20 bg-gradient-to-b from-sand to-off-white">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-river-blue mb-6">
-                Lead Organizer
+                Coordinator
               </h2>
             </div>
 
@@ -142,36 +194,33 @@ export default function OrganizersPartnersPage() {
               </h2>
             </div>
 
-            {/* Grid Layout */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Centered Layout */}
+            <div className="flex flex-wrap justify-center gap-12">
               {keyPartners.map((partner, index) => (
-                <Link key={index} href={partner.url} target="_blank" rel="noopener noreferrer" className="block group">
-                  <div className="relative h-full">
-                    <div
-                      className={`absolute -top-2 -right-2 w-full h-full ${partner.shadowColor} transform -rotate-2 rounded-tr-3xl rounded-bl-3xl`}
-                    ></div>
-                    <div
-                      className={`relative bg-white p-6 shadow-2xl border-r-4 ${partner.borderColor} rounded-tr-3xl rounded-bl-3xl transform group-hover:scale-105 transition-all duration-300 h-full`}
-                    >
-                      <div className="text-center flex flex-col h-full">
-                        <div className="mb-4">
-                          <div className="w-32 h-32 relative mx-auto group-hover:scale-110 transition-transform duration-300">
-                            <img
-                              src={partner.logo || "/placeholder.svg"}
-                              alt={`${partner.name} logo`}
-
-                              className="absolute inset-0 w-full h-full object-contain"
-
-                            />
-                          </div>
-                        </div>
-                        <div className="flex-grow flex flex-col justify-center">
-                          <h3 className="font-playfair text-lg font-bold text-river-blue mb-1">{partner.name}</h3>
-                          <p className="font-lora text-xs text-charcoal italic mb-2">{partner.subtitle}</p>
-                          <p className="font-lora text-sm text-charcoal leading-relaxed">{partner.description}</p>
-                        </div>
-                      </div>
+                <Link
+                  key={index}
+                  href={partner.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <div className="text-center">
+                    <div className="w-32 h-32 relative mx-auto group-hover:scale-110 transition-transform duration-300">
+                      <img
+                        src={partner.logo || "/placeholder.svg"}
+                        alt={`${partner.name} logo`}
+                        className="absolute inset-0 w-full h-full object-contain"
+                      />
                     </div>
+                    <h3 className="font-playfair text-lg font-bold text-river-blue mt-4">
+                      {partner.name}
+                    </h3>
+                    <p className="font-lora text-sm text-charcoal italic mt-2">
+                      {partner.subtitle}
+                    </p>
+                    <p className="font-lora text-sm text-charcoal leading-relaxed mt-2">
+                      {partner.description}
+                    </p>
                   </div>
                 </Link>
               ))}
@@ -186,7 +235,7 @@ export default function OrganizersPartnersPage() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-river-blue mb-6">
-                Supporting Partners
+                Supporters
 
               </h2>
 

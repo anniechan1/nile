@@ -190,7 +190,7 @@ export default function DeeptiPoster() {
             }}
           >
             <img
-              src="/images/deepti1.png"
+              src="/images/speakers/deepti_k.png"
               alt="Deepti Kataria"
               style={{
                 width: "100%",

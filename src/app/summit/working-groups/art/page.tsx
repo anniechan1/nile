@@ -280,7 +280,7 @@ export default function ArtWorkingGroupPage() {
                       {/* Video Section */}
                       <div className="mt-4 flex justify-center">
                         <video controls className="w-full max-w-[200px] rounded-lg shadow-lg">
-                          <source src="/videos/sport.mp4" type="video/mp4" />
+                          <source src="/videos/sport1.mp4" type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>
                       </div>

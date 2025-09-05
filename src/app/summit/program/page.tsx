@@ -58,36 +58,37 @@ export default function SummitPage() {
           </p>
 
 
+          <div className="flex justify-center space-x-4">
 
-
-          <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSe1LBQ7nSDlQsDUeGyE-DFuVsB0gnm2A8Rt3jvBy5j22wer3g/viewform?usp=header"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button
-              size="sm"
-              className="bg-deep-orange hover:bg-deep-orange-dark text-rich-white font-bold px-8 py-3 text-lg rounded-full shadow-xl transform hover:scale-105 transition-all duration-300 font-merriweather"
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe1LBQ7nSDlQsDUeGyE-DFuVsB0gnm2A8Rt3jvBy5j22wer3g/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Register Now
-              <ArrowRight className="h-5 w-5 ml-2" />
-            </Button>
-          </Link>
-          <Link
-            href="/documents/FullProgram.pdf" // Path to the FullProgram.pdf file
-            target="_blank"
-            rel="noopener noreferrer"
-            download
+              <Button
+                size="sm"
+                className="bg-deep-orange hover:bg-deep-orange-dark text-rich-white font-bold px-8 py-3 text-lg rounded-full shadow-xl transform hover:scale-105 transition-all duration-300 font-merriweather"
+              >
+                Register Now
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Button>
+            </Link>
+            <Link
+              href="/documents/FullProgram.pdf" // Path to the FullProgram.pdf file
+              target="_blank"
+              rel="noopener noreferrer"
+              download
 
-          >
-            <Button
-              size="sm"
-              className="bg-warm-gold hover:bg-warm-gold-dark text-rich-white font-bold px-8 py-3 text-lg rounded-full shadow-xl transform hover:scale-105 transition-all duration-300 font-merriweather"
             >
-              Download Program
-              <Download className="h-5 w-5 ml-2" />
-            </Button>
-          </Link>
+              <Button
+                size="sm"
+                className="bg-warm-gold hover:bg-warm-gold-dark text-rich-white font-bold px-8 py-3 text-lg rounded-full shadow-xl transform hover:scale-105 transition-all duration-300 font-merriweather"
+              >
+                Download Program
+                <Download className="h-5 w-5 ml-2" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -236,7 +237,7 @@ export default function SummitPage() {
                               style={{ color: "#FF5722", fontWeight: "bold" }}
                               className="hover:underline mt-2 inline-block"
                             >
-                              Interview with Artist Hailu
+                              Interview with Artist Desaalegn Hailu
                             </a>
                           </div>
                         </div>
@@ -691,6 +692,7 @@ export default function SummitPage() {
                               download
                               style={{ color: "#FF5722", fontWeight: "bold" }}
                               className="hover:underline mt-2 inline-block"
+                              onClick={(e) => e.stopPropagation()}
                             >
                               Interview with Artist Desalegn Hailu
                             </a>
@@ -763,6 +765,7 @@ export default function SummitPage() {
                               download
                               style={{ color: "#FF5722", fontWeight: "bold" }}
                               className="hover:underline mt-2 inline-block"
+                              onClick={(e) => e.stopPropagation()}
                             >
                               Interview with Dr. Mitslal
                             </a>

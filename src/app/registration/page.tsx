@@ -52,8 +52,7 @@ export default function RegistrationPage() {
 
               <div className="pt-6 border-t border-warm-gold-30 max-w-lg">
                 <p className="font-lora text-sm text-charcoal text-center leading-relaxed">
-                  Registration is free and open to all. Both in-person (Addis Ababa) and virtual participation options
-                  are available.
+                  Registration is free and open to all.
                 </p>
               </div>
             </div>

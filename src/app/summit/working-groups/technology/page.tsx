@@ -232,7 +232,7 @@ export default function TechnologyWorkingGroupPage() {
                     </div>
                   </div>
 
-                  {/* International */}
+
                   <div className="border-l-4 border-warm-gold pl-4">
                     <h4 className="font-bold text-charcoal mb-2">
                       Uganda: “Health Card, how closing data gaps in healthcare enables coverage for all”
@@ -245,6 +245,27 @@ export default function TechnologyWorkingGroupPage() {
                       </em>
                     </p>
                   </div>
+
+
+                  <div className="border-l-4 border-deep-orange pl-4">
+                    <h4 className="font-bold text-charcoal mb-2">
+
+                    </h4>
+                    <div className="flex items-start space-x-4">
+                      <img
+                        src="/images/speakers/Jerome.jpeg"
+                        alt="Jerome Katunga"
+                        className="w-20 h-20 rounded-full object-cover"
+                      />
+                      <p className="text-sm text-charcoal">
+                        <strong>Jerome Katunga</strong> <br /><br />
+                        <em>
+
+                        </em>
+                      </p>
+                    </div>
+                  </div>
+
                   {/* Sudan */}
                   <div className="border-l-4 border-deep-orange pl-4">
                     <h4 className="font-bold text-charcoal mb-2">Sudan: "Mobile Solutions for Youth Employment"</h4>

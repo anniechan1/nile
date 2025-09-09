@@ -14,15 +14,13 @@ const summitImages = [
   {
     src: "/images/press/close_up.jpeg",
     alt: "Close-up of speakers",
-    caption: "Media interview during the conference",
-
-
+    caption: "Media interview during the conference. Artist Desalegn Hailu, Dr. Mitslal Kifleyesus-Matschie",
 
   },
   {
     src: "/images/press/panel.jpeg",
     alt: "Panel discussion",
-    caption: "",
+    caption: "Prof. Mammo Muchie, Dr. Getachew Engida, Artist Desalegn Hailu, Dr. Mitslal",
   },
   {
     src: "/images/press/interview.jpeg",
